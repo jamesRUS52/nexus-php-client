@@ -1,4 +1,4 @@
-# Swagger\Client\RepositoryManagementApi
+# NexusClient\RepositoryManagementApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -104,12 +104,12 @@ Create Maven group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\MavenGroupRepositoryApiRequest(); // \Swagger\Client\Model\MavenGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\MavenGroupRepositoryApiRequest(); // \NexusClient\Model\MavenGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository($body);
@@ -123,7 +123,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MavenGroupRepositoryApiRequest**](../Model/MavenGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\MavenGroupRepositoryApiRequest**](../Model/MavenGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -152,12 +152,12 @@ Create Maven hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\MavenHostedRepositoryApiRequest(); // \Swagger\Client\Model\MavenHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\MavenHostedRepositoryApiRequest(); // \NexusClient\Model\MavenHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository1($body);
@@ -171,7 +171,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MavenHostedRepositoryApiRequest**](../Model/MavenHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\MavenHostedRepositoryApiRequest**](../Model/MavenHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -200,12 +200,12 @@ Create NuGet proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\NugetProxyRepositoryApiRequest(); // \Swagger\Client\Model\NugetProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\NugetProxyRepositoryApiRequest(); // \NexusClient\Model\NugetProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository10($body);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NugetProxyRepositoryApiRequest**](../Model/NugetProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NugetProxyRepositoryApiRequest**](../Model/NugetProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -248,12 +248,12 @@ Create npm group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\NpmGroupRepositoryApiRequest(); // \Swagger\Client\Model\NpmGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\NpmGroupRepositoryApiRequest(); // \NexusClient\Model\NpmGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository11($body);
@@ -267,7 +267,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NpmGroupRepositoryApiRequest**](../Model/NpmGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NpmGroupRepositoryApiRequest**](../Model/NpmGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -296,12 +296,12 @@ Create npm hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\NpmHostedRepositoryApiRequest(); // \Swagger\Client\Model\NpmHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\NpmHostedRepositoryApiRequest(); // \NexusClient\Model\NpmHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository12($body);
@@ -315,7 +315,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NpmHostedRepositoryApiRequest**](../Model/NpmHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NpmHostedRepositoryApiRequest**](../Model/NpmHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -344,12 +344,12 @@ Create npm proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\NpmProxyRepositoryApiRequest(); // \Swagger\Client\Model\NpmProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\NpmProxyRepositoryApiRequest(); // \NexusClient\Model\NpmProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository13($body);
@@ -363,7 +363,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NpmProxyRepositoryApiRequest**](../Model/NpmProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NpmProxyRepositoryApiRequest**](../Model/NpmProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -392,12 +392,12 @@ Create RubyGems group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest(); // \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\RubyGemsGroupRepositoryApiRequest(); // \NexusClient\Model\RubyGemsGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository14($body);
@@ -411,7 +411,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest**](../Model/RubyGemsGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RubyGemsGroupRepositoryApiRequest**](../Model/RubyGemsGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -440,12 +440,12 @@ Create RubyGems hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest(); // \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\RubyGemsHostedRepositoryApiRequest(); // \NexusClient\Model\RubyGemsHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository15($body);
@@ -459,7 +459,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest**](../Model/RubyGemsHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RubyGemsHostedRepositoryApiRequest**](../Model/RubyGemsHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -488,12 +488,12 @@ Create RubyGems proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest(); // \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\RubyGemsProxyRepositoryApiRequest(); // \NexusClient\Model\RubyGemsProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository16($body);
@@ -507,7 +507,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest**](../Model/RubyGemsProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RubyGemsProxyRepositoryApiRequest**](../Model/RubyGemsProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -536,12 +536,12 @@ Create APT hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\AptHostedRepositoryApiRequest(); // \Swagger\Client\Model\AptHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\AptHostedRepositoryApiRequest(); // \NexusClient\Model\AptHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository17($body);
@@ -555,7 +555,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AptHostedRepositoryApiRequest**](../Model/AptHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\AptHostedRepositoryApiRequest**](../Model/AptHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -584,12 +584,12 @@ Create APT proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\AptProxyRepositoryApiRequest(); // \Swagger\Client\Model\AptProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\AptProxyRepositoryApiRequest(); // \NexusClient\Model\AptProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository18($body);
@@ -603,7 +603,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AptProxyRepositoryApiRequest**](../Model/AptProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\AptProxyRepositoryApiRequest**](../Model/AptProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -632,12 +632,12 @@ Create Cocoapods proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest(); // \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\CocoapodsProxyRepositoryApiRequest(); // \NexusClient\Model\CocoapodsProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository19($body);
@@ -651,7 +651,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest**](../Model/CocoapodsProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\CocoapodsProxyRepositoryApiRequest**](../Model/CocoapodsProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -680,12 +680,12 @@ Create Maven proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\MavenProxyRepositoryApiRequest(); // \Swagger\Client\Model\MavenProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\MavenProxyRepositoryApiRequest(); // \NexusClient\Model\MavenProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository2($body);
@@ -699,7 +699,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MavenProxyRepositoryApiRequest**](../Model/MavenProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\MavenProxyRepositoryApiRequest**](../Model/MavenProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -728,12 +728,12 @@ Create a Go group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\GolangGroupRepositoryApiRequest(); // \Swagger\Client\Model\GolangGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\GolangGroupRepositoryApiRequest(); // \NexusClient\Model\GolangGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository20($body);
@@ -747,7 +747,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\GolangGroupRepositoryApiRequest**](../Model/GolangGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\GolangGroupRepositoryApiRequest**](../Model/GolangGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -776,12 +776,12 @@ Create a Go proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\GolangProxyRepositoryApiRequest(); // \Swagger\Client\Model\GolangProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\GolangProxyRepositoryApiRequest(); // \NexusClient\Model\GolangProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository21($body);
@@ -795,7 +795,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\GolangProxyRepositoryApiRequest**](../Model/GolangProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\GolangProxyRepositoryApiRequest**](../Model/GolangProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -824,12 +824,12 @@ Create PyPI group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\PypiGroupRepositoryApiRequest(); // \Swagger\Client\Model\PypiGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\PypiGroupRepositoryApiRequest(); // \NexusClient\Model\PypiGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository22($body);
@@ -843,7 +843,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PypiGroupRepositoryApiRequest**](../Model/PypiGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\PypiGroupRepositoryApiRequest**](../Model/PypiGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -872,12 +872,12 @@ Create PyPI hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\PypiHostedRepositoryApiRequest(); // \Swagger\Client\Model\PypiHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\PypiHostedRepositoryApiRequest(); // \NexusClient\Model\PypiHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository23($body);
@@ -891,7 +891,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PypiHostedRepositoryApiRequest**](../Model/PypiHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\PypiHostedRepositoryApiRequest**](../Model/PypiHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -920,12 +920,12 @@ Create PyPI proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\PypiProxyRepositoryApiRequest(); // \Swagger\Client\Model\PypiProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\PypiProxyRepositoryApiRequest(); // \NexusClient\Model\PypiProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository24($body);
@@ -939,7 +939,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PypiProxyRepositoryApiRequest**](../Model/PypiProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\PypiProxyRepositoryApiRequest**](../Model/PypiProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -968,12 +968,12 @@ Create Conan proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ConanProxyRepositoryApiRequest(); // \Swagger\Client\Model\ConanProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\ConanProxyRepositoryApiRequest(); // \NexusClient\Model\ConanProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository25($body);
@@ -987,7 +987,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ConanProxyRepositoryApiRequest**](../Model/ConanProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\ConanProxyRepositoryApiRequest**](../Model/ConanProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1016,12 +1016,12 @@ Create p2 proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\P2ProxyRepositoryApiRequest(); // \Swagger\Client\Model\P2ProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\P2ProxyRepositoryApiRequest(); // \NexusClient\Model\P2ProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository26($body);
@@ -1035,7 +1035,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\P2ProxyRepositoryApiRequest**](../Model/P2ProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\P2ProxyRepositoryApiRequest**](../Model/P2ProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1064,12 +1064,12 @@ Create R group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RGroupRepositoryApiRequest(); // \Swagger\Client\Model\RGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\RGroupRepositoryApiRequest(); // \NexusClient\Model\RGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository27($body);
@@ -1083,7 +1083,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RGroupRepositoryApiRequest**](../Model/RGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RGroupRepositoryApiRequest**](../Model/RGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1112,12 +1112,12 @@ Create R hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RHostedRepositoryApiRequest(); // \Swagger\Client\Model\RHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\RHostedRepositoryApiRequest(); // \NexusClient\Model\RHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository28($body);
@@ -1131,7 +1131,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RHostedRepositoryApiRequest**](../Model/RHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RHostedRepositoryApiRequest**](../Model/RHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1160,12 +1160,12 @@ Create R proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RProxyRepositoryApiRequest(); // \Swagger\Client\Model\RProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\RProxyRepositoryApiRequest(); // \NexusClient\Model\RProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository29($body);
@@ -1179,7 +1179,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RProxyRepositoryApiRequest**](../Model/RProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RProxyRepositoryApiRequest**](../Model/RProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1208,12 +1208,12 @@ Create raw group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RawGroupRepositoryApiRequest(); // \Swagger\Client\Model\RawGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\RawGroupRepositoryApiRequest(); // \NexusClient\Model\RawGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository3($body);
@@ -1227,7 +1227,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RawGroupRepositoryApiRequest**](../Model/RawGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RawGroupRepositoryApiRequest**](../Model/RawGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1256,12 +1256,12 @@ Create Bower group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\BowerGroupRepositoryApiRequest(); // \Swagger\Client\Model\BowerGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\BowerGroupRepositoryApiRequest(); // \NexusClient\Model\BowerGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository30($body);
@@ -1275,7 +1275,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\BowerGroupRepositoryApiRequest**](../Model/BowerGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\BowerGroupRepositoryApiRequest**](../Model/BowerGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1304,12 +1304,12 @@ Create Bower hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\BowerHostedRepositoryApiRequest(); // \Swagger\Client\Model\BowerHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\BowerHostedRepositoryApiRequest(); // \NexusClient\Model\BowerHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository31($body);
@@ -1323,7 +1323,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\BowerHostedRepositoryApiRequest**](../Model/BowerHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\BowerHostedRepositoryApiRequest**](../Model/BowerHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1352,12 +1352,12 @@ Create Bower proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\BowerProxyRepositoryApiRequest(); // \Swagger\Client\Model\BowerProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\BowerProxyRepositoryApiRequest(); // \NexusClient\Model\BowerProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository32($body);
@@ -1371,7 +1371,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\BowerProxyRepositoryApiRequest**](../Model/BowerProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\BowerProxyRepositoryApiRequest**](../Model/BowerProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1400,12 +1400,12 @@ Create Docker group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DockerGroupRepositoryApiRequest(); // \Swagger\Client\Model\DockerGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\DockerGroupRepositoryApiRequest(); // \NexusClient\Model\DockerGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository33($body);
@@ -1419,7 +1419,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DockerGroupRepositoryApiRequest**](../Model/DockerGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\DockerGroupRepositoryApiRequest**](../Model/DockerGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1448,12 +1448,12 @@ Create Docker hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DockerHostedRepositoryApiRequest(); // \Swagger\Client\Model\DockerHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\DockerHostedRepositoryApiRequest(); // \NexusClient\Model\DockerHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository34($body);
@@ -1467,7 +1467,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DockerHostedRepositoryApiRequest**](../Model/DockerHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\DockerHostedRepositoryApiRequest**](../Model/DockerHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1496,12 +1496,12 @@ Create Docker proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DockerProxyRepositoryApiRequest(); // \Swagger\Client\Model\DockerProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\DockerProxyRepositoryApiRequest(); // \NexusClient\Model\DockerProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository35($body);
@@ -1515,7 +1515,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DockerProxyRepositoryApiRequest**](../Model/DockerProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\DockerProxyRepositoryApiRequest**](../Model/DockerProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1544,12 +1544,12 @@ Create Git LFS hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest(); // \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\GitLfsHostedRepositoryApiRequest(); // \NexusClient\Model\GitLfsHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository36($body);
@@ -1563,7 +1563,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\GitLfsHostedRepositoryApiRequest**](../Model/GitLfsHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\GitLfsHostedRepositoryApiRequest**](../Model/GitLfsHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1592,12 +1592,12 @@ Create Yum group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\YumGroupRepositoryApiRequest(); // \Swagger\Client\Model\YumGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\YumGroupRepositoryApiRequest(); // \NexusClient\Model\YumGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository37($body);
@@ -1611,7 +1611,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\YumGroupRepositoryApiRequest**](../Model/YumGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\YumGroupRepositoryApiRequest**](../Model/YumGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1640,12 +1640,12 @@ Create Yum hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\YumHostedRepositoryApiRequest(); // \Swagger\Client\Model\YumHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\YumHostedRepositoryApiRequest(); // \NexusClient\Model\YumHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository38($body);
@@ -1659,7 +1659,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\YumHostedRepositoryApiRequest**](../Model/YumHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\YumHostedRepositoryApiRequest**](../Model/YumHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1688,12 +1688,12 @@ Create Yum proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\YumProxyRepositoryApiRequest(); // \Swagger\Client\Model\YumProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\YumProxyRepositoryApiRequest(); // \NexusClient\Model\YumProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository39($body);
@@ -1707,7 +1707,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\YumProxyRepositoryApiRequest**](../Model/YumProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\YumProxyRepositoryApiRequest**](../Model/YumProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1736,12 +1736,12 @@ Create raw hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RawHostedRepositoryApiRequest(); // \Swagger\Client\Model\RawHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\RawHostedRepositoryApiRequest(); // \NexusClient\Model\RawHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository4($body);
@@ -1755,7 +1755,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RawHostedRepositoryApiRequest**](../Model/RawHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RawHostedRepositoryApiRequest**](../Model/RawHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1784,12 +1784,12 @@ Create raw proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RawProxyRepositoryApiRequest(); // \Swagger\Client\Model\RawProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\RawProxyRepositoryApiRequest(); // \NexusClient\Model\RawProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository5($body);
@@ -1803,7 +1803,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RawProxyRepositoryApiRequest**](../Model/RawProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RawProxyRepositoryApiRequest**](../Model/RawProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1832,12 +1832,12 @@ Create Helm hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\HelmHostedRepositoryApiRequest(); // \Swagger\Client\Model\HelmHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\HelmHostedRepositoryApiRequest(); // \NexusClient\Model\HelmHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository6($body);
@@ -1851,7 +1851,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HelmHostedRepositoryApiRequest**](../Model/HelmHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\HelmHostedRepositoryApiRequest**](../Model/HelmHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1880,12 +1880,12 @@ Create Helm proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\HelmProxyRepositoryApiRequest(); // \Swagger\Client\Model\HelmProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\HelmProxyRepositoryApiRequest(); // \NexusClient\Model\HelmProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository7($body);
@@ -1899,7 +1899,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HelmProxyRepositoryApiRequest**](../Model/HelmProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\HelmProxyRepositoryApiRequest**](../Model/HelmProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1928,12 +1928,12 @@ Create NuGet group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\NugetGroupRepositoryApiRequest(); // \Swagger\Client\Model\NugetGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\NugetGroupRepositoryApiRequest(); // \NexusClient\Model\NugetGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository8($body);
@@ -1947,7 +1947,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NugetGroupRepositoryApiRequest**](../Model/NugetGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NugetGroupRepositoryApiRequest**](../Model/NugetGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -1976,12 +1976,12 @@ Create NuGet hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\NugetHostedRepositoryApiRequest(); // \Swagger\Client\Model\NugetHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\NugetHostedRepositoryApiRequest(); // \NexusClient\Model\NugetHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->createRepository9($body);
@@ -1995,7 +1995,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NugetHostedRepositoryApiRequest**](../Model/NugetHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NugetHostedRepositoryApiRequest**](../Model/NugetHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2024,7 +2024,7 @@ Delete repository of any format
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2072,7 +2072,7 @@ Disable repository health check. Proxy repositories only.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2120,7 +2120,7 @@ Enable repository health check. Proxy repositories only.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2157,7 +2157,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRepositories**
-> \Swagger\Client\Model\AbstractApiRepository[] getRepositories()
+> \NexusClient\Model\AbstractApiRepository[] getRepositories()
 
 List repositories
 
@@ -2168,7 +2168,7 @@ List repositories
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2188,7 +2188,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\AbstractApiRepository[]**](../Model/AbstractApiRepository.md)
+[**\NexusClient\Model\AbstractApiRepository[]**](../Model/AbstractApiRepository.md)
 
 ### Authorization
 
@@ -2213,7 +2213,7 @@ Invalidate repository cache. Proxy or group repositories only.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2261,7 +2261,7 @@ Schedule a 'Repair - Rebuild repository search' Task. Hosted or proxy repositori
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2309,13 +2309,13 @@ Update Maven group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\MavenGroupRepositoryApiRequest(); // \Swagger\Client\Model\MavenGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\MavenGroupRepositoryApiRequest(); // \NexusClient\Model\MavenGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository($repository_name, $body);
@@ -2330,7 +2330,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\MavenGroupRepositoryApiRequest**](../Model/MavenGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\MavenGroupRepositoryApiRequest**](../Model/MavenGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2359,13 +2359,13 @@ Update Maven hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\MavenHostedRepositoryApiRequest(); // \Swagger\Client\Model\MavenHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\MavenHostedRepositoryApiRequest(); // \NexusClient\Model\MavenHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository1($repository_name, $body);
@@ -2380,7 +2380,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\MavenHostedRepositoryApiRequest**](../Model/MavenHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\MavenHostedRepositoryApiRequest**](../Model/MavenHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2409,13 +2409,13 @@ Update NuGet proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\NugetProxyRepositoryApiRequest(); // \Swagger\Client\Model\NugetProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\NugetProxyRepositoryApiRequest(); // \NexusClient\Model\NugetProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository10($repository_name, $body);
@@ -2430,7 +2430,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\NugetProxyRepositoryApiRequest**](../Model/NugetProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NugetProxyRepositoryApiRequest**](../Model/NugetProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2459,13 +2459,13 @@ Update npm group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\NpmGroupRepositoryApiRequest(); // \Swagger\Client\Model\NpmGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\NpmGroupRepositoryApiRequest(); // \NexusClient\Model\NpmGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository11($repository_name, $body);
@@ -2480,7 +2480,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\NpmGroupRepositoryApiRequest**](../Model/NpmGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NpmGroupRepositoryApiRequest**](../Model/NpmGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2509,13 +2509,13 @@ Update npm hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\NpmHostedRepositoryApiRequest(); // \Swagger\Client\Model\NpmHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\NpmHostedRepositoryApiRequest(); // \NexusClient\Model\NpmHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository12($repository_name, $body);
@@ -2530,7 +2530,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\NpmHostedRepositoryApiRequest**](../Model/NpmHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NpmHostedRepositoryApiRequest**](../Model/NpmHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2559,13 +2559,13 @@ Update npm proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\NpmProxyRepositoryApiRequest(); // \Swagger\Client\Model\NpmProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\NpmProxyRepositoryApiRequest(); // \NexusClient\Model\NpmProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository13($repository_name, $body);
@@ -2580,7 +2580,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\NpmProxyRepositoryApiRequest**](../Model/NpmProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NpmProxyRepositoryApiRequest**](../Model/NpmProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2609,13 +2609,13 @@ Update RubyGems group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest(); // \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\RubyGemsGroupRepositoryApiRequest(); // \NexusClient\Model\RubyGemsGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository14($repository_name, $body);
@@ -2630,7 +2630,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest**](../Model/RubyGemsGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RubyGemsGroupRepositoryApiRequest**](../Model/RubyGemsGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2659,13 +2659,13 @@ Update RubyGems hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest(); // \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\RubyGemsHostedRepositoryApiRequest(); // \NexusClient\Model\RubyGemsHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository15($repository_name, $body);
@@ -2680,7 +2680,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest**](../Model/RubyGemsHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RubyGemsHostedRepositoryApiRequest**](../Model/RubyGemsHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2709,13 +2709,13 @@ Update RubyGems proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest(); // \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\RubyGemsProxyRepositoryApiRequest(); // \NexusClient\Model\RubyGemsProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository16($repository_name, $body);
@@ -2730,7 +2730,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest**](../Model/RubyGemsProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RubyGemsProxyRepositoryApiRequest**](../Model/RubyGemsProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2759,13 +2759,13 @@ Update APT hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\AptHostedRepositoryApiRequest(); // \Swagger\Client\Model\AptHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\AptHostedRepositoryApiRequest(); // \NexusClient\Model\AptHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository17($repository_name, $body);
@@ -2780,7 +2780,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\AptHostedRepositoryApiRequest**](../Model/AptHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\AptHostedRepositoryApiRequest**](../Model/AptHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2809,13 +2809,13 @@ Update APT proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\AptProxyRepositoryApiRequest(); // \Swagger\Client\Model\AptProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\AptProxyRepositoryApiRequest(); // \NexusClient\Model\AptProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository18($repository_name, $body);
@@ -2830,7 +2830,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\AptProxyRepositoryApiRequest**](../Model/AptProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\AptProxyRepositoryApiRequest**](../Model/AptProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2859,13 +2859,13 @@ Update Cocoapods proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest(); // \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\CocoapodsProxyRepositoryApiRequest(); // \NexusClient\Model\CocoapodsProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository19($repository_name, $body);
@@ -2880,7 +2880,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest**](../Model/CocoapodsProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\CocoapodsProxyRepositoryApiRequest**](../Model/CocoapodsProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2909,13 +2909,13 @@ Update Maven proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\MavenProxyRepositoryApiRequest(); // \Swagger\Client\Model\MavenProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\MavenProxyRepositoryApiRequest(); // \NexusClient\Model\MavenProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository2($repository_name, $body);
@@ -2930,7 +2930,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\MavenProxyRepositoryApiRequest**](../Model/MavenProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\MavenProxyRepositoryApiRequest**](../Model/MavenProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -2959,13 +2959,13 @@ Update a Go group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\GolangGroupRepositoryApiRequest(); // \Swagger\Client\Model\GolangGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\GolangGroupRepositoryApiRequest(); // \NexusClient\Model\GolangGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository20($repository_name, $body);
@@ -2980,7 +2980,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\GolangGroupRepositoryApiRequest**](../Model/GolangGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\GolangGroupRepositoryApiRequest**](../Model/GolangGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3009,13 +3009,13 @@ Update a Go proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\GolangProxyRepositoryApiRequest(); // \Swagger\Client\Model\GolangProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\GolangProxyRepositoryApiRequest(); // \NexusClient\Model\GolangProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository21($repository_name, $body);
@@ -3030,7 +3030,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\GolangProxyRepositoryApiRequest**](../Model/GolangProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\GolangProxyRepositoryApiRequest**](../Model/GolangProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3059,13 +3059,13 @@ Update PyPI group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\PypiGroupRepositoryApiRequest(); // \Swagger\Client\Model\PypiGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\PypiGroupRepositoryApiRequest(); // \NexusClient\Model\PypiGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository22($repository_name, $body);
@@ -3080,7 +3080,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\PypiGroupRepositoryApiRequest**](../Model/PypiGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\PypiGroupRepositoryApiRequest**](../Model/PypiGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3109,13 +3109,13 @@ Update PyPI hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\PypiHostedRepositoryApiRequest(); // \Swagger\Client\Model\PypiHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\PypiHostedRepositoryApiRequest(); // \NexusClient\Model\PypiHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository23($repository_name, $body);
@@ -3130,7 +3130,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\PypiHostedRepositoryApiRequest**](../Model/PypiHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\PypiHostedRepositoryApiRequest**](../Model/PypiHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3159,13 +3159,13 @@ Update PyPI proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\PypiProxyRepositoryApiRequest(); // \Swagger\Client\Model\PypiProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\PypiProxyRepositoryApiRequest(); // \NexusClient\Model\PypiProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository24($repository_name, $body);
@@ -3180,7 +3180,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\PypiProxyRepositoryApiRequest**](../Model/PypiProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\PypiProxyRepositoryApiRequest**](../Model/PypiProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3209,13 +3209,13 @@ Update Conan proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\ConanProxyRepositoryApiRequest(); // \Swagger\Client\Model\ConanProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\ConanProxyRepositoryApiRequest(); // \NexusClient\Model\ConanProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository25($repository_name, $body);
@@ -3230,7 +3230,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\ConanProxyRepositoryApiRequest**](../Model/ConanProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\ConanProxyRepositoryApiRequest**](../Model/ConanProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3259,13 +3259,13 @@ Update p2 proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\P2ProxyRepositoryApiRequest(); // \Swagger\Client\Model\P2ProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\P2ProxyRepositoryApiRequest(); // \NexusClient\Model\P2ProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository26($repository_name, $body);
@@ -3280,7 +3280,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\P2ProxyRepositoryApiRequest**](../Model/P2ProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\P2ProxyRepositoryApiRequest**](../Model/P2ProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3309,13 +3309,13 @@ Update R group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RGroupRepositoryApiRequest(); // \Swagger\Client\Model\RGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\RGroupRepositoryApiRequest(); // \NexusClient\Model\RGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository27($repository_name, $body);
@@ -3330,7 +3330,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RGroupRepositoryApiRequest**](../Model/RGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RGroupRepositoryApiRequest**](../Model/RGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3359,13 +3359,13 @@ Update R hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RHostedRepositoryApiRequest(); // \Swagger\Client\Model\RHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\RHostedRepositoryApiRequest(); // \NexusClient\Model\RHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository28($repository_name, $body);
@@ -3380,7 +3380,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RHostedRepositoryApiRequest**](../Model/RHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RHostedRepositoryApiRequest**](../Model/RHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3409,13 +3409,13 @@ Update R proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RProxyRepositoryApiRequest(); // \Swagger\Client\Model\RProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\RProxyRepositoryApiRequest(); // \NexusClient\Model\RProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository29($repository_name, $body);
@@ -3430,7 +3430,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RProxyRepositoryApiRequest**](../Model/RProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RProxyRepositoryApiRequest**](../Model/RProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3459,13 +3459,13 @@ Update raw group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RawGroupRepositoryApiRequest(); // \Swagger\Client\Model\RawGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\RawGroupRepositoryApiRequest(); // \NexusClient\Model\RawGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository3($repository_name, $body);
@@ -3480,7 +3480,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RawGroupRepositoryApiRequest**](../Model/RawGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RawGroupRepositoryApiRequest**](../Model/RawGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3509,13 +3509,13 @@ Update Bower group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\BowerGroupRepositoryApiRequest(); // \Swagger\Client\Model\BowerGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\BowerGroupRepositoryApiRequest(); // \NexusClient\Model\BowerGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository30($repository_name, $body);
@@ -3530,7 +3530,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\BowerGroupRepositoryApiRequest**](../Model/BowerGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\BowerGroupRepositoryApiRequest**](../Model/BowerGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3559,13 +3559,13 @@ Update Bower hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\BowerHostedRepositoryApiRequest(); // \Swagger\Client\Model\BowerHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\BowerHostedRepositoryApiRequest(); // \NexusClient\Model\BowerHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository31($repository_name, $body);
@@ -3580,7 +3580,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\BowerHostedRepositoryApiRequest**](../Model/BowerHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\BowerHostedRepositoryApiRequest**](../Model/BowerHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3609,13 +3609,13 @@ Update Bower proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\BowerProxyRepositoryApiRequest(); // \Swagger\Client\Model\BowerProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\BowerProxyRepositoryApiRequest(); // \NexusClient\Model\BowerProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository32($repository_name, $body);
@@ -3630,7 +3630,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\BowerProxyRepositoryApiRequest**](../Model/BowerProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\BowerProxyRepositoryApiRequest**](../Model/BowerProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3659,13 +3659,13 @@ Update Docker group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\DockerGroupRepositoryApiRequest(); // \Swagger\Client\Model\DockerGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\DockerGroupRepositoryApiRequest(); // \NexusClient\Model\DockerGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository33($repository_name, $body);
@@ -3680,7 +3680,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\DockerGroupRepositoryApiRequest**](../Model/DockerGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\DockerGroupRepositoryApiRequest**](../Model/DockerGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3709,13 +3709,13 @@ Update Docker hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\DockerHostedRepositoryApiRequest(); // \Swagger\Client\Model\DockerHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\DockerHostedRepositoryApiRequest(); // \NexusClient\Model\DockerHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository34($repository_name, $body);
@@ -3730,7 +3730,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\DockerHostedRepositoryApiRequest**](../Model/DockerHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\DockerHostedRepositoryApiRequest**](../Model/DockerHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3759,13 +3759,13 @@ Update Docker group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\DockerProxyRepositoryApiRequest(); // \Swagger\Client\Model\DockerProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\DockerProxyRepositoryApiRequest(); // \NexusClient\Model\DockerProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository35($repository_name, $body);
@@ -3780,7 +3780,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\DockerProxyRepositoryApiRequest**](../Model/DockerProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\DockerProxyRepositoryApiRequest**](../Model/DockerProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3809,13 +3809,13 @@ Update Git LFS hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest(); // \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\GitLfsHostedRepositoryApiRequest(); // \NexusClient\Model\GitLfsHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository36($repository_name, $body);
@@ -3830,7 +3830,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\GitLfsHostedRepositoryApiRequest**](../Model/GitLfsHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\GitLfsHostedRepositoryApiRequest**](../Model/GitLfsHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3859,13 +3859,13 @@ Update Yum group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\YumGroupRepositoryApiRequest(); // \Swagger\Client\Model\YumGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\YumGroupRepositoryApiRequest(); // \NexusClient\Model\YumGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository37($repository_name, $body);
@@ -3880,7 +3880,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\YumGroupRepositoryApiRequest**](../Model/YumGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\YumGroupRepositoryApiRequest**](../Model/YumGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3909,13 +3909,13 @@ Update Yum hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\YumHostedRepositoryApiRequest(); // \Swagger\Client\Model\YumHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\YumHostedRepositoryApiRequest(); // \NexusClient\Model\YumHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository38($repository_name, $body);
@@ -3930,7 +3930,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\YumHostedRepositoryApiRequest**](../Model/YumHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\YumHostedRepositoryApiRequest**](../Model/YumHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -3959,13 +3959,13 @@ Update Yum proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\YumProxyRepositoryApiRequest(); // \Swagger\Client\Model\YumProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\YumProxyRepositoryApiRequest(); // \NexusClient\Model\YumProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository39($repository_name, $body);
@@ -3980,7 +3980,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\YumProxyRepositoryApiRequest**](../Model/YumProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\YumProxyRepositoryApiRequest**](../Model/YumProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -4009,13 +4009,13 @@ Update raw hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RawHostedRepositoryApiRequest(); // \Swagger\Client\Model\RawHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\RawHostedRepositoryApiRequest(); // \NexusClient\Model\RawHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository4($repository_name, $body);
@@ -4030,7 +4030,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RawHostedRepositoryApiRequest**](../Model/RawHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RawHostedRepositoryApiRequest**](../Model/RawHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -4059,13 +4059,13 @@ Update raw proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\RawProxyRepositoryApiRequest(); // \Swagger\Client\Model\RawProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\RawProxyRepositoryApiRequest(); // \NexusClient\Model\RawProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository5($repository_name, $body);
@@ -4080,7 +4080,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\RawProxyRepositoryApiRequest**](../Model/RawProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\RawProxyRepositoryApiRequest**](../Model/RawProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -4109,13 +4109,13 @@ Update Helm hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\HelmHostedRepositoryApiRequest(); // \Swagger\Client\Model\HelmHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\HelmHostedRepositoryApiRequest(); // \NexusClient\Model\HelmHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository6($repository_name, $body);
@@ -4130,7 +4130,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\HelmHostedRepositoryApiRequest**](../Model/HelmHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\HelmHostedRepositoryApiRequest**](../Model/HelmHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -4159,13 +4159,13 @@ Update Helm proxy repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\HelmProxyRepositoryApiRequest(); // \Swagger\Client\Model\HelmProxyRepositoryApiRequest | 
+$body = new \NexusClient\Model\HelmProxyRepositoryApiRequest(); // \NexusClient\Model\HelmProxyRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository7($repository_name, $body);
@@ -4180,7 +4180,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\HelmProxyRepositoryApiRequest**](../Model/HelmProxyRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\HelmProxyRepositoryApiRequest**](../Model/HelmProxyRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -4209,13 +4209,13 @@ Update NuGet group repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\NugetGroupRepositoryApiRequest(); // \Swagger\Client\Model\NugetGroupRepositoryApiRequest | 
+$body = new \NexusClient\Model\NugetGroupRepositoryApiRequest(); // \NexusClient\Model\NugetGroupRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository8($repository_name, $body);
@@ -4230,7 +4230,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\NugetGroupRepositoryApiRequest**](../Model/NugetGroupRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NugetGroupRepositoryApiRequest**](../Model/NugetGroupRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 
@@ -4259,13 +4259,13 @@ Update NuGet hosted repository
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoryManagementApi(
+$apiInstance = new NexusClient\Api\RepositoryManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $repository_name = "repository_name_example"; // string | Name of the repository to update
-$body = new \Swagger\Client\Model\NugetHostedRepositoryApiRequest(); // \Swagger\Client\Model\NugetHostedRepositoryApiRequest | 
+$body = new \NexusClient\Model\NugetHostedRepositoryApiRequest(); // \NexusClient\Model\NugetHostedRepositoryApiRequest | 
 
 try {
     $apiInstance->updateRepository9($repository_name, $body);
@@ -4280,7 +4280,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **repository_name** | **string**| Name of the repository to update |
- **body** | [**\Swagger\Client\Model\NugetHostedRepositoryApiRequest**](../Model/NugetHostedRepositoryApiRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\NugetHostedRepositoryApiRequest**](../Model/NugetHostedRepositoryApiRequest.md)|  | [optional]
 
 ### Return type
 

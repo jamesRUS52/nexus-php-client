@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * PageComponentXO Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class PageComponentXO implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\Swagger\Client\Model\ComponentXO[]',
+        'items' => '\NexusClient\Model\ComponentXO[]',
         'continuation_token' => 'string'
     ];
 
@@ -213,7 +213,7 @@ class PageComponentXO implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\ComponentXO[]
+     * @return \NexusClient\Model\ComponentXO[]
      */
     public function getItems()
     {
@@ -223,7 +223,7 @@ class PageComponentXO implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\ComponentXO[] $items items
+     * @param \NexusClient\Model\ComponentXO[] $items items
      *
      * @return $this
      */

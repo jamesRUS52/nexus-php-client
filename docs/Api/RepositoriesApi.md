@@ -1,4 +1,4 @@
-# Swagger\Client\RepositoriesApi
+# NexusClient\RepositoriesApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getRepositories1**
-> \Swagger\Client\Model\RepositoryXO[] getRepositories1()
+> \NexusClient\Model\RepositoryXO[] getRepositories1()
 
 List repositories
 
@@ -19,7 +19,7 @@ List repositories
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RepositoriesApi(
+$apiInstance = new NexusClient\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -39,7 +39,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RepositoryXO[]**](../Model/RepositoryXO.md)
+[**\NexusClient\Model\RepositoryXO[]**](../Model/RepositoryXO.md)
 
 ### Authorization
 

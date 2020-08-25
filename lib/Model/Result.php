@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * Result Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class Result implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'healthy' => 'bool',
         'message' => 'string',
-        'error' => '\Swagger\Client\Model\Throwable',
+        'error' => '\NexusClient\Model\Throwable',
         'details' => 'map[string,object]',
         'time' => 'int',
         'duration' => 'int',
@@ -291,7 +291,7 @@ class Result implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \Swagger\Client\Model\Throwable
+     * @return \NexusClient\Model\Throwable
      */
     public function getError()
     {
@@ -301,7 +301,7 @@ class Result implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \Swagger\Client\Model\Throwable $error error
+     * @param \NexusClient\Model\Throwable $error error
      *
      * @return $this
      */

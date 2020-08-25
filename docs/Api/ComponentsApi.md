@@ -1,4 +1,4 @@
-# Swagger\Client\ComponentsApi
+# NexusClient\ComponentsApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -22,7 +22,7 @@ Delete a single component
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ComponentsApi(
+$apiInstance = new NexusClient\Api\ComponentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getComponentById**
-> \Swagger\Client\Model\ComponentXO getComponentById($id)
+> \NexusClient\Model\ComponentXO getComponentById($id)
 
 Get a single component
 
@@ -70,7 +70,7 @@ Get a single component
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ComponentsApi(
+$apiInstance = new NexusClient\Api\ComponentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ComponentXO**](../Model/ComponentXO.md)
+[**\NexusClient\Model\ComponentXO**](../Model/ComponentXO.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getComponents**
-> \Swagger\Client\Model\PageComponentXO getComponents($repository, $continuation_token)
+> \NexusClient\Model\PageComponentXO getComponents($repository, $continuation_token)
 
 List components
 
@@ -119,7 +119,7 @@ List components
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ComponentsApi(
+$apiInstance = new NexusClient\Api\ComponentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PageComponentXO**](../Model/PageComponentXO.md)
+[**\NexusClient\Model\PageComponentXO**](../Model/PageComponentXO.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ Upload a single component
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ComponentsApi(
+$apiInstance = new NexusClient\Api\ComponentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

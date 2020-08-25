@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * DockerHostedRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\HostedStorageAttributes',
-        'cleanup' => '\Swagger\Client\Model\CleanupPolicyAttributes',
-        'docker' => '\Swagger\Client\Model\DockerAttributes'
+        'storage' => '\NexusClient\Model\HostedStorageAttributes',
+        'cleanup' => '\NexusClient\Model\CleanupPolicyAttributes',
+        'docker' => '\NexusClient\Model\DockerAttributes'
     ];
 
     /**
@@ -300,7 +300,7 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\HostedStorageAttributes
+     * @return \NexusClient\Model\HostedStorageAttributes
      */
     public function getStorage()
     {
@@ -310,7 +310,7 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\HostedStorageAttributes $storage storage
+     * @param \NexusClient\Model\HostedStorageAttributes $storage storage
      *
      * @return $this
      */
@@ -324,7 +324,7 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cleanup
      *
-     * @return \Swagger\Client\Model\CleanupPolicyAttributes
+     * @return \NexusClient\Model\CleanupPolicyAttributes
      */
     public function getCleanup()
     {
@@ -334,7 +334,7 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cleanup
      *
-     * @param \Swagger\Client\Model\CleanupPolicyAttributes $cleanup cleanup
+     * @param \NexusClient\Model\CleanupPolicyAttributes $cleanup cleanup
      *
      * @return $this
      */
@@ -348,7 +348,7 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets docker
      *
-     * @return \Swagger\Client\Model\DockerAttributes
+     * @return \NexusClient\Model\DockerAttributes
      */
     public function getDocker()
     {
@@ -358,7 +358,7 @@ class DockerHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets docker
      *
-     * @param \Swagger\Client\Model\DockerAttributes $docker docker
+     * @param \NexusClient\Model\DockerAttributes $docker docker
      *
      * @return $this
      */

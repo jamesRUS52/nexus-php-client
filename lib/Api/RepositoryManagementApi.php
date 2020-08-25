@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * RepositoryManagementApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class RepositoryManagementApi
      *
      * Create Maven group repository
      *
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class RepositoryManagementApi
      *
      * Create Maven group repository
      *
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class RepositoryManagementApi
      *
      * Create Maven group repository
      *
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class RepositoryManagementApi
      *
      * Create Maven group repository
      *
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository'
      *
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -313,9 +313,9 @@ class RepositoryManagementApi
      *
      * Create Maven hosted repository
      *
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -329,9 +329,9 @@ class RepositoryManagementApi
      *
      * Create Maven hosted repository
      *
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -382,7 +382,7 @@ class RepositoryManagementApi
      *
      * Create Maven hosted repository
      *
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -402,7 +402,7 @@ class RepositoryManagementApi
      *
      * Create Maven hosted repository
      *
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -438,7 +438,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository1'
      *
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -534,9 +534,9 @@ class RepositoryManagementApi
      *
      * Create NuGet proxy repository
      *
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -550,9 +550,9 @@ class RepositoryManagementApi
      *
      * Create NuGet proxy repository
      *
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -603,7 +603,7 @@ class RepositoryManagementApi
      *
      * Create NuGet proxy repository
      *
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -623,7 +623,7 @@ class RepositoryManagementApi
      *
      * Create NuGet proxy repository
      *
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -659,7 +659,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository10'
      *
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -755,9 +755,9 @@ class RepositoryManagementApi
      *
      * Create npm group repository
      *
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -771,9 +771,9 @@ class RepositoryManagementApi
      *
      * Create npm group repository
      *
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -824,7 +824,7 @@ class RepositoryManagementApi
      *
      * Create npm group repository
      *
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -844,7 +844,7 @@ class RepositoryManagementApi
      *
      * Create npm group repository
      *
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -880,7 +880,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository11'
      *
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -976,9 +976,9 @@ class RepositoryManagementApi
      *
      * Create npm hosted repository
      *
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -992,9 +992,9 @@ class RepositoryManagementApi
      *
      * Create npm hosted repository
      *
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1045,7 +1045,7 @@ class RepositoryManagementApi
      *
      * Create npm hosted repository
      *
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1065,7 +1065,7 @@ class RepositoryManagementApi
      *
      * Create npm hosted repository
      *
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1101,7 +1101,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository12'
      *
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1197,9 +1197,9 @@ class RepositoryManagementApi
      *
      * Create npm proxy repository
      *
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1213,9 +1213,9 @@ class RepositoryManagementApi
      *
      * Create npm proxy repository
      *
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1266,7 +1266,7 @@ class RepositoryManagementApi
      *
      * Create npm proxy repository
      *
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1286,7 +1286,7 @@ class RepositoryManagementApi
      *
      * Create npm proxy repository
      *
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1322,7 +1322,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository13'
      *
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1418,9 +1418,9 @@ class RepositoryManagementApi
      *
      * Create RubyGems group repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1434,9 +1434,9 @@ class RepositoryManagementApi
      *
      * Create RubyGems group repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1487,7 +1487,7 @@ class RepositoryManagementApi
      *
      * Create RubyGems group repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1507,7 +1507,7 @@ class RepositoryManagementApi
      *
      * Create RubyGems group repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1543,7 +1543,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository14'
      *
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1639,9 +1639,9 @@ class RepositoryManagementApi
      *
      * Create RubyGems hosted repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1655,9 +1655,9 @@ class RepositoryManagementApi
      *
      * Create RubyGems hosted repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1708,7 +1708,7 @@ class RepositoryManagementApi
      *
      * Create RubyGems hosted repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1728,7 +1728,7 @@ class RepositoryManagementApi
      *
      * Create RubyGems hosted repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1764,7 +1764,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository15'
      *
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1860,9 +1860,9 @@ class RepositoryManagementApi
      *
      * Create RubyGems proxy repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1876,9 +1876,9 @@ class RepositoryManagementApi
      *
      * Create RubyGems proxy repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1929,7 +1929,7 @@ class RepositoryManagementApi
      *
      * Create RubyGems proxy repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1949,7 +1949,7 @@ class RepositoryManagementApi
      *
      * Create RubyGems proxy repository
      *
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1985,7 +1985,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository16'
      *
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2081,9 +2081,9 @@ class RepositoryManagementApi
      *
      * Create APT hosted repository
      *
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2097,9 +2097,9 @@ class RepositoryManagementApi
      *
      * Create APT hosted repository
      *
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2150,7 +2150,7 @@ class RepositoryManagementApi
      *
      * Create APT hosted repository
      *
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2170,7 +2170,7 @@ class RepositoryManagementApi
      *
      * Create APT hosted repository
      *
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2206,7 +2206,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository17'
      *
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2302,9 +2302,9 @@ class RepositoryManagementApi
      *
      * Create APT proxy repository
      *
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2318,9 +2318,9 @@ class RepositoryManagementApi
      *
      * Create APT proxy repository
      *
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2371,7 +2371,7 @@ class RepositoryManagementApi
      *
      * Create APT proxy repository
      *
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2391,7 +2391,7 @@ class RepositoryManagementApi
      *
      * Create APT proxy repository
      *
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2427,7 +2427,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository18'
      *
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2523,9 +2523,9 @@ class RepositoryManagementApi
      *
      * Create Cocoapods proxy repository
      *
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2539,9 +2539,9 @@ class RepositoryManagementApi
      *
      * Create Cocoapods proxy repository
      *
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2592,7 +2592,7 @@ class RepositoryManagementApi
      *
      * Create Cocoapods proxy repository
      *
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2612,7 +2612,7 @@ class RepositoryManagementApi
      *
      * Create Cocoapods proxy repository
      *
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2648,7 +2648,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository19'
      *
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2744,9 +2744,9 @@ class RepositoryManagementApi
      *
      * Create Maven proxy repository
      *
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2760,9 +2760,9 @@ class RepositoryManagementApi
      *
      * Create Maven proxy repository
      *
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2813,7 +2813,7 @@ class RepositoryManagementApi
      *
      * Create Maven proxy repository
      *
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2833,7 +2833,7 @@ class RepositoryManagementApi
      *
      * Create Maven proxy repository
      *
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2869,7 +2869,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository2'
      *
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2965,9 +2965,9 @@ class RepositoryManagementApi
      *
      * Create a Go group repository
      *
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2981,9 +2981,9 @@ class RepositoryManagementApi
      *
      * Create a Go group repository
      *
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3034,7 +3034,7 @@ class RepositoryManagementApi
      *
      * Create a Go group repository
      *
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3054,7 +3054,7 @@ class RepositoryManagementApi
      *
      * Create a Go group repository
      *
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3090,7 +3090,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository20'
      *
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3186,9 +3186,9 @@ class RepositoryManagementApi
      *
      * Create a Go proxy repository
      *
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3202,9 +3202,9 @@ class RepositoryManagementApi
      *
      * Create a Go proxy repository
      *
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3255,7 +3255,7 @@ class RepositoryManagementApi
      *
      * Create a Go proxy repository
      *
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3275,7 +3275,7 @@ class RepositoryManagementApi
      *
      * Create a Go proxy repository
      *
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3311,7 +3311,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository21'
      *
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3407,9 +3407,9 @@ class RepositoryManagementApi
      *
      * Create PyPI group repository
      *
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3423,9 +3423,9 @@ class RepositoryManagementApi
      *
      * Create PyPI group repository
      *
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3476,7 +3476,7 @@ class RepositoryManagementApi
      *
      * Create PyPI group repository
      *
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3496,7 +3496,7 @@ class RepositoryManagementApi
      *
      * Create PyPI group repository
      *
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3532,7 +3532,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository22'
      *
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3628,9 +3628,9 @@ class RepositoryManagementApi
      *
      * Create PyPI hosted repository
      *
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3644,9 +3644,9 @@ class RepositoryManagementApi
      *
      * Create PyPI hosted repository
      *
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3697,7 +3697,7 @@ class RepositoryManagementApi
      *
      * Create PyPI hosted repository
      *
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3717,7 +3717,7 @@ class RepositoryManagementApi
      *
      * Create PyPI hosted repository
      *
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3753,7 +3753,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository23'
      *
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3849,9 +3849,9 @@ class RepositoryManagementApi
      *
      * Create PyPI proxy repository
      *
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3865,9 +3865,9 @@ class RepositoryManagementApi
      *
      * Create PyPI proxy repository
      *
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3918,7 +3918,7 @@ class RepositoryManagementApi
      *
      * Create PyPI proxy repository
      *
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3938,7 +3938,7 @@ class RepositoryManagementApi
      *
      * Create PyPI proxy repository
      *
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3974,7 +3974,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository24'
      *
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4070,9 +4070,9 @@ class RepositoryManagementApi
      *
      * Create Conan proxy repository
      *
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4086,9 +4086,9 @@ class RepositoryManagementApi
      *
      * Create Conan proxy repository
      *
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4139,7 +4139,7 @@ class RepositoryManagementApi
      *
      * Create Conan proxy repository
      *
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4159,7 +4159,7 @@ class RepositoryManagementApi
      *
      * Create Conan proxy repository
      *
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4195,7 +4195,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository25'
      *
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4291,9 +4291,9 @@ class RepositoryManagementApi
      *
      * Create p2 proxy repository
      *
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4307,9 +4307,9 @@ class RepositoryManagementApi
      *
      * Create p2 proxy repository
      *
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4360,7 +4360,7 @@ class RepositoryManagementApi
      *
      * Create p2 proxy repository
      *
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4380,7 +4380,7 @@ class RepositoryManagementApi
      *
      * Create p2 proxy repository
      *
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4416,7 +4416,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository26'
      *
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4512,9 +4512,9 @@ class RepositoryManagementApi
      *
      * Create R group repository
      *
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4528,9 +4528,9 @@ class RepositoryManagementApi
      *
      * Create R group repository
      *
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4581,7 +4581,7 @@ class RepositoryManagementApi
      *
      * Create R group repository
      *
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4601,7 +4601,7 @@ class RepositoryManagementApi
      *
      * Create R group repository
      *
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4637,7 +4637,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository27'
      *
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4733,9 +4733,9 @@ class RepositoryManagementApi
      *
      * Create R hosted repository
      *
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4749,9 +4749,9 @@ class RepositoryManagementApi
      *
      * Create R hosted repository
      *
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4802,7 +4802,7 @@ class RepositoryManagementApi
      *
      * Create R hosted repository
      *
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4822,7 +4822,7 @@ class RepositoryManagementApi
      *
      * Create R hosted repository
      *
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4858,7 +4858,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository28'
      *
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4954,9 +4954,9 @@ class RepositoryManagementApi
      *
      * Create R proxy repository
      *
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4970,9 +4970,9 @@ class RepositoryManagementApi
      *
      * Create R proxy repository
      *
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5023,7 +5023,7 @@ class RepositoryManagementApi
      *
      * Create R proxy repository
      *
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5043,7 +5043,7 @@ class RepositoryManagementApi
      *
      * Create R proxy repository
      *
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5079,7 +5079,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository29'
      *
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5175,9 +5175,9 @@ class RepositoryManagementApi
      *
      * Create raw group repository
      *
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5191,9 +5191,9 @@ class RepositoryManagementApi
      *
      * Create raw group repository
      *
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5244,7 +5244,7 @@ class RepositoryManagementApi
      *
      * Create raw group repository
      *
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5264,7 +5264,7 @@ class RepositoryManagementApi
      *
      * Create raw group repository
      *
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5300,7 +5300,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository3'
      *
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5396,9 +5396,9 @@ class RepositoryManagementApi
      *
      * Create Bower group repository
      *
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5412,9 +5412,9 @@ class RepositoryManagementApi
      *
      * Create Bower group repository
      *
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5465,7 +5465,7 @@ class RepositoryManagementApi
      *
      * Create Bower group repository
      *
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5485,7 +5485,7 @@ class RepositoryManagementApi
      *
      * Create Bower group repository
      *
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5521,7 +5521,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository30'
      *
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5617,9 +5617,9 @@ class RepositoryManagementApi
      *
      * Create Bower hosted repository
      *
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5633,9 +5633,9 @@ class RepositoryManagementApi
      *
      * Create Bower hosted repository
      *
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5686,7 +5686,7 @@ class RepositoryManagementApi
      *
      * Create Bower hosted repository
      *
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5706,7 +5706,7 @@ class RepositoryManagementApi
      *
      * Create Bower hosted repository
      *
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5742,7 +5742,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository31'
      *
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5838,9 +5838,9 @@ class RepositoryManagementApi
      *
      * Create Bower proxy repository
      *
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5854,9 +5854,9 @@ class RepositoryManagementApi
      *
      * Create Bower proxy repository
      *
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5907,7 +5907,7 @@ class RepositoryManagementApi
      *
      * Create Bower proxy repository
      *
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5927,7 +5927,7 @@ class RepositoryManagementApi
      *
      * Create Bower proxy repository
      *
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5963,7 +5963,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository32'
      *
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6059,9 +6059,9 @@ class RepositoryManagementApi
      *
      * Create Docker group repository
      *
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6075,9 +6075,9 @@ class RepositoryManagementApi
      *
      * Create Docker group repository
      *
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6128,7 +6128,7 @@ class RepositoryManagementApi
      *
      * Create Docker group repository
      *
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6148,7 +6148,7 @@ class RepositoryManagementApi
      *
      * Create Docker group repository
      *
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6184,7 +6184,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository33'
      *
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6280,9 +6280,9 @@ class RepositoryManagementApi
      *
      * Create Docker hosted repository
      *
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6296,9 +6296,9 @@ class RepositoryManagementApi
      *
      * Create Docker hosted repository
      *
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6349,7 +6349,7 @@ class RepositoryManagementApi
      *
      * Create Docker hosted repository
      *
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6369,7 +6369,7 @@ class RepositoryManagementApi
      *
      * Create Docker hosted repository
      *
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6405,7 +6405,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository34'
      *
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6501,9 +6501,9 @@ class RepositoryManagementApi
      *
      * Create Docker proxy repository
      *
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6517,9 +6517,9 @@ class RepositoryManagementApi
      *
      * Create Docker proxy repository
      *
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6570,7 +6570,7 @@ class RepositoryManagementApi
      *
      * Create Docker proxy repository
      *
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6590,7 +6590,7 @@ class RepositoryManagementApi
      *
      * Create Docker proxy repository
      *
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6626,7 +6626,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository35'
      *
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6722,9 +6722,9 @@ class RepositoryManagementApi
      *
      * Create Git LFS hosted repository
      *
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6738,9 +6738,9 @@ class RepositoryManagementApi
      *
      * Create Git LFS hosted repository
      *
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6791,7 +6791,7 @@ class RepositoryManagementApi
      *
      * Create Git LFS hosted repository
      *
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6811,7 +6811,7 @@ class RepositoryManagementApi
      *
      * Create Git LFS hosted repository
      *
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6847,7 +6847,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository36'
      *
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6943,9 +6943,9 @@ class RepositoryManagementApi
      *
      * Create Yum group repository
      *
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6959,9 +6959,9 @@ class RepositoryManagementApi
      *
      * Create Yum group repository
      *
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7012,7 +7012,7 @@ class RepositoryManagementApi
      *
      * Create Yum group repository
      *
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7032,7 +7032,7 @@ class RepositoryManagementApi
      *
      * Create Yum group repository
      *
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7068,7 +7068,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository37'
      *
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7164,9 +7164,9 @@ class RepositoryManagementApi
      *
      * Create Yum hosted repository
      *
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7180,9 +7180,9 @@ class RepositoryManagementApi
      *
      * Create Yum hosted repository
      *
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7233,7 +7233,7 @@ class RepositoryManagementApi
      *
      * Create Yum hosted repository
      *
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7253,7 +7253,7 @@ class RepositoryManagementApi
      *
      * Create Yum hosted repository
      *
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7289,7 +7289,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository38'
      *
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7385,9 +7385,9 @@ class RepositoryManagementApi
      *
      * Create Yum proxy repository
      *
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7401,9 +7401,9 @@ class RepositoryManagementApi
      *
      * Create Yum proxy repository
      *
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7454,7 +7454,7 @@ class RepositoryManagementApi
      *
      * Create Yum proxy repository
      *
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7474,7 +7474,7 @@ class RepositoryManagementApi
      *
      * Create Yum proxy repository
      *
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7510,7 +7510,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository39'
      *
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7606,9 +7606,9 @@ class RepositoryManagementApi
      *
      * Create raw hosted repository
      *
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7622,9 +7622,9 @@ class RepositoryManagementApi
      *
      * Create raw hosted repository
      *
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7675,7 +7675,7 @@ class RepositoryManagementApi
      *
      * Create raw hosted repository
      *
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7695,7 +7695,7 @@ class RepositoryManagementApi
      *
      * Create raw hosted repository
      *
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7731,7 +7731,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository4'
      *
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7827,9 +7827,9 @@ class RepositoryManagementApi
      *
      * Create raw proxy repository
      *
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7843,9 +7843,9 @@ class RepositoryManagementApi
      *
      * Create raw proxy repository
      *
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7896,7 +7896,7 @@ class RepositoryManagementApi
      *
      * Create raw proxy repository
      *
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7916,7 +7916,7 @@ class RepositoryManagementApi
      *
      * Create raw proxy repository
      *
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7952,7 +7952,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository5'
      *
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8048,9 +8048,9 @@ class RepositoryManagementApi
      *
      * Create Helm hosted repository
      *
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8064,9 +8064,9 @@ class RepositoryManagementApi
      *
      * Create Helm hosted repository
      *
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8117,7 +8117,7 @@ class RepositoryManagementApi
      *
      * Create Helm hosted repository
      *
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8137,7 +8137,7 @@ class RepositoryManagementApi
      *
      * Create Helm hosted repository
      *
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8173,7 +8173,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository6'
      *
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8269,9 +8269,9 @@ class RepositoryManagementApi
      *
      * Create Helm proxy repository
      *
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8285,9 +8285,9 @@ class RepositoryManagementApi
      *
      * Create Helm proxy repository
      *
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8338,7 +8338,7 @@ class RepositoryManagementApi
      *
      * Create Helm proxy repository
      *
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8358,7 +8358,7 @@ class RepositoryManagementApi
      *
      * Create Helm proxy repository
      *
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8394,7 +8394,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository7'
      *
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8490,9 +8490,9 @@ class RepositoryManagementApi
      *
      * Create NuGet group repository
      *
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8506,9 +8506,9 @@ class RepositoryManagementApi
      *
      * Create NuGet group repository
      *
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8559,7 +8559,7 @@ class RepositoryManagementApi
      *
      * Create NuGet group repository
      *
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8579,7 +8579,7 @@ class RepositoryManagementApi
      *
      * Create NuGet group repository
      *
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8615,7 +8615,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository8'
      *
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8711,9 +8711,9 @@ class RepositoryManagementApi
      *
      * Create NuGet hosted repository
      *
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8727,9 +8727,9 @@ class RepositoryManagementApi
      *
      * Create NuGet hosted repository
      *
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8780,7 +8780,7 @@ class RepositoryManagementApi
      *
      * Create NuGet hosted repository
      *
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8800,7 +8800,7 @@ class RepositoryManagementApi
      *
      * Create NuGet hosted repository
      *
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8836,7 +8836,7 @@ class RepositoryManagementApi
     /**
      * Create request for operation 'createRepository9'
      *
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8934,7 +8934,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8950,7 +8950,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9166,7 +9166,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to disable Repository Health Check for (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9182,7 +9182,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to disable Repository Health Check for (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9398,7 +9398,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to enable Repository Health Check for (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9414,7 +9414,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to enable Repository Health Check for (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9629,9 +9629,9 @@ class RepositoryManagementApi
      * List repositories
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AbstractApiRepository[]
+     * @return \NexusClient\Model\AbstractApiRepository[]
      */
     public function getRepositories()
     {
@@ -9645,13 +9645,13 @@ class RepositoryManagementApi
      * List repositories
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AbstractApiRepository[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\AbstractApiRepository[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getRepositoriesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\AbstractApiRepository[]';
+        $returnType = '\NexusClient\Model\AbstractApiRepository[]';
         $request = $this->getRepositoriesRequest();
 
         try {
@@ -9703,7 +9703,7 @@ class RepositoryManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AbstractApiRepository[]',
+                        '\NexusClient\Model\AbstractApiRepository[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9743,7 +9743,7 @@ class RepositoryManagementApi
      */
     public function getRepositoriesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\AbstractApiRepository[]';
+        $returnType = '\NexusClient\Model\AbstractApiRepository[]';
         $request = $this->getRepositoriesRequest();
 
         return $this->client
@@ -9880,7 +9880,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to invalidate cache (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9896,7 +9896,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to invalidate cache (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10112,7 +10112,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to rebuild index (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10128,7 +10128,7 @@ class RepositoryManagementApi
      *
      * @param  string $repository_name Name of the repository to rebuild index (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10343,9 +10343,9 @@ class RepositoryManagementApi
      * Update Maven group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10360,9 +10360,9 @@ class RepositoryManagementApi
      * Update Maven group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10414,7 +10414,7 @@ class RepositoryManagementApi
      * Update Maven group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10435,7 +10435,7 @@ class RepositoryManagementApi
      * Update Maven group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10472,7 +10472,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10583,9 +10583,9 @@ class RepositoryManagementApi
      * Update Maven hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10600,9 +10600,9 @@ class RepositoryManagementApi
      * Update Maven hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10654,7 +10654,7 @@ class RepositoryManagementApi
      * Update Maven hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10675,7 +10675,7 @@ class RepositoryManagementApi
      * Update Maven hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10712,7 +10712,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository1'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10823,9 +10823,9 @@ class RepositoryManagementApi
      * Update NuGet proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10840,9 +10840,9 @@ class RepositoryManagementApi
      * Update NuGet proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10894,7 +10894,7 @@ class RepositoryManagementApi
      * Update NuGet proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10915,7 +10915,7 @@ class RepositoryManagementApi
      * Update NuGet proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10952,7 +10952,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository10'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11063,9 +11063,9 @@ class RepositoryManagementApi
      * Update npm group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -11080,9 +11080,9 @@ class RepositoryManagementApi
      * Update npm group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11134,7 +11134,7 @@ class RepositoryManagementApi
      * Update npm group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11155,7 +11155,7 @@ class RepositoryManagementApi
      * Update npm group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11192,7 +11192,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository11'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11303,9 +11303,9 @@ class RepositoryManagementApi
      * Update npm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -11320,9 +11320,9 @@ class RepositoryManagementApi
      * Update npm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11374,7 +11374,7 @@ class RepositoryManagementApi
      * Update npm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11395,7 +11395,7 @@ class RepositoryManagementApi
      * Update npm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11432,7 +11432,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository12'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11543,9 +11543,9 @@ class RepositoryManagementApi
      * Update npm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -11560,9 +11560,9 @@ class RepositoryManagementApi
      * Update npm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11614,7 +11614,7 @@ class RepositoryManagementApi
      * Update npm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11635,7 +11635,7 @@ class RepositoryManagementApi
      * Update npm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11672,7 +11672,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository13'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NpmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NpmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11783,9 +11783,9 @@ class RepositoryManagementApi
      * Update RubyGems group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -11800,9 +11800,9 @@ class RepositoryManagementApi
      * Update RubyGems group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11854,7 +11854,7 @@ class RepositoryManagementApi
      * Update RubyGems group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11875,7 +11875,7 @@ class RepositoryManagementApi
      * Update RubyGems group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11912,7 +11912,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository14'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12023,9 +12023,9 @@ class RepositoryManagementApi
      * Update RubyGems hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -12040,9 +12040,9 @@ class RepositoryManagementApi
      * Update RubyGems hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12094,7 +12094,7 @@ class RepositoryManagementApi
      * Update RubyGems hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12115,7 +12115,7 @@ class RepositoryManagementApi
      * Update RubyGems hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12152,7 +12152,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository15'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12263,9 +12263,9 @@ class RepositoryManagementApi
      * Update RubyGems proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -12280,9 +12280,9 @@ class RepositoryManagementApi
      * Update RubyGems proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12334,7 +12334,7 @@ class RepositoryManagementApi
      * Update RubyGems proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12355,7 +12355,7 @@ class RepositoryManagementApi
      * Update RubyGems proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12392,7 +12392,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository16'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RubyGemsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12503,9 +12503,9 @@ class RepositoryManagementApi
      * Update APT hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -12520,9 +12520,9 @@ class RepositoryManagementApi
      * Update APT hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12574,7 +12574,7 @@ class RepositoryManagementApi
      * Update APT hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12595,7 +12595,7 @@ class RepositoryManagementApi
      * Update APT hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12632,7 +12632,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository17'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12743,9 +12743,9 @@ class RepositoryManagementApi
      * Update APT proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -12760,9 +12760,9 @@ class RepositoryManagementApi
      * Update APT proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12814,7 +12814,7 @@ class RepositoryManagementApi
      * Update APT proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12835,7 +12835,7 @@ class RepositoryManagementApi
      * Update APT proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12872,7 +12872,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository18'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\AptProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\AptProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12983,9 +12983,9 @@ class RepositoryManagementApi
      * Update Cocoapods proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -13000,9 +13000,9 @@ class RepositoryManagementApi
      * Update Cocoapods proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -13054,7 +13054,7 @@ class RepositoryManagementApi
      * Update Cocoapods proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13075,7 +13075,7 @@ class RepositoryManagementApi
      * Update Cocoapods proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13112,7 +13112,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository19'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\CocoapodsProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -13223,9 +13223,9 @@ class RepositoryManagementApi
      * Update Maven proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -13240,9 +13240,9 @@ class RepositoryManagementApi
      * Update Maven proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -13294,7 +13294,7 @@ class RepositoryManagementApi
      * Update Maven proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13315,7 +13315,7 @@ class RepositoryManagementApi
      * Update Maven proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13352,7 +13352,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository2'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\MavenProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\MavenProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -13463,9 +13463,9 @@ class RepositoryManagementApi
      * Update a Go group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -13480,9 +13480,9 @@ class RepositoryManagementApi
      * Update a Go group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -13534,7 +13534,7 @@ class RepositoryManagementApi
      * Update a Go group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13555,7 +13555,7 @@ class RepositoryManagementApi
      * Update a Go group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13592,7 +13592,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository20'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -13703,9 +13703,9 @@ class RepositoryManagementApi
      * Update a Go proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -13720,9 +13720,9 @@ class RepositoryManagementApi
      * Update a Go proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -13774,7 +13774,7 @@ class RepositoryManagementApi
      * Update a Go proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13795,7 +13795,7 @@ class RepositoryManagementApi
      * Update a Go proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -13832,7 +13832,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository21'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GolangProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GolangProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -13943,9 +13943,9 @@ class RepositoryManagementApi
      * Update PyPI group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -13960,9 +13960,9 @@ class RepositoryManagementApi
      * Update PyPI group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14014,7 +14014,7 @@ class RepositoryManagementApi
      * Update PyPI group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14035,7 +14035,7 @@ class RepositoryManagementApi
      * Update PyPI group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14072,7 +14072,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository22'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -14183,9 +14183,9 @@ class RepositoryManagementApi
      * Update PyPI hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -14200,9 +14200,9 @@ class RepositoryManagementApi
      * Update PyPI hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14254,7 +14254,7 @@ class RepositoryManagementApi
      * Update PyPI hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14275,7 +14275,7 @@ class RepositoryManagementApi
      * Update PyPI hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14312,7 +14312,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository23'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -14423,9 +14423,9 @@ class RepositoryManagementApi
      * Update PyPI proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -14440,9 +14440,9 @@ class RepositoryManagementApi
      * Update PyPI proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14494,7 +14494,7 @@ class RepositoryManagementApi
      * Update PyPI proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14515,7 +14515,7 @@ class RepositoryManagementApi
      * Update PyPI proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14552,7 +14552,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository24'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\PypiProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\PypiProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -14663,9 +14663,9 @@ class RepositoryManagementApi
      * Update Conan proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -14680,9 +14680,9 @@ class RepositoryManagementApi
      * Update Conan proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14734,7 +14734,7 @@ class RepositoryManagementApi
      * Update Conan proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14755,7 +14755,7 @@ class RepositoryManagementApi
      * Update Conan proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14792,7 +14792,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository25'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\ConanProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\ConanProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -14903,9 +14903,9 @@ class RepositoryManagementApi
      * Update p2 proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -14920,9 +14920,9 @@ class RepositoryManagementApi
      * Update p2 proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14974,7 +14974,7 @@ class RepositoryManagementApi
      * Update p2 proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14995,7 +14995,7 @@ class RepositoryManagementApi
      * Update p2 proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15032,7 +15032,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository26'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\P2ProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\P2ProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15143,9 +15143,9 @@ class RepositoryManagementApi
      * Update R group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -15160,9 +15160,9 @@ class RepositoryManagementApi
      * Update R group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15214,7 +15214,7 @@ class RepositoryManagementApi
      * Update R group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15235,7 +15235,7 @@ class RepositoryManagementApi
      * Update R group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15272,7 +15272,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository27'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15383,9 +15383,9 @@ class RepositoryManagementApi
      * Update R hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -15400,9 +15400,9 @@ class RepositoryManagementApi
      * Update R hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15454,7 +15454,7 @@ class RepositoryManagementApi
      * Update R hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15475,7 +15475,7 @@ class RepositoryManagementApi
      * Update R hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15512,7 +15512,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository28'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15623,9 +15623,9 @@ class RepositoryManagementApi
      * Update R proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -15640,9 +15640,9 @@ class RepositoryManagementApi
      * Update R proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15694,7 +15694,7 @@ class RepositoryManagementApi
      * Update R proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15715,7 +15715,7 @@ class RepositoryManagementApi
      * Update R proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15752,7 +15752,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository29'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15863,9 +15863,9 @@ class RepositoryManagementApi
      * Update raw group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -15880,9 +15880,9 @@ class RepositoryManagementApi
      * Update raw group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15934,7 +15934,7 @@ class RepositoryManagementApi
      * Update raw group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15955,7 +15955,7 @@ class RepositoryManagementApi
      * Update raw group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15992,7 +15992,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository3'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -16103,9 +16103,9 @@ class RepositoryManagementApi
      * Update Bower group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16120,9 +16120,9 @@ class RepositoryManagementApi
      * Update Bower group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16174,7 +16174,7 @@ class RepositoryManagementApi
      * Update Bower group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16195,7 +16195,7 @@ class RepositoryManagementApi
      * Update Bower group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16232,7 +16232,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository30'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -16343,9 +16343,9 @@ class RepositoryManagementApi
      * Update Bower hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16360,9 +16360,9 @@ class RepositoryManagementApi
      * Update Bower hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16414,7 +16414,7 @@ class RepositoryManagementApi
      * Update Bower hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16435,7 +16435,7 @@ class RepositoryManagementApi
      * Update Bower hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16472,7 +16472,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository31'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -16583,9 +16583,9 @@ class RepositoryManagementApi
      * Update Bower proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16600,9 +16600,9 @@ class RepositoryManagementApi
      * Update Bower proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16654,7 +16654,7 @@ class RepositoryManagementApi
      * Update Bower proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16675,7 +16675,7 @@ class RepositoryManagementApi
      * Update Bower proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16712,7 +16712,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository32'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\BowerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\BowerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -16823,9 +16823,9 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16840,9 +16840,9 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16894,7 +16894,7 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16915,7 +16915,7 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16952,7 +16952,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository33'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -17063,9 +17063,9 @@ class RepositoryManagementApi
      * Update Docker hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17080,9 +17080,9 @@ class RepositoryManagementApi
      * Update Docker hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17134,7 +17134,7 @@ class RepositoryManagementApi
      * Update Docker hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17155,7 +17155,7 @@ class RepositoryManagementApi
      * Update Docker hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17192,7 +17192,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository34'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -17303,9 +17303,9 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17320,9 +17320,9 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17374,7 +17374,7 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17395,7 +17395,7 @@ class RepositoryManagementApi
      * Update Docker group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17432,7 +17432,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository35'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\DockerProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\DockerProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -17543,9 +17543,9 @@ class RepositoryManagementApi
      * Update Git LFS hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17560,9 +17560,9 @@ class RepositoryManagementApi
      * Update Git LFS hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17614,7 +17614,7 @@ class RepositoryManagementApi
      * Update Git LFS hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17635,7 +17635,7 @@ class RepositoryManagementApi
      * Update Git LFS hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17672,7 +17672,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository36'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\GitLfsHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\GitLfsHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -17783,9 +17783,9 @@ class RepositoryManagementApi
      * Update Yum group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17800,9 +17800,9 @@ class RepositoryManagementApi
      * Update Yum group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17854,7 +17854,7 @@ class RepositoryManagementApi
      * Update Yum group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17875,7 +17875,7 @@ class RepositoryManagementApi
      * Update Yum group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17912,7 +17912,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository37'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -18023,9 +18023,9 @@ class RepositoryManagementApi
      * Update Yum hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -18040,9 +18040,9 @@ class RepositoryManagementApi
      * Update Yum hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18094,7 +18094,7 @@ class RepositoryManagementApi
      * Update Yum hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18115,7 +18115,7 @@ class RepositoryManagementApi
      * Update Yum hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18152,7 +18152,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository38'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -18263,9 +18263,9 @@ class RepositoryManagementApi
      * Update Yum proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -18280,9 +18280,9 @@ class RepositoryManagementApi
      * Update Yum proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18334,7 +18334,7 @@ class RepositoryManagementApi
      * Update Yum proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18355,7 +18355,7 @@ class RepositoryManagementApi
      * Update Yum proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18392,7 +18392,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository39'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\YumProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\YumProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -18503,9 +18503,9 @@ class RepositoryManagementApi
      * Update raw hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -18520,9 +18520,9 @@ class RepositoryManagementApi
      * Update raw hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18574,7 +18574,7 @@ class RepositoryManagementApi
      * Update raw hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18595,7 +18595,7 @@ class RepositoryManagementApi
      * Update raw hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18632,7 +18632,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository4'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -18743,9 +18743,9 @@ class RepositoryManagementApi
      * Update raw proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -18760,9 +18760,9 @@ class RepositoryManagementApi
      * Update raw proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18814,7 +18814,7 @@ class RepositoryManagementApi
      * Update raw proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18835,7 +18835,7 @@ class RepositoryManagementApi
      * Update raw proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18872,7 +18872,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository5'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\RawProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\RawProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -18983,9 +18983,9 @@ class RepositoryManagementApi
      * Update Helm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -19000,9 +19000,9 @@ class RepositoryManagementApi
      * Update Helm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -19054,7 +19054,7 @@ class RepositoryManagementApi
      * Update Helm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19075,7 +19075,7 @@ class RepositoryManagementApi
      * Update Helm hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19112,7 +19112,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository6'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -19223,9 +19223,9 @@ class RepositoryManagementApi
      * Update Helm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -19240,9 +19240,9 @@ class RepositoryManagementApi
      * Update Helm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -19294,7 +19294,7 @@ class RepositoryManagementApi
      * Update Helm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19315,7 +19315,7 @@ class RepositoryManagementApi
      * Update Helm proxy repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19352,7 +19352,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository7'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\HelmProxyRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\HelmProxyRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -19463,9 +19463,9 @@ class RepositoryManagementApi
      * Update NuGet group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -19480,9 +19480,9 @@ class RepositoryManagementApi
      * Update NuGet group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -19534,7 +19534,7 @@ class RepositoryManagementApi
      * Update NuGet group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19555,7 +19555,7 @@ class RepositoryManagementApi
      * Update NuGet group repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19592,7 +19592,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository8'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetGroupRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetGroupRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -19703,9 +19703,9 @@ class RepositoryManagementApi
      * Update NuGet hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -19720,9 +19720,9 @@ class RepositoryManagementApi
      * Update NuGet hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -19774,7 +19774,7 @@ class RepositoryManagementApi
      * Update NuGet hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19795,7 +19795,7 @@ class RepositoryManagementApi
      * Update NuGet hosted repository
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -19832,7 +19832,7 @@ class RepositoryManagementApi
      * Create request for operation 'updateRepository9'
      *
      * @param  string $repository_name Name of the repository to update (required)
-     * @param  \Swagger\Client\Model\NugetHostedRepositoryApiRequest $body (optional)
+     * @param  \NexusClient\Model\NugetHostedRepositoryApiRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -1,4 +1,4 @@
-# Swagger\Client\EmailApi
+# NexusClient\EmailApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -22,7 +22,7 @@ Disable and clear the email configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmailApi(
+$apiInstance = new NexusClient\Api\EmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEmailConfiguration**
-> \Swagger\Client\Model\ApiEmailConfiguration getEmailConfiguration()
+> \NexusClient\Model\ApiEmailConfiguration getEmailConfiguration()
 
 Retrieve the current email configuration
 
@@ -66,7 +66,7 @@ Retrieve the current email configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmailApi(
+$apiInstance = new NexusClient\Api\EmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -86,7 +86,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiEmailConfiguration**](../Model/ApiEmailConfiguration.md)
+[**\NexusClient\Model\ApiEmailConfiguration**](../Model/ApiEmailConfiguration.md)
 
 ### Authorization
 
@@ -111,12 +111,12 @@ Set the current email configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmailApi(
+$apiInstance = new NexusClient\Api\EmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiEmailConfiguration(); // \Swagger\Client\Model\ApiEmailConfiguration | 
+$body = new \NexusClient\Model\ApiEmailConfiguration(); // \NexusClient\Model\ApiEmailConfiguration | 
 
 try {
     $apiInstance->setEmailConfiguration($body);
@@ -130,7 +130,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiEmailConfiguration**](../Model/ApiEmailConfiguration.md)|  |
+ **body** | [**\NexusClient\Model\ApiEmailConfiguration**](../Model/ApiEmailConfiguration.md)|  |
 
 ### Return type
 
@@ -148,7 +148,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testEmailConfiguration**
-> \Swagger\Client\Model\ApiEmailValidation testEmailConfiguration($body)
+> \NexusClient\Model\ApiEmailValidation testEmailConfiguration($body)
 
 Send a test email to the email address provided in the request body
 
@@ -159,7 +159,7 @@ Send a test email to the email address provided in the request body
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmailApi(
+$apiInstance = new NexusClient\Api\EmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiEmailValidation**](../Model/ApiEmailValidation.md)
+[**\NexusClient\Model\ApiEmailValidation**](../Model/ApiEmailValidation.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementPrivilegesApi
+# NexusClient\SecurityManagementPrivilegesApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -33,12 +33,12 @@ Create a wildcard type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiPrivilegeWildcardRequest(); // \Swagger\Client\Model\ApiPrivilegeWildcardRequest | The privilege to create.
+$body = new \NexusClient\Model\ApiPrivilegeWildcardRequest(); // \NexusClient\Model\ApiPrivilegeWildcardRequest | The privilege to create.
 
 try {
     $apiInstance->createPrivilege($body);
@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiPrivilegeWildcardRequest**](../Model/ApiPrivilegeWildcardRequest.md)| The privilege to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeWildcardRequest**](../Model/ApiPrivilegeWildcardRequest.md)| The privilege to create. | [optional]
 
 ### Return type
 
@@ -81,12 +81,12 @@ Create an application type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiPrivilegeApplicationRequest(); // \Swagger\Client\Model\ApiPrivilegeApplicationRequest | The privilege to create.
+$body = new \NexusClient\Model\ApiPrivilegeApplicationRequest(); // \NexusClient\Model\ApiPrivilegeApplicationRequest | The privilege to create.
 
 try {
     $apiInstance->createPrivilege1($body);
@@ -100,7 +100,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiPrivilegeApplicationRequest**](../Model/ApiPrivilegeApplicationRequest.md)| The privilege to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeApplicationRequest**](../Model/ApiPrivilegeApplicationRequest.md)| The privilege to create. | [optional]
 
 ### Return type
 
@@ -129,12 +129,12 @@ Create a repository content selector type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest(); // \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest | The privilege to create.
+$body = new \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest(); // \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest | The privilege to create.
 
 try {
     $apiInstance->createPrivilege2($body);
@@ -148,7 +148,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest**](../Model/ApiPrivilegeRepositoryContentSelectorRequest.md)| The privilege to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest**](../Model/ApiPrivilegeRepositoryContentSelectorRequest.md)| The privilege to create. | [optional]
 
 ### Return type
 
@@ -177,12 +177,12 @@ Create a repository admin type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest(); // \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest | The privilege to create.
+$body = new \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest(); // \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest | The privilege to create.
 
 try {
     $apiInstance->createPrivilege3($body);
@@ -196,7 +196,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest**](../Model/ApiPrivilegeRepositoryAdminRequest.md)| The privilege to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeRepositoryAdminRequest**](../Model/ApiPrivilegeRepositoryAdminRequest.md)| The privilege to create. | [optional]
 
 ### Return type
 
@@ -225,12 +225,12 @@ Create a repository view type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest(); // \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest | The privilege to create.
+$body = new \NexusClient\Model\ApiPrivilegeRepositoryViewRequest(); // \NexusClient\Model\ApiPrivilegeRepositoryViewRequest | The privilege to create.
 
 try {
     $apiInstance->createPrivilege4($body);
@@ -244,7 +244,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest**](../Model/ApiPrivilegeRepositoryViewRequest.md)| The privilege to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeRepositoryViewRequest**](../Model/ApiPrivilegeRepositoryViewRequest.md)| The privilege to create. | [optional]
 
 ### Return type
 
@@ -273,12 +273,12 @@ Create a script type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiPrivilegeScriptRequest(); // \Swagger\Client\Model\ApiPrivilegeScriptRequest | The privilege to create.
+$body = new \NexusClient\Model\ApiPrivilegeScriptRequest(); // \NexusClient\Model\ApiPrivilegeScriptRequest | The privilege to create.
 
 try {
     $apiInstance->createPrivilege5($body);
@@ -292,7 +292,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiPrivilegeScriptRequest**](../Model/ApiPrivilegeScriptRequest.md)| The privilege to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeScriptRequest**](../Model/ApiPrivilegeScriptRequest.md)| The privilege to create. | [optional]
 
 ### Return type
 
@@ -321,7 +321,7 @@ Delete a privilege by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -358,7 +358,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPrivilege**
-> \Swagger\Client\Model\ApiPrivilege getPrivilege($privilege_id)
+> \NexusClient\Model\ApiPrivilege getPrivilege($privilege_id)
 
 Retrieve a privilege by id.
 
@@ -369,7 +369,7 @@ Retrieve a privilege by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiPrivilege**](../Model/ApiPrivilege.md)
+[**\NexusClient\Model\ApiPrivilege**](../Model/ApiPrivilege.md)
 
 ### Authorization
 
@@ -407,7 +407,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPrivileges**
-> \Swagger\Client\Model\ApiPrivilege[] getPrivileges()
+> \NexusClient\Model\ApiPrivilege[] getPrivileges()
 
 Retrieve a list of privileges.
 
@@ -418,7 +418,7 @@ Retrieve a list of privileges.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -438,7 +438,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiPrivilege[]**](../Model/ApiPrivilege.md)
+[**\NexusClient\Model\ApiPrivilege[]**](../Model/ApiPrivilege.md)
 
 ### Authorization
 
@@ -463,13 +463,13 @@ Update a wildcard type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $privilege_id = "privilege_id_example"; // string | The id of the privilege to update.
-$body = new \Swagger\Client\Model\ApiPrivilegeWildcardRequest(); // \Swagger\Client\Model\ApiPrivilegeWildcardRequest | The privilege to update.
+$body = new \NexusClient\Model\ApiPrivilegeWildcardRequest(); // \NexusClient\Model\ApiPrivilegeWildcardRequest | The privilege to update.
 
 try {
     $apiInstance->updatePrivilege($privilege_id, $body);
@@ -484,7 +484,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **privilege_id** | **string**| The id of the privilege to update. |
- **body** | [**\Swagger\Client\Model\ApiPrivilegeWildcardRequest**](../Model/ApiPrivilegeWildcardRequest.md)| The privilege to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeWildcardRequest**](../Model/ApiPrivilegeWildcardRequest.md)| The privilege to update. | [optional]
 
 ### Return type
 
@@ -513,13 +513,13 @@ Update an application type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $privilege_id = "privilege_id_example"; // string | The id of the privilege to update.
-$body = new \Swagger\Client\Model\ApiPrivilegeApplicationRequest(); // \Swagger\Client\Model\ApiPrivilegeApplicationRequest | The privilege to update.
+$body = new \NexusClient\Model\ApiPrivilegeApplicationRequest(); // \NexusClient\Model\ApiPrivilegeApplicationRequest | The privilege to update.
 
 try {
     $apiInstance->updatePrivilege1($privilege_id, $body);
@@ -534,7 +534,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **privilege_id** | **string**| The id of the privilege to update. |
- **body** | [**\Swagger\Client\Model\ApiPrivilegeApplicationRequest**](../Model/ApiPrivilegeApplicationRequest.md)| The privilege to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeApplicationRequest**](../Model/ApiPrivilegeApplicationRequest.md)| The privilege to update. | [optional]
 
 ### Return type
 
@@ -563,13 +563,13 @@ Update a repository view type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $privilege_id = "privilege_id_example"; // string | The id of the privilege to update.
-$body = new \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest(); // \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest | The privilege to update.
+$body = new \NexusClient\Model\ApiPrivilegeRepositoryViewRequest(); // \NexusClient\Model\ApiPrivilegeRepositoryViewRequest | The privilege to update.
 
 try {
     $apiInstance->updatePrivilege2($privilege_id, $body);
@@ -584,7 +584,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **privilege_id** | **string**| The id of the privilege to update. |
- **body** | [**\Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest**](../Model/ApiPrivilegeRepositoryViewRequest.md)| The privilege to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeRepositoryViewRequest**](../Model/ApiPrivilegeRepositoryViewRequest.md)| The privilege to update. | [optional]
 
 ### Return type
 
@@ -613,13 +613,13 @@ Update a repository content selector type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $privilege_id = "privilege_id_example"; // string | The id of the privilege to update.
-$body = new \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest(); // \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest | The privilege to update.
+$body = new \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest(); // \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest | The privilege to update.
 
 try {
     $apiInstance->updatePrivilege3($privilege_id, $body);
@@ -634,7 +634,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **privilege_id** | **string**| The id of the privilege to update. |
- **body** | [**\Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest**](../Model/ApiPrivilegeRepositoryContentSelectorRequest.md)| The privilege to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest**](../Model/ApiPrivilegeRepositoryContentSelectorRequest.md)| The privilege to update. | [optional]
 
 ### Return type
 
@@ -663,13 +663,13 @@ Update a repository admin type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $privilege_id = "privilege_id_example"; // string | The id of the privilege to update.
-$body = new \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest(); // \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest | The privilege to update.
+$body = new \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest(); // \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest | The privilege to update.
 
 try {
     $apiInstance->updatePrivilege4($privilege_id, $body);
@@ -684,7 +684,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **privilege_id** | **string**| The id of the privilege to update. |
- **body** | [**\Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest**](../Model/ApiPrivilegeRepositoryAdminRequest.md)| The privilege to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeRepositoryAdminRequest**](../Model/ApiPrivilegeRepositoryAdminRequest.md)| The privilege to update. | [optional]
 
 ### Return type
 
@@ -713,13 +713,13 @@ Update a script type privilege.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementPrivilegesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementPrivilegesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $privilege_id = "privilege_id_example"; // string | The id of the privilege to update.
-$body = new \Swagger\Client\Model\ApiPrivilegeScriptRequest(); // \Swagger\Client\Model\ApiPrivilegeScriptRequest | The privilege to update.
+$body = new \NexusClient\Model\ApiPrivilegeScriptRequest(); // \NexusClient\Model\ApiPrivilegeScriptRequest | The privilege to update.
 
 try {
     $apiInstance->updatePrivilege5($privilege_id, $body);
@@ -734,7 +734,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **privilege_id** | **string**| The id of the privilege to update. |
- **body** | [**\Swagger\Client\Model\ApiPrivilegeScriptRequest**](../Model/ApiPrivilegeScriptRequest.md)| The privilege to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiPrivilegeScriptRequest**](../Model/ApiPrivilegeScriptRequest.md)| The privilege to update. | [optional]
 
 ### Return type
 

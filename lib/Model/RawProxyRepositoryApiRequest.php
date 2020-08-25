@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * RawProxyRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,13 +59,13 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\StorageAttributes',
-        'cleanup' => '\Swagger\Client\Model\CleanupPolicyAttributes',
-        'proxy' => '\Swagger\Client\Model\ProxyAttributes',
-        'negative_cache' => '\Swagger\Client\Model\NegativeCacheAttributes',
-        'http_client' => '\Swagger\Client\Model\HttpClientAttributes',
+        'storage' => '\NexusClient\Model\StorageAttributes',
+        'cleanup' => '\NexusClient\Model\CleanupPolicyAttributes',
+        'proxy' => '\NexusClient\Model\ProxyAttributes',
+        'negative_cache' => '\NexusClient\Model\NegativeCacheAttributes',
+        'http_client' => '\NexusClient\Model\HttpClientAttributes',
         'routing_rule' => 'string',
-        'raw' => '\Swagger\Client\Model\RawAttributes'
+        'raw' => '\NexusClient\Model\RawAttributes'
     ];
 
     /**
@@ -330,7 +330,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\StorageAttributes
+     * @return \NexusClient\Model\StorageAttributes
      */
     public function getStorage()
     {
@@ -340,7 +340,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\StorageAttributes $storage storage
+     * @param \NexusClient\Model\StorageAttributes $storage storage
      *
      * @return $this
      */
@@ -354,7 +354,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cleanup
      *
-     * @return \Swagger\Client\Model\CleanupPolicyAttributes
+     * @return \NexusClient\Model\CleanupPolicyAttributes
      */
     public function getCleanup()
     {
@@ -364,7 +364,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cleanup
      *
-     * @param \Swagger\Client\Model\CleanupPolicyAttributes $cleanup cleanup
+     * @param \NexusClient\Model\CleanupPolicyAttributes $cleanup cleanup
      *
      * @return $this
      */
@@ -378,7 +378,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets proxy
      *
-     * @return \Swagger\Client\Model\ProxyAttributes
+     * @return \NexusClient\Model\ProxyAttributes
      */
     public function getProxy()
     {
@@ -388,7 +388,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets proxy
      *
-     * @param \Swagger\Client\Model\ProxyAttributes $proxy proxy
+     * @param \NexusClient\Model\ProxyAttributes $proxy proxy
      *
      * @return $this
      */
@@ -402,7 +402,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets negative_cache
      *
-     * @return \Swagger\Client\Model\NegativeCacheAttributes
+     * @return \NexusClient\Model\NegativeCacheAttributes
      */
     public function getNegativeCache()
     {
@@ -412,7 +412,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets negative_cache
      *
-     * @param \Swagger\Client\Model\NegativeCacheAttributes $negative_cache negative_cache
+     * @param \NexusClient\Model\NegativeCacheAttributes $negative_cache negative_cache
      *
      * @return $this
      */
@@ -426,7 +426,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets http_client
      *
-     * @return \Swagger\Client\Model\HttpClientAttributes
+     * @return \NexusClient\Model\HttpClientAttributes
      */
     public function getHttpClient()
     {
@@ -436,7 +436,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets http_client
      *
-     * @param \Swagger\Client\Model\HttpClientAttributes $http_client http_client
+     * @param \NexusClient\Model\HttpClientAttributes $http_client http_client
      *
      * @return $this
      */
@@ -474,7 +474,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets raw
      *
-     * @return \Swagger\Client\Model\RawAttributes
+     * @return \NexusClient\Model\RawAttributes
      */
     public function getRaw()
     {
@@ -484,7 +484,7 @@ class RawProxyRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets raw
      *
-     * @param \Swagger\Client\Model\RawAttributes $raw raw
+     * @param \NexusClient\Model\RawAttributes $raw raw
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * RubyGemsGroupRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class RubyGemsGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\StorageAttributes',
-        'group' => '\Swagger\Client\Model\GroupAttributes'
+        'storage' => '\NexusClient\Model\StorageAttributes',
+        'group' => '\NexusClient\Model\GroupAttributes'
     ];
 
     /**
@@ -294,7 +294,7 @@ class RubyGemsGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\StorageAttributes
+     * @return \NexusClient\Model\StorageAttributes
      */
     public function getStorage()
     {
@@ -304,7 +304,7 @@ class RubyGemsGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\StorageAttributes $storage storage
+     * @param \NexusClient\Model\StorageAttributes $storage storage
      *
      * @return $this
      */
@@ -318,7 +318,7 @@ class RubyGemsGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets group
      *
-     * @return \Swagger\Client\Model\GroupAttributes
+     * @return \NexusClient\Model\GroupAttributes
      */
     public function getGroup()
     {
@@ -328,7 +328,7 @@ class RubyGemsGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets group
      *
-     * @param \Swagger\Client\Model\GroupAttributes $group group
+     * @param \NexusClient\Model\GroupAttributes $group group
      *
      * @return $this
      */

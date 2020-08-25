@@ -5,13 +5,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | A unique identifier for this repository | 
 **online** | **bool** | Whether this repository accepts incoming requests | 
-**storage** | [**\Swagger\Client\Model\StorageAttributes**](StorageAttributes.md) |  | 
-**cleanup** | [**\Swagger\Client\Model\CleanupPolicyAttributes**](CleanupPolicyAttributes.md) |  | [optional] 
-**proxy** | [**\Swagger\Client\Model\ProxyAttributes**](ProxyAttributes.md) |  | 
-**negative_cache** | [**\Swagger\Client\Model\NegativeCacheAttributes**](NegativeCacheAttributes.md) |  | 
-**http_client** | [**\Swagger\Client\Model\HttpClientAttributes**](HttpClientAttributes.md) |  | 
+**storage** | [**\NexusClient\Model\StorageAttributes**](StorageAttributes.md) |  | 
+**cleanup** | [**\NexusClient\Model\CleanupPolicyAttributes**](CleanupPolicyAttributes.md) |  | [optional] 
+**proxy** | [**\NexusClient\Model\ProxyAttributes**](ProxyAttributes.md) |  | 
+**negative_cache** | [**\NexusClient\Model\NegativeCacheAttributes**](NegativeCacheAttributes.md) |  | 
+**http_client** | [**\NexusClient\Model\HttpClientAttributes**](HttpClientAttributes.md) |  | 
 **routing_rule** | **string** |  | [optional] 
-**maven** | [**\Swagger\Client\Model\MavenAttributes**](MavenAttributes.md) |  | 
+**maven** | [**\NexusClient\Model\MavenAttributes**](MavenAttributes.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

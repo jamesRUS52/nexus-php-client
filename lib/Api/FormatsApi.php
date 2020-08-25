@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * FormatsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class FormatsApi
      *
      * @param  string $format The desired repository format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UploadDefinitionXO
+     * @return \NexusClient\Model\UploadDefinitionXO
      */
     public function get1($format)
     {
@@ -111,13 +111,13 @@ class FormatsApi
      *
      * @param  string $format The desired repository format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UploadDefinitionXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\UploadDefinitionXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function get1WithHttpInfo($format)
     {
-        $returnType = '\Swagger\Client\Model\UploadDefinitionXO';
+        $returnType = '\NexusClient\Model\UploadDefinitionXO';
         $request = $this->get1Request($format);
 
         try {
@@ -169,7 +169,7 @@ class FormatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UploadDefinitionXO',
+                        '\NexusClient\Model\UploadDefinitionXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class FormatsApi
      */
     public function get1AsyncWithHttpInfo($format)
     {
-        $returnType = '\Swagger\Client\Model\UploadDefinitionXO';
+        $returnType = '\NexusClient\Model\UploadDefinitionXO';
         $request = $this->get1Request($format);
 
         return $this->client
@@ -362,9 +362,9 @@ class FormatsApi
      * Get upload field requirements for each supported format
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UploadDefinitionXO[]
+     * @return \NexusClient\Model\UploadDefinitionXO[]
      */
     public function get2()
     {
@@ -378,13 +378,13 @@ class FormatsApi
      * Get upload field requirements for each supported format
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UploadDefinitionXO[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\UploadDefinitionXO[], HTTP status code, HTTP response headers (array of strings)
      */
     public function get2WithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\UploadDefinitionXO[]';
+        $returnType = '\NexusClient\Model\UploadDefinitionXO[]';
         $request = $this->get2Request();
 
         try {
@@ -436,7 +436,7 @@ class FormatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UploadDefinitionXO[]',
+                        '\NexusClient\Model\UploadDefinitionXO[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -476,7 +476,7 @@ class FormatsApi
      */
     public function get2AsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\UploadDefinitionXO[]';
+        $returnType = '\NexusClient\Model\UploadDefinitionXO[]';
         $request = $this->get2Request();
 
         return $this->client

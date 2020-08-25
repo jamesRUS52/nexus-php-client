@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * RoutingRulesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class RoutingRulesApi
      *
      * Create a single routing rule
      *
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class RoutingRulesApi
      *
      * Create a single routing rule
      *
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class RoutingRulesApi
      *
      * Create a single routing rule
      *
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class RoutingRulesApi
      *
      * Create a single routing rule
      *
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class RoutingRulesApi
     /**
      * Create request for operation 'createRoutingRule'
      *
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -321,7 +321,7 @@ class RoutingRulesApi
      *
      * @param  string $name The name of the routing rule to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -337,7 +337,7 @@ class RoutingRulesApi
      *
      * @param  string $name The name of the routing rule to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -553,9 +553,9 @@ class RoutingRulesApi
      *
      * @param  string $name The name of the routing rule to get (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RoutingRuleXO
+     * @return \NexusClient\Model\RoutingRuleXO
      */
     public function getRoutingRule($name)
     {
@@ -570,13 +570,13 @@ class RoutingRulesApi
      *
      * @param  string $name The name of the routing rule to get (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RoutingRuleXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\RoutingRuleXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRoutingRuleWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\RoutingRuleXO';
+        $returnType = '\NexusClient\Model\RoutingRuleXO';
         $request = $this->getRoutingRuleRequest($name);
 
         try {
@@ -628,7 +628,7 @@ class RoutingRulesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RoutingRuleXO',
+                        '\NexusClient\Model\RoutingRuleXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -670,7 +670,7 @@ class RoutingRulesApi
      */
     public function getRoutingRuleAsyncWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\RoutingRuleXO';
+        $returnType = '\NexusClient\Model\RoutingRuleXO';
         $request = $this->getRoutingRuleRequest($name);
 
         return $this->client
@@ -821,9 +821,9 @@ class RoutingRulesApi
      * List routing rules
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RoutingRuleXO[]
+     * @return \NexusClient\Model\RoutingRuleXO[]
      */
     public function getRoutingRules()
     {
@@ -837,13 +837,13 @@ class RoutingRulesApi
      * List routing rules
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RoutingRuleXO[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\RoutingRuleXO[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getRoutingRulesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\RoutingRuleXO[]';
+        $returnType = '\NexusClient\Model\RoutingRuleXO[]';
         $request = $this->getRoutingRulesRequest();
 
         try {
@@ -895,7 +895,7 @@ class RoutingRulesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RoutingRuleXO[]',
+                        '\NexusClient\Model\RoutingRuleXO[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -935,7 +935,7 @@ class RoutingRulesApi
      */
     public function getRoutingRulesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\RoutingRuleXO[]';
+        $returnType = '\NexusClient\Model\RoutingRuleXO[]';
         $request = $this->getRoutingRulesRequest();
 
         return $this->client
@@ -1071,9 +1071,9 @@ class RoutingRulesApi
      * Update a single routing rule
      *
      * @param  string $name The name of the routing rule to update (required)
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1088,9 +1088,9 @@ class RoutingRulesApi
      * Update a single routing rule
      *
      * @param  string $name The name of the routing rule to update (required)
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1142,7 +1142,7 @@ class RoutingRulesApi
      * Update a single routing rule
      *
      * @param  string $name The name of the routing rule to update (required)
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1163,7 +1163,7 @@ class RoutingRulesApi
      * Update a single routing rule
      *
      * @param  string $name The name of the routing rule to update (required)
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1200,7 +1200,7 @@ class RoutingRulesApi
      * Create request for operation 'updateRoutingRule'
      *
      * @param  string $name The name of the routing rule to update (required)
-     * @param  \Swagger\Client\Model\RoutingRuleXO $body A routing rule configuration (required)
+     * @param  \NexusClient\Model\RoutingRuleXO $body A routing rule configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

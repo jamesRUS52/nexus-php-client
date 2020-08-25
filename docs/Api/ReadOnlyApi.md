@@ -1,4 +1,4 @@
-# Swagger\Client\ReadOnlyApi
+# NexusClient\ReadOnlyApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -22,7 +22,7 @@ Forcibly release read-only status, including System initiated tasks. Warning: ma
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ReadOnlyApi(
+$apiInstance = new NexusClient\Api\ReadOnlyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -66,7 +66,7 @@ Enable read-only
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ReadOnlyApi(
+$apiInstance = new NexusClient\Api\ReadOnlyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -99,7 +99,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **get**
-> \Swagger\Client\Model\ReadOnlyState get()
+> \NexusClient\Model\ReadOnlyState get()
 
 Get read-only state
 
@@ -110,7 +110,7 @@ Get read-only state
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ReadOnlyApi(
+$apiInstance = new NexusClient\Api\ReadOnlyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -130,7 +130,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ReadOnlyState**](../Model/ReadOnlyState.md)
+[**\NexusClient\Model\ReadOnlyState**](../Model/ReadOnlyState.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ Release administrator initiated read-only status. Will not release read-only cau
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ReadOnlyApi(
+$apiInstance = new NexusClient\Api\ReadOnlyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

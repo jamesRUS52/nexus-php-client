@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * EmailApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class EmailApi
      * Disable and clear the email configuration
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,7 +108,7 @@ class EmailApi
      * Disable and clear the email configuration
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -306,9 +306,9 @@ class EmailApi
      * Retrieve the current email configuration
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiEmailConfiguration
+     * @return \NexusClient\Model\ApiEmailConfiguration
      */
     public function getEmailConfiguration()
     {
@@ -322,13 +322,13 @@ class EmailApi
      * Retrieve the current email configuration
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiEmailConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiEmailConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEmailConfigurationWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiEmailConfiguration';
+        $returnType = '\NexusClient\Model\ApiEmailConfiguration';
         $request = $this->getEmailConfigurationRequest();
 
         try {
@@ -380,7 +380,7 @@ class EmailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiEmailConfiguration',
+                        '\NexusClient\Model\ApiEmailConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -420,7 +420,7 @@ class EmailApi
      */
     public function getEmailConfigurationAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiEmailConfiguration';
+        $returnType = '\NexusClient\Model\ApiEmailConfiguration';
         $request = $this->getEmailConfigurationRequest();
 
         return $this->client
@@ -555,9 +555,9 @@ class EmailApi
      *
      * Set the current email configuration
      *
-     * @param  \Swagger\Client\Model\ApiEmailConfiguration $body body (required)
+     * @param  \NexusClient\Model\ApiEmailConfiguration $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -571,9 +571,9 @@ class EmailApi
      *
      * Set the current email configuration
      *
-     * @param  \Swagger\Client\Model\ApiEmailConfiguration $body (required)
+     * @param  \NexusClient\Model\ApiEmailConfiguration $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -624,7 +624,7 @@ class EmailApi
      *
      * Set the current email configuration
      *
-     * @param  \Swagger\Client\Model\ApiEmailConfiguration $body (required)
+     * @param  \NexusClient\Model\ApiEmailConfiguration $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -644,7 +644,7 @@ class EmailApi
      *
      * Set the current email configuration
      *
-     * @param  \Swagger\Client\Model\ApiEmailConfiguration $body (required)
+     * @param  \NexusClient\Model\ApiEmailConfiguration $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -680,7 +680,7 @@ class EmailApi
     /**
      * Create request for operation 'setEmailConfiguration'
      *
-     * @param  \Swagger\Client\Model\ApiEmailConfiguration $body (required)
+     * @param  \NexusClient\Model\ApiEmailConfiguration $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -784,9 +784,9 @@ class EmailApi
      *
      * @param  string $body An email address to send a test email to (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiEmailValidation
+     * @return \NexusClient\Model\ApiEmailValidation
      */
     public function testEmailConfiguration($body)
     {
@@ -801,13 +801,13 @@ class EmailApi
      *
      * @param  string $body An email address to send a test email to (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiEmailValidation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiEmailValidation, HTTP status code, HTTP response headers (array of strings)
      */
     public function testEmailConfigurationWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\ApiEmailValidation';
+        $returnType = '\NexusClient\Model\ApiEmailValidation';
         $request = $this->testEmailConfigurationRequest($body);
 
         try {
@@ -859,7 +859,7 @@ class EmailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiEmailValidation',
+                        '\NexusClient\Model\ApiEmailValidation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -901,7 +901,7 @@ class EmailApi
      */
     public function testEmailConfigurationAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\ApiEmailValidation';
+        $returnType = '\NexusClient\Model\ApiEmailValidation';
         $request = $this->testEmailConfigurationRequest($body);
 
         return $this->client

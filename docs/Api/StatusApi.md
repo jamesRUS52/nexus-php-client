@@ -1,4 +1,4 @@
-# Swagger\Client\StatusApi
+# NexusClient\StatusApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getSystemStatusChecks**
-> map[string,\Swagger\Client\Model\Result] getSystemStatusChecks()
+> map[string,\NexusClient\Model\Result] getSystemStatusChecks()
 
 Health check endpoint that returns the results of the system status checks
 
@@ -21,7 +21,7 @@ Health check endpoint that returns the results of the system status checks
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\StatusApi(
+$apiInstance = new NexusClient\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\Result]**](../Model/Result.md)
+[**map[string,\NexusClient\Model\Result]**](../Model/Result.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Health check endpoint that validates server can respond to read requests
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\StatusApi(
+$apiInstance = new NexusClient\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -110,7 +110,7 @@ Health check endpoint that validates server can respond to read and write reques
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\StatusApi(
+$apiInstance = new NexusClient\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

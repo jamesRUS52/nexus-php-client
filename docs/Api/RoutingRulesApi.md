@@ -1,4 +1,4 @@
-# Swagger\Client\RoutingRulesApi
+# NexusClient\RoutingRulesApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -23,12 +23,12 @@ Create a single routing rule
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoutingRulesApi(
+$apiInstance = new NexusClient\Api\RoutingRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RoutingRuleXO(); // \Swagger\Client\Model\RoutingRuleXO | A routing rule configuration
+$body = new \NexusClient\Model\RoutingRuleXO(); // \NexusClient\Model\RoutingRuleXO | A routing rule configuration
 
 try {
     $apiInstance->createRoutingRule($body);
@@ -42,7 +42,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RoutingRuleXO**](../Model/RoutingRuleXO.md)| A routing rule configuration |
+ **body** | [**\NexusClient\Model\RoutingRuleXO**](../Model/RoutingRuleXO.md)| A routing rule configuration |
 
 ### Return type
 
@@ -71,7 +71,7 @@ Delete a single routing rule
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoutingRulesApi(
+$apiInstance = new NexusClient\Api\RoutingRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRoutingRule**
-> \Swagger\Client\Model\RoutingRuleXO getRoutingRule($name)
+> \NexusClient\Model\RoutingRuleXO getRoutingRule($name)
 
 Get a single routing rule
 
@@ -119,7 +119,7 @@ Get a single routing rule
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoutingRulesApi(
+$apiInstance = new NexusClient\Api\RoutingRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RoutingRuleXO**](../Model/RoutingRuleXO.md)
+[**\NexusClient\Model\RoutingRuleXO**](../Model/RoutingRuleXO.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRoutingRules**
-> \Swagger\Client\Model\RoutingRuleXO[] getRoutingRules()
+> \NexusClient\Model\RoutingRuleXO[] getRoutingRules()
 
 List routing rules
 
@@ -168,7 +168,7 @@ List routing rules
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoutingRulesApi(
+$apiInstance = new NexusClient\Api\RoutingRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -188,7 +188,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RoutingRuleXO[]**](../Model/RoutingRuleXO.md)
+[**\NexusClient\Model\RoutingRuleXO[]**](../Model/RoutingRuleXO.md)
 
 ### Authorization
 
@@ -213,13 +213,13 @@ Update a single routing rule
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoutingRulesApi(
+$apiInstance = new NexusClient\Api\RoutingRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = "name_example"; // string | The name of the routing rule to update
-$body = new \Swagger\Client\Model\RoutingRuleXO(); // \Swagger\Client\Model\RoutingRuleXO | A routing rule configuration
+$body = new \NexusClient\Model\RoutingRuleXO(); // \NexusClient\Model\RoutingRuleXO | A routing rule configuration
 
 try {
     $apiInstance->updateRoutingRule($name, $body);
@@ -234,7 +234,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The name of the routing rule to update |
- **body** | [**\Swagger\Client\Model\RoutingRuleXO**](../Model/RoutingRuleXO.md)| A routing rule configuration |
+ **body** | [**\NexusClient\Model\RoutingRuleXO**](../Model/RoutingRuleXO.md)| A routing rule configuration |
 
 ### Return type
 

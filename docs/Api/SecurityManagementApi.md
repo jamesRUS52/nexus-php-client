@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementApi
+# NexusClient\SecurityManagementApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getUserSources**
-> \Swagger\Client\Model\ApiUserSource[] getUserSources()
+> \NexusClient\Model\ApiUserSource[] getUserSources()
 
 Retrieve a list of the available user sources.
 
@@ -19,7 +19,7 @@ Retrieve a list of the available user sources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementApi(
+$apiInstance = new NexusClient\Api\SecurityManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -39,7 +39,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiUserSource[]**](../Model/ApiUserSource.md)
+[**\NexusClient\Model\ApiUserSource[]**](../Model/ApiUserSource.md)
 
 ### Authorization
 

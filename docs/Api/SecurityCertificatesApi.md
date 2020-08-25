@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityCertificatesApi
+# NexusClient\SecurityCertificatesApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCertificate**
-> \Swagger\Client\Model\ApiCertificate addCertificate($body)
+> \NexusClient\Model\ApiCertificate addCertificate($body)
 
 Add a certificate to the trust store.
 
@@ -22,7 +22,7 @@ Add a certificate to the trust store.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityCertificatesApi(
+$apiInstance = new NexusClient\Api\SecurityCertificatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiCertificate**](../Model/ApiCertificate.md)
+[**\NexusClient\Model\ApiCertificate**](../Model/ApiCertificate.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTrustStoreCertificates**
-> \Swagger\Client\Model\ApiCertificate[] getTrustStoreCertificates()
+> \NexusClient\Model\ApiCertificate[] getTrustStoreCertificates()
 
 Retrieve a list of certificates added to the trust store.
 
@@ -71,7 +71,7 @@ Retrieve a list of certificates added to the trust store.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityCertificatesApi(
+$apiInstance = new NexusClient\Api\SecurityCertificatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiCertificate[]**](../Model/ApiCertificate.md)
+[**\NexusClient\Model\ApiCertificate[]**](../Model/ApiCertificate.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Remove a certificate in the trust store.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityCertificatesApi(
+$apiInstance = new NexusClient\Api\SecurityCertificatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -153,7 +153,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveCertificate**
-> \Swagger\Client\Model\ApiCertificate retrieveCertificate($host, $port, $protocol_hint)
+> \NexusClient\Model\ApiCertificate retrieveCertificate($host, $port, $protocol_hint)
 
 Helper method to retrieve certificate details from a remote system.
 
@@ -164,7 +164,7 @@ Helper method to retrieve certificate details from a remote system.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityCertificatesApi(
+$apiInstance = new NexusClient\Api\SecurityCertificatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiCertificate**](../Model/ApiCertificate.md)
+[**\NexusClient\Model\ApiCertificate**](../Model/ApiCertificate.md)
 
 ### Authorization
 

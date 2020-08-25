@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * HttpClientAttributes Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class HttpClientAttributes implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'blocked' => 'bool',
         'auto_block' => 'bool',
-        'connection' => '\Swagger\Client\Model\HttpClientConnectionAttributes',
-        'authentication' => '\Swagger\Client\Model\HttpClientConnectionAuthenticationAttributes'
+        'connection' => '\NexusClient\Model\HttpClientConnectionAttributes',
+        'authentication' => '\NexusClient\Model\HttpClientConnectionAuthenticationAttributes'
     ];
 
     /**
@@ -279,7 +279,7 @@ class HttpClientAttributes implements ModelInterface, ArrayAccess
     /**
      * Gets connection
      *
-     * @return \Swagger\Client\Model\HttpClientConnectionAttributes
+     * @return \NexusClient\Model\HttpClientConnectionAttributes
      */
     public function getConnection()
     {
@@ -289,7 +289,7 @@ class HttpClientAttributes implements ModelInterface, ArrayAccess
     /**
      * Sets connection
      *
-     * @param \Swagger\Client\Model\HttpClientConnectionAttributes $connection connection
+     * @param \NexusClient\Model\HttpClientConnectionAttributes $connection connection
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class HttpClientAttributes implements ModelInterface, ArrayAccess
     /**
      * Gets authentication
      *
-     * @return \Swagger\Client\Model\HttpClientConnectionAuthenticationAttributes
+     * @return \NexusClient\Model\HttpClientConnectionAuthenticationAttributes
      */
     public function getAuthentication()
     {
@@ -313,7 +313,7 @@ class HttpClientAttributes implements ModelInterface, ArrayAccess
     /**
      * Sets authentication
      *
-     * @param \Swagger\Client\Model\HttpClientConnectionAuthenticationAttributes $authentication authentication
+     * @param \NexusClient\Model\HttpClientConnectionAuthenticationAttributes $authentication authentication
      *
      * @return $this
      */

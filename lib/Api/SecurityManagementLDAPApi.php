@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementLDAPApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class SecurityManagementLDAPApi
      *
      * @param  string[] $body Ordered list of LDAP server names (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class SecurityManagementLDAPApi
      *
      * @param  string[] $body Ordered list of LDAP server names (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -313,9 +313,9 @@ class SecurityManagementLDAPApi
      *
      * Create LDAP server
      *
-     * @param  \Swagger\Client\Model\CreateLdapServerXo $body body (optional)
+     * @param  \NexusClient\Model\CreateLdapServerXo $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -329,9 +329,9 @@ class SecurityManagementLDAPApi
      *
      * Create LDAP server
      *
-     * @param  \Swagger\Client\Model\CreateLdapServerXo $body (optional)
+     * @param  \NexusClient\Model\CreateLdapServerXo $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -382,7 +382,7 @@ class SecurityManagementLDAPApi
      *
      * Create LDAP server
      *
-     * @param  \Swagger\Client\Model\CreateLdapServerXo $body (optional)
+     * @param  \NexusClient\Model\CreateLdapServerXo $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -402,7 +402,7 @@ class SecurityManagementLDAPApi
      *
      * Create LDAP server
      *
-     * @param  \Swagger\Client\Model\CreateLdapServerXo $body (optional)
+     * @param  \NexusClient\Model\CreateLdapServerXo $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -438,7 +438,7 @@ class SecurityManagementLDAPApi
     /**
      * Create request for operation 'createLdapServer'
      *
-     * @param  \Swagger\Client\Model\CreateLdapServerXo $body (optional)
+     * @param  \NexusClient\Model\CreateLdapServerXo $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -536,7 +536,7 @@ class SecurityManagementLDAPApi
      *
      * @param  string $name Name of the LDAP server to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -552,7 +552,7 @@ class SecurityManagementLDAPApi
      *
      * @param  string $name Name of the LDAP server to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -768,7 +768,7 @@ class SecurityManagementLDAPApi
      *
      * @param  string $name Name of the LDAP server to retrieve (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -784,7 +784,7 @@ class SecurityManagementLDAPApi
      *
      * @param  string $name Name of the LDAP server to retrieve (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -999,7 +999,7 @@ class SecurityManagementLDAPApi
      * List LDAP servers
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1014,7 +1014,7 @@ class SecurityManagementLDAPApi
      * List LDAP servers
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1212,9 +1212,9 @@ class SecurityManagementLDAPApi
      * Update LDAP server
      *
      * @param  string $name Name of the LDAP server to update (required)
-     * @param  \Swagger\Client\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
+     * @param  \NexusClient\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1229,9 +1229,9 @@ class SecurityManagementLDAPApi
      * Update LDAP server
      *
      * @param  string $name Name of the LDAP server to update (required)
-     * @param  \Swagger\Client\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
+     * @param  \NexusClient\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1283,7 +1283,7 @@ class SecurityManagementLDAPApi
      * Update LDAP server
      *
      * @param  string $name Name of the LDAP server to update (required)
-     * @param  \Swagger\Client\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
+     * @param  \NexusClient\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1304,7 +1304,7 @@ class SecurityManagementLDAPApi
      * Update LDAP server
      *
      * @param  string $name Name of the LDAP server to update (required)
-     * @param  \Swagger\Client\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
+     * @param  \NexusClient\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1341,7 +1341,7 @@ class SecurityManagementLDAPApi
      * Create request for operation 'updateLdapServer'
      *
      * @param  string $name Name of the LDAP server to update (required)
-     * @param  \Swagger\Client\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
+     * @param  \NexusClient\Model\UpdateLdapServerXo $body Updated values of LDAP server (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

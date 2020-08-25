@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementRealmsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class SecurityManagementRealmsApi
      * List the active realm IDs in order
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string[]
      */
@@ -109,7 +109,7 @@ class SecurityManagementRealmsApi
      * List the active realm IDs in order
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -343,9 +343,9 @@ class SecurityManagementRealmsApi
      * List the available realms
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RealmApiXO[]
+     * @return \NexusClient\Model\RealmApiXO[]
      */
     public function getRealms()
     {
@@ -359,13 +359,13 @@ class SecurityManagementRealmsApi
      * List the available realms
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RealmApiXO[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\RealmApiXO[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getRealmsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\RealmApiXO[]';
+        $returnType = '\NexusClient\Model\RealmApiXO[]';
         $request = $this->getRealmsRequest();
 
         try {
@@ -417,7 +417,7 @@ class SecurityManagementRealmsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RealmApiXO[]',
+                        '\NexusClient\Model\RealmApiXO[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class SecurityManagementRealmsApi
      */
     public function getRealmsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\RealmApiXO[]';
+        $returnType = '\NexusClient\Model\RealmApiXO[]';
         $request = $this->getRealmsRequest();
 
         return $this->client
@@ -594,7 +594,7 @@ class SecurityManagementRealmsApi
      *
      * @param  string[] $body The realm IDs (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -610,7 +610,7 @@ class SecurityManagementRealmsApi
      *
      * @param  string[] $body The realm IDs (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

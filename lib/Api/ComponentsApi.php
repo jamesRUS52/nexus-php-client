@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * ComponentsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class ComponentsApi
      *
      * @param  string $id ID of the component to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class ComponentsApi
      *
      * @param  string $id ID of the component to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -326,9 +326,9 @@ class ComponentsApi
      *
      * @param  string $id ID of the component to retrieve (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ComponentXO
+     * @return \NexusClient\Model\ComponentXO
      */
     public function getComponentById($id)
     {
@@ -343,13 +343,13 @@ class ComponentsApi
      *
      * @param  string $id ID of the component to retrieve (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ComponentXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ComponentXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getComponentByIdWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\ComponentXO';
+        $returnType = '\NexusClient\Model\ComponentXO';
         $request = $this->getComponentByIdRequest($id);
 
         try {
@@ -401,7 +401,7 @@ class ComponentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ComponentXO',
+                        '\NexusClient\Model\ComponentXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -443,7 +443,7 @@ class ComponentsApi
      */
     public function getComponentByIdAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\ComponentXO';
+        $returnType = '\NexusClient\Model\ComponentXO';
         $request = $this->getComponentByIdRequest($id);
 
         return $this->client
@@ -596,9 +596,9 @@ class ComponentsApi
      * @param  string $repository Repository from which you would like to retrieve components (required)
      * @param  string $continuation_token A token returned by a prior request. If present, the next page of results are returned (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PageComponentXO
+     * @return \NexusClient\Model\PageComponentXO
      */
     public function getComponents($repository, $continuation_token = null)
     {
@@ -614,13 +614,13 @@ class ComponentsApi
      * @param  string $repository Repository from which you would like to retrieve components (required)
      * @param  string $continuation_token A token returned by a prior request. If present, the next page of results are returned (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PageComponentXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\PageComponentXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getComponentsWithHttpInfo($repository, $continuation_token = null)
     {
-        $returnType = '\Swagger\Client\Model\PageComponentXO';
+        $returnType = '\NexusClient\Model\PageComponentXO';
         $request = $this->getComponentsRequest($repository, $continuation_token);
 
         try {
@@ -672,7 +672,7 @@ class ComponentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PageComponentXO',
+                        '\NexusClient\Model\PageComponentXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -716,7 +716,7 @@ class ComponentsApi
      */
     public function getComponentsAsyncWithHttpInfo($repository, $continuation_token = null)
     {
-        $returnType = '\Swagger\Client\Model\PageComponentXO';
+        $returnType = '\NexusClient\Model\PageComponentXO';
         $request = $this->getComponentsRequest($repository, $continuation_token);
 
         return $this->client
@@ -902,7 +902,7 @@ class ComponentsApi
      * @param  string $maven2_asset3_classifier maven2 Asset 3 Classifier (optional)
      * @param  string $maven2_asset3_extension maven2 Asset 3 Extension (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -951,7 +951,7 @@ class ComponentsApi
      * @param  string $maven2_asset3_classifier maven2 Asset 3 Classifier (optional)
      * @param  string $maven2_asset3_extension maven2 Asset 3 Extension (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

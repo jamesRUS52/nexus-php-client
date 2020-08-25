@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * AssetsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class AssetsApi
      *
      * @param  string $id Id of the asset to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class AssetsApi
      *
      * @param  string $id Id of the asset to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -326,9 +326,9 @@ class AssetsApi
      *
      * @param  string $id Id of the asset to get (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AssetXO
+     * @return \NexusClient\Model\AssetXO
      */
     public function getAssetById($id)
     {
@@ -343,13 +343,13 @@ class AssetsApi
      *
      * @param  string $id Id of the asset to get (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AssetXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\AssetXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAssetByIdWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\AssetXO';
+        $returnType = '\NexusClient\Model\AssetXO';
         $request = $this->getAssetByIdRequest($id);
 
         try {
@@ -401,7 +401,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AssetXO',
+                        '\NexusClient\Model\AssetXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -443,7 +443,7 @@ class AssetsApi
      */
     public function getAssetByIdAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\AssetXO';
+        $returnType = '\NexusClient\Model\AssetXO';
         $request = $this->getAssetByIdRequest($id);
 
         return $this->client
@@ -596,9 +596,9 @@ class AssetsApi
      * @param  string $repository Repository from which you would like to retrieve assets. (required)
      * @param  string $continuation_token A token returned by a prior request. If present, the next page of results are returned (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PageAssetXO
+     * @return \NexusClient\Model\PageAssetXO
      */
     public function getAssets($repository, $continuation_token = null)
     {
@@ -614,13 +614,13 @@ class AssetsApi
      * @param  string $repository Repository from which you would like to retrieve assets. (required)
      * @param  string $continuation_token A token returned by a prior request. If present, the next page of results are returned (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PageAssetXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\PageAssetXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAssetsWithHttpInfo($repository, $continuation_token = null)
     {
-        $returnType = '\Swagger\Client\Model\PageAssetXO';
+        $returnType = '\NexusClient\Model\PageAssetXO';
         $request = $this->getAssetsRequest($repository, $continuation_token);
 
         try {
@@ -672,7 +672,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PageAssetXO',
+                        '\NexusClient\Model\PageAssetXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -716,7 +716,7 @@ class AssetsApi
      */
     public function getAssetsAsyncWithHttpInfo($repository, $continuation_token = null)
     {
-        $returnType = '\Swagger\Client\Model\PageAssetXO';
+        $returnType = '\NexusClient\Model\PageAssetXO';
         $request = $this->getAssetsRequest($repository, $continuation_token);
 
         return $this->client

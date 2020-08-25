@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * S3BlobStoreApiBucketConfiguration Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bucket' => '\Swagger\Client\Model\S3BlobStoreApiBucket',
-        'encryption' => '\Swagger\Client\Model\S3BlobStoreApiEncryption',
-        'bucket_security' => '\Swagger\Client\Model\S3BlobStoreApiBucketSecurity',
-        'advanced_bucket_connection' => '\Swagger\Client\Model\S3BlobStoreApiAdvancedBucketConnection'
+        'bucket' => '\NexusClient\Model\S3BlobStoreApiBucket',
+        'encryption' => '\NexusClient\Model\S3BlobStoreApiEncryption',
+        'bucket_security' => '\NexusClient\Model\S3BlobStoreApiBucketSecurity',
+        'advanced_bucket_connection' => '\NexusClient\Model\S3BlobStoreApiAdvancedBucketConnection'
     ];
 
     /**
@@ -228,7 +228,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets bucket
      *
-     * @return \Swagger\Client\Model\S3BlobStoreApiBucket
+     * @return \NexusClient\Model\S3BlobStoreApiBucket
      */
     public function getBucket()
     {
@@ -238,7 +238,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets bucket
      *
-     * @param \Swagger\Client\Model\S3BlobStoreApiBucket $bucket Details of the S3 bucket such as name and region
+     * @param \NexusClient\Model\S3BlobStoreApiBucket $bucket Details of the S3 bucket such as name and region
      *
      * @return $this
      */
@@ -252,7 +252,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets encryption
      *
-     * @return \Swagger\Client\Model\S3BlobStoreApiEncryption
+     * @return \NexusClient\Model\S3BlobStoreApiEncryption
      */
     public function getEncryption()
     {
@@ -262,7 +262,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets encryption
      *
-     * @param \Swagger\Client\Model\S3BlobStoreApiEncryption $encryption The type of encryption to use if any
+     * @param \NexusClient\Model\S3BlobStoreApiEncryption $encryption The type of encryption to use if any
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets bucket_security
      *
-     * @return \Swagger\Client\Model\S3BlobStoreApiBucketSecurity
+     * @return \NexusClient\Model\S3BlobStoreApiBucketSecurity
      */
     public function getBucketSecurity()
     {
@@ -286,7 +286,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets bucket_security
      *
-     * @param \Swagger\Client\Model\S3BlobStoreApiBucketSecurity $bucket_security Security details for granting access the S3 API
+     * @param \NexusClient\Model\S3BlobStoreApiBucketSecurity $bucket_security Security details for granting access the S3 API
      *
      * @return $this
      */
@@ -300,7 +300,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets advanced_bucket_connection
      *
-     * @return \Swagger\Client\Model\S3BlobStoreApiAdvancedBucketConnection
+     * @return \NexusClient\Model\S3BlobStoreApiAdvancedBucketConnection
      */
     public function getAdvancedBucketConnection()
     {
@@ -310,7 +310,7 @@ class S3BlobStoreApiBucketConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets advanced_bucket_connection
      *
-     * @param \Swagger\Client\Model\S3BlobStoreApiAdvancedBucketConnection $advanced_bucket_connection A custom endpoint URL, signer type and whether path style access is enabled
+     * @param \NexusClient\Model\S3BlobStoreApiAdvancedBucketConnection $advanced_bucket_connection A custom endpoint URL, signer type and whether path style access is enabled
      *
      * @return $this
      */

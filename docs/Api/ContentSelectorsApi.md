@@ -1,4 +1,4 @@
-# Swagger\Client\ContentSelectorsApi
+# NexusClient\ContentSelectorsApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -23,12 +23,12 @@ Create a new content selector
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentSelectorsApi(
+$apiInstance = new NexusClient\Api\ContentSelectorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ContentSelectorApiCreateRequest(); // \Swagger\Client\Model\ContentSelectorApiCreateRequest | 
+$body = new \NexusClient\Model\ContentSelectorApiCreateRequest(); // \NexusClient\Model\ContentSelectorApiCreateRequest | 
 
 try {
     $apiInstance->createContentSelector($body);
@@ -42,7 +42,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ContentSelectorApiCreateRequest**](../Model/ContentSelectorApiCreateRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\ContentSelectorApiCreateRequest**](../Model/ContentSelectorApiCreateRequest.md)|  | [optional]
 
 ### Return type
 
@@ -71,7 +71,7 @@ Delete a content selector
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentSelectorsApi(
+$apiInstance = new NexusClient\Api\ContentSelectorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContentSelector**
-> \Swagger\Client\Model\ContentSelectorApiResponse getContentSelector($name)
+> \NexusClient\Model\ContentSelectorApiResponse getContentSelector($name)
 
 Get a content selector by name
 
@@ -119,7 +119,7 @@ Get a content selector by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentSelectorsApi(
+$apiInstance = new NexusClient\Api\ContentSelectorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentSelectorApiResponse**](../Model/ContentSelectorApiResponse.md)
+[**\NexusClient\Model\ContentSelectorApiResponse**](../Model/ContentSelectorApiResponse.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContentSelectors**
-> \Swagger\Client\Model\ContentSelectorApiResponse[] getContentSelectors()
+> \NexusClient\Model\ContentSelectorApiResponse[] getContentSelectors()
 
 List content selectors
 
@@ -168,7 +168,7 @@ List content selectors
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentSelectorsApi(
+$apiInstance = new NexusClient\Api\ContentSelectorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -188,7 +188,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentSelectorApiResponse[]**](../Model/ContentSelectorApiResponse.md)
+[**\NexusClient\Model\ContentSelectorApiResponse[]**](../Model/ContentSelectorApiResponse.md)
 
 ### Authorization
 
@@ -213,13 +213,13 @@ Update a content selector
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentSelectorsApi(
+$apiInstance = new NexusClient\Api\ContentSelectorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = "name_example"; // string | The content selector name
-$body = new \Swagger\Client\Model\ContentSelectorApiUpdateRequest(); // \Swagger\Client\Model\ContentSelectorApiUpdateRequest | 
+$body = new \NexusClient\Model\ContentSelectorApiUpdateRequest(); // \NexusClient\Model\ContentSelectorApiUpdateRequest | 
 
 try {
     $apiInstance->updateContentSelector($name, $body);
@@ -234,7 +234,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The content selector name |
- **body** | [**\Swagger\Client\Model\ContentSelectorApiUpdateRequest**](../Model/ContentSelectorApiUpdateRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\ContentSelectorApiUpdateRequest**](../Model/ContentSelectorApiUpdateRequest.md)|  | [optional]
 
 ### Return type
 

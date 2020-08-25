@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SearchApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -131,9 +131,9 @@ class SearchApi
      * @param  string $rubygems_summary RubyGems summary (optional)
      * @param  string $yum_architecture Yum architecture (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PageComponentXO
+     * @return \NexusClient\Model\PageComponentXO
      */
     public function search($continuation_token = null, $sort = null, $direction = null, $timeout = null, $q = null, $repository = null, $format = null, $group = null, $name = null, $version = null, $md5 = null, $sha1 = null, $sha256 = null, $sha512 = null, $prerelease = null, $conan_base_version = null, $conan_channel = null, $docker_image_name = null, $docker_image_tag = null, $docker_layer_id = null, $docker_content_digest = null, $maven_group_id = null, $maven_artifact_id = null, $maven_base_version = null, $maven_extension = null, $maven_classifier = null, $npm_scope = null, $nuget_id = null, $nuget_tags = null, $p2_plugin_name = null, $pypi_classifiers = null, $pypi_description = null, $pypi_keywords = null, $pypi_summary = null, $rubygems_description = null, $rubygems_platform = null, $rubygems_summary = null, $yum_architecture = null)
     {
@@ -185,13 +185,13 @@ class SearchApi
      * @param  string $rubygems_summary RubyGems summary (optional)
      * @param  string $yum_architecture Yum architecture (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PageComponentXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\PageComponentXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchWithHttpInfo($continuation_token = null, $sort = null, $direction = null, $timeout = null, $q = null, $repository = null, $format = null, $group = null, $name = null, $version = null, $md5 = null, $sha1 = null, $sha256 = null, $sha512 = null, $prerelease = null, $conan_base_version = null, $conan_channel = null, $docker_image_name = null, $docker_image_tag = null, $docker_layer_id = null, $docker_content_digest = null, $maven_group_id = null, $maven_artifact_id = null, $maven_base_version = null, $maven_extension = null, $maven_classifier = null, $npm_scope = null, $nuget_id = null, $nuget_tags = null, $p2_plugin_name = null, $pypi_classifiers = null, $pypi_description = null, $pypi_keywords = null, $pypi_summary = null, $rubygems_description = null, $rubygems_platform = null, $rubygems_summary = null, $yum_architecture = null)
     {
-        $returnType = '\Swagger\Client\Model\PageComponentXO';
+        $returnType = '\NexusClient\Model\PageComponentXO';
         $request = $this->searchRequest($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture);
 
         try {
@@ -243,7 +243,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PageComponentXO',
+                        '\NexusClient\Model\PageComponentXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -359,7 +359,7 @@ class SearchApi
      */
     public function searchAsyncWithHttpInfo($continuation_token = null, $sort = null, $direction = null, $timeout = null, $q = null, $repository = null, $format = null, $group = null, $name = null, $version = null, $md5 = null, $sha1 = null, $sha256 = null, $sha512 = null, $prerelease = null, $conan_base_version = null, $conan_channel = null, $docker_image_name = null, $docker_image_tag = null, $docker_layer_id = null, $docker_content_digest = null, $maven_group_id = null, $maven_artifact_id = null, $maven_base_version = null, $maven_extension = null, $maven_classifier = null, $npm_scope = null, $nuget_id = null, $nuget_tags = null, $p2_plugin_name = null, $pypi_classifiers = null, $pypi_description = null, $pypi_keywords = null, $pypi_summary = null, $rubygems_description = null, $rubygems_platform = null, $rubygems_summary = null, $yum_architecture = null)
     {
-        $returnType = '\Swagger\Client\Model\PageComponentXO';
+        $returnType = '\NexusClient\Model\PageComponentXO';
         $request = $this->searchRequest($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture);
 
         return $this->client
@@ -722,7 +722,7 @@ class SearchApi
      * @param  string $rubygems_summary RubyGems summary (optional)
      * @param  string $yum_architecture Yum architecture (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -774,7 +774,7 @@ class SearchApi
      * @param  string $rubygems_summary RubyGems summary (optional)
      * @param  string $yum_architecture Yum architecture (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1269,9 +1269,9 @@ class SearchApi
      * @param  string $rubygems_summary RubyGems summary (optional)
      * @param  string $yum_architecture Yum architecture (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PageAssetXO
+     * @return \NexusClient\Model\PageAssetXO
      */
     public function searchAssets($continuation_token = null, $sort = null, $direction = null, $timeout = null, $q = null, $repository = null, $format = null, $group = null, $name = null, $version = null, $md5 = null, $sha1 = null, $sha256 = null, $sha512 = null, $prerelease = null, $conan_base_version = null, $conan_channel = null, $docker_image_name = null, $docker_image_tag = null, $docker_layer_id = null, $docker_content_digest = null, $maven_group_id = null, $maven_artifact_id = null, $maven_base_version = null, $maven_extension = null, $maven_classifier = null, $npm_scope = null, $nuget_id = null, $nuget_tags = null, $p2_plugin_name = null, $pypi_classifiers = null, $pypi_description = null, $pypi_keywords = null, $pypi_summary = null, $rubygems_description = null, $rubygems_platform = null, $rubygems_summary = null, $yum_architecture = null)
     {
@@ -1323,13 +1323,13 @@ class SearchApi
      * @param  string $rubygems_summary RubyGems summary (optional)
      * @param  string $yum_architecture Yum architecture (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PageAssetXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\PageAssetXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchAssetsWithHttpInfo($continuation_token = null, $sort = null, $direction = null, $timeout = null, $q = null, $repository = null, $format = null, $group = null, $name = null, $version = null, $md5 = null, $sha1 = null, $sha256 = null, $sha512 = null, $prerelease = null, $conan_base_version = null, $conan_channel = null, $docker_image_name = null, $docker_image_tag = null, $docker_layer_id = null, $docker_content_digest = null, $maven_group_id = null, $maven_artifact_id = null, $maven_base_version = null, $maven_extension = null, $maven_classifier = null, $npm_scope = null, $nuget_id = null, $nuget_tags = null, $p2_plugin_name = null, $pypi_classifiers = null, $pypi_description = null, $pypi_keywords = null, $pypi_summary = null, $rubygems_description = null, $rubygems_platform = null, $rubygems_summary = null, $yum_architecture = null)
     {
-        $returnType = '\Swagger\Client\Model\PageAssetXO';
+        $returnType = '\NexusClient\Model\PageAssetXO';
         $request = $this->searchAssetsRequest($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture);
 
         try {
@@ -1381,7 +1381,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PageAssetXO',
+                        '\NexusClient\Model\PageAssetXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1497,7 +1497,7 @@ class SearchApi
      */
     public function searchAssetsAsyncWithHttpInfo($continuation_token = null, $sort = null, $direction = null, $timeout = null, $q = null, $repository = null, $format = null, $group = null, $name = null, $version = null, $md5 = null, $sha1 = null, $sha256 = null, $sha512 = null, $prerelease = null, $conan_base_version = null, $conan_channel = null, $docker_image_name = null, $docker_image_tag = null, $docker_layer_id = null, $docker_content_digest = null, $maven_group_id = null, $maven_artifact_id = null, $maven_base_version = null, $maven_extension = null, $maven_classifier = null, $npm_scope = null, $nuget_id = null, $nuget_tags = null, $p2_plugin_name = null, $pypi_classifiers = null, $pypi_description = null, $pypi_keywords = null, $pypi_summary = null, $rubygems_description = null, $rubygems_platform = null, $rubygems_summary = null, $yum_architecture = null)
     {
-        $returnType = '\Swagger\Client\Model\PageAssetXO';
+        $returnType = '\NexusClient\Model\PageAssetXO';
         $request = $this->searchAssetsRequest($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture);
 
         return $this->client

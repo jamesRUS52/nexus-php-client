@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * S3BlobStoreApiModel Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class S3BlobStoreApiModel implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-        'soft_quota' => '\Swagger\Client\Model\BlobStoreApiSoftQuota',
-        'bucket_configuration' => '\Swagger\Client\Model\S3BlobStoreApiBucketConfiguration'
+        'soft_quota' => '\NexusClient\Model\BlobStoreApiSoftQuota',
+        'bucket_configuration' => '\NexusClient\Model\S3BlobStoreApiBucketConfiguration'
     ];
 
     /**
@@ -249,7 +249,7 @@ class S3BlobStoreApiModel implements ModelInterface, ArrayAccess
     /**
      * Gets soft_quota
      *
-     * @return \Swagger\Client\Model\BlobStoreApiSoftQuota
+     * @return \NexusClient\Model\BlobStoreApiSoftQuota
      */
     public function getSoftQuota()
     {
@@ -259,7 +259,7 @@ class S3BlobStoreApiModel implements ModelInterface, ArrayAccess
     /**
      * Sets soft_quota
      *
-     * @param \Swagger\Client\Model\BlobStoreApiSoftQuota $soft_quota Settings to control the soft quota.
+     * @param \NexusClient\Model\BlobStoreApiSoftQuota $soft_quota Settings to control the soft quota.
      *
      * @return $this
      */
@@ -273,7 +273,7 @@ class S3BlobStoreApiModel implements ModelInterface, ArrayAccess
     /**
      * Gets bucket_configuration
      *
-     * @return \Swagger\Client\Model\S3BlobStoreApiBucketConfiguration
+     * @return \NexusClient\Model\S3BlobStoreApiBucketConfiguration
      */
     public function getBucketConfiguration()
     {
@@ -283,7 +283,7 @@ class S3BlobStoreApiModel implements ModelInterface, ArrayAccess
     /**
      * Sets bucket_configuration
      *
-     * @param \Swagger\Client\Model\S3BlobStoreApiBucketConfiguration $bucket_configuration The S3 specific configuration details for the S3 object that'll contain the blob store.
+     * @param \NexusClient\Model\S3BlobStoreApiBucketConfiguration $bucket_configuration The S3 specific configuration details for the S3 object that'll contain the blob store.
      *
      * @return $this
      */

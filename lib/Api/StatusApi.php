@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * StatusApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class StatusApi
      * Health check endpoint that returns the results of the system status checks
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return map[string,\Swagger\Client\Model\Result]
+     * @return map[string,\NexusClient\Model\Result]
      */
     public function getSystemStatusChecks()
     {
@@ -109,13 +109,13 @@ class StatusApi
      * Health check endpoint that returns the results of the system status checks
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of map[string,\Swagger\Client\Model\Result], HTTP status code, HTTP response headers (array of strings)
+     * @return array of map[string,\NexusClient\Model\Result], HTTP status code, HTTP response headers (array of strings)
      */
     public function getSystemStatusChecksWithHttpInfo()
     {
-        $returnType = 'map[string,\Swagger\Client\Model\Result]';
+        $returnType = 'map[string,\NexusClient\Model\Result]';
         $request = $this->getSystemStatusChecksRequest();
 
         try {
@@ -167,7 +167,7 @@ class StatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'map[string,\Swagger\Client\Model\Result]',
+                        'map[string,\NexusClient\Model\Result]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class StatusApi
      */
     public function getSystemStatusChecksAsyncWithHttpInfo()
     {
-        $returnType = 'map[string,\Swagger\Client\Model\Result]';
+        $returnType = 'map[string,\NexusClient\Model\Result]';
         $request = $this->getSystemStatusChecksRequest();
 
         return $this->client
@@ -343,7 +343,7 @@ class StatusApi
      * Health check endpoint that validates server can respond to read requests
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -358,7 +358,7 @@ class StatusApi
      * Health check endpoint that validates server can respond to read requests
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -556,7 +556,7 @@ class StatusApi
      * Health check endpoint that validates server can respond to read and write requests
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -571,7 +571,7 @@ class StatusApi
      * Health check endpoint that validates server can respond to read and write requests
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

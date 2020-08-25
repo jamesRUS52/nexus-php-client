@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * BlobStoreApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class BlobStoreApi
      *
      * Create an S3 blob store
      *
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class BlobStoreApi
      *
      * Create an S3 blob store
      *
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class BlobStoreApi
      *
      * Create an S3 blob store
      *
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class BlobStoreApi
      *
      * Create an S3 blob store
      *
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class BlobStoreApi
     /**
      * Create request for operation 'createBlobStore'
      *
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -313,9 +313,9 @@ class BlobStoreApi
      *
      * Create a file blob store
      *
-     * @param  \Swagger\Client\Model\FileBlobStoreApiCreateRequest $body body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiCreateRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -329,9 +329,9 @@ class BlobStoreApi
      *
      * Create a file blob store
      *
-     * @param  \Swagger\Client\Model\FileBlobStoreApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiCreateRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -382,7 +382,7 @@ class BlobStoreApi
      *
      * Create a file blob store
      *
-     * @param  \Swagger\Client\Model\FileBlobStoreApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiCreateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -402,7 +402,7 @@ class BlobStoreApi
      *
      * Create a file blob store
      *
-     * @param  \Swagger\Client\Model\FileBlobStoreApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiCreateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -438,7 +438,7 @@ class BlobStoreApi
     /**
      * Create request for operation 'createFileBlobStore'
      *
-     * @param  \Swagger\Client\Model\FileBlobStoreApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiCreateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -536,7 +536,7 @@ class BlobStoreApi
      *
      * @param  string $name The name of the blob store to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -552,7 +552,7 @@ class BlobStoreApi
      *
      * @param  string $name The name of the blob store to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -768,7 +768,7 @@ class BlobStoreApi
      *
      * @param  string $name Name of the blob store configuration to fetch (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -784,7 +784,7 @@ class BlobStoreApi
      *
      * @param  string $name Name of the blob store configuration to fetch (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1000,9 +1000,9 @@ class BlobStoreApi
      *
      * @param  string $name The name of the file blob store to read (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\FileBlobStoreApiModel
+     * @return \NexusClient\Model\FileBlobStoreApiModel
      */
     public function getFileBlobStoreConfiguration($name)
     {
@@ -1017,13 +1017,13 @@ class BlobStoreApi
      *
      * @param  string $name The name of the file blob store to read (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\FileBlobStoreApiModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\FileBlobStoreApiModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFileBlobStoreConfigurationWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\FileBlobStoreApiModel';
+        $returnType = '\NexusClient\Model\FileBlobStoreApiModel';
         $request = $this->getFileBlobStoreConfigurationRequest($name);
 
         try {
@@ -1075,7 +1075,7 @@ class BlobStoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\FileBlobStoreApiModel',
+                        '\NexusClient\Model\FileBlobStoreApiModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1117,7 +1117,7 @@ class BlobStoreApi
      */
     public function getFileBlobStoreConfigurationAsyncWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\FileBlobStoreApiModel';
+        $returnType = '\NexusClient\Model\FileBlobStoreApiModel';
         $request = $this->getFileBlobStoreConfigurationRequest($name);
 
         return $this->client
@@ -1268,9 +1268,9 @@ class BlobStoreApi
      * List the blob stores
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GenericBlobStoreApiResponse[]
+     * @return \NexusClient\Model\GenericBlobStoreApiResponse[]
      */
     public function listBlobStores()
     {
@@ -1284,13 +1284,13 @@ class BlobStoreApi
      * List the blob stores
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GenericBlobStoreApiResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\GenericBlobStoreApiResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listBlobStoresWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\GenericBlobStoreApiResponse[]';
+        $returnType = '\NexusClient\Model\GenericBlobStoreApiResponse[]';
         $request = $this->listBlobStoresRequest();
 
         try {
@@ -1342,7 +1342,7 @@ class BlobStoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GenericBlobStoreApiResponse[]',
+                        '\NexusClient\Model\GenericBlobStoreApiResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1382,7 +1382,7 @@ class BlobStoreApi
      */
     public function listBlobStoresAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\GenericBlobStoreApiResponse[]';
+        $returnType = '\NexusClient\Model\GenericBlobStoreApiResponse[]';
         $request = $this->listBlobStoresRequest();
 
         return $this->client
@@ -1519,9 +1519,9 @@ class BlobStoreApi
      *
      * @param  string $name name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\BlobStoreQuotaResultXO
+     * @return \NexusClient\Model\BlobStoreQuotaResultXO
      */
     public function quotaStatus($name)
     {
@@ -1536,13 +1536,13 @@ class BlobStoreApi
      *
      * @param  string $name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\BlobStoreQuotaResultXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\BlobStoreQuotaResultXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function quotaStatusWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\BlobStoreQuotaResultXO';
+        $returnType = '\NexusClient\Model\BlobStoreQuotaResultXO';
         $request = $this->quotaStatusRequest($name);
 
         try {
@@ -1594,7 +1594,7 @@ class BlobStoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BlobStoreQuotaResultXO',
+                        '\NexusClient\Model\BlobStoreQuotaResultXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1636,7 +1636,7 @@ class BlobStoreApi
      */
     public function quotaStatusAsyncWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\BlobStoreQuotaResultXO';
+        $returnType = '\NexusClient\Model\BlobStoreQuotaResultXO';
         $request = $this->quotaStatusRequest($name);
 
         return $this->client
@@ -1787,9 +1787,9 @@ class BlobStoreApi
      * Update an S3 blob store configuration
      *
      * @param  string $name Name of the blob store to update (required)
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1804,9 +1804,9 @@ class BlobStoreApi
      * Update an S3 blob store configuration
      *
      * @param  string $name Name of the blob store to update (required)
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1858,7 +1858,7 @@ class BlobStoreApi
      * Update an S3 blob store configuration
      *
      * @param  string $name Name of the blob store to update (required)
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1879,7 +1879,7 @@ class BlobStoreApi
      * Update an S3 blob store configuration
      *
      * @param  string $name Name of the blob store to update (required)
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1916,7 +1916,7 @@ class BlobStoreApi
      * Create request for operation 'updateBlobStore'
      *
      * @param  string $name Name of the blob store to update (required)
-     * @param  \Swagger\Client\Model\S3BlobStoreApiModel $body (optional)
+     * @param  \NexusClient\Model\S3BlobStoreApiModel $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2027,9 +2027,9 @@ class BlobStoreApi
      * Update a file blob store configuration by name
      *
      * @param  string $name The name of the file blob store to update (required)
-     * @param  \Swagger\Client\Model\FileBlobStoreApiUpdateRequest $body body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiUpdateRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2044,9 +2044,9 @@ class BlobStoreApi
      * Update a file blob store configuration by name
      *
      * @param  string $name The name of the file blob store to update (required)
-     * @param  \Swagger\Client\Model\FileBlobStoreApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiUpdateRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2098,7 +2098,7 @@ class BlobStoreApi
      * Update a file blob store configuration by name
      *
      * @param  string $name The name of the file blob store to update (required)
-     * @param  \Swagger\Client\Model\FileBlobStoreApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiUpdateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2119,7 +2119,7 @@ class BlobStoreApi
      * Update a file blob store configuration by name
      *
      * @param  string $name The name of the file blob store to update (required)
-     * @param  \Swagger\Client\Model\FileBlobStoreApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiUpdateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2156,7 +2156,7 @@ class BlobStoreApi
      * Create request for operation 'updateFileBlobStore'
      *
      * @param  string $name The name of the file blob store to update (required)
-     * @param  \Swagger\Client\Model\FileBlobStoreApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\FileBlobStoreApiUpdateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**soft_quota** | [**\Swagger\Client\Model\BlobStoreApiSoftQuota**](BlobStoreApiSoftQuota.md) | Settings to control the soft quota | [optional] 
+**soft_quota** | [**\NexusClient\Model\BlobStoreApiSoftQuota**](BlobStoreApiSoftQuota.md) | Settings to control the soft quota | [optional] 
 **name** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
 **blob_count** | **int** |  | [optional] 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementPrivilegesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a wildcard type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a wildcard type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a wildcard type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a wildcard type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class SecurityManagementPrivilegesApi
     /**
      * Create request for operation 'createPrivilege'
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -313,9 +313,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create an application type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -329,9 +329,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create an application type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -382,7 +382,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create an application type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -402,7 +402,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create an application type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -438,7 +438,7 @@ class SecurityManagementPrivilegesApi
     /**
      * Create request for operation 'createPrivilege1'
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -534,9 +534,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository content selector type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -550,9 +550,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository content selector type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -603,7 +603,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository content selector type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -623,7 +623,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository content selector type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -659,7 +659,7 @@ class SecurityManagementPrivilegesApi
     /**
      * Create request for operation 'createPrivilege2'
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -755,9 +755,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository admin type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -771,9 +771,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository admin type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -824,7 +824,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository admin type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -844,7 +844,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository admin type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -880,7 +880,7 @@ class SecurityManagementPrivilegesApi
     /**
      * Create request for operation 'createPrivilege3'
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -976,9 +976,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository view type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -992,9 +992,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository view type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1045,7 +1045,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository view type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1065,7 +1065,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a repository view type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1101,7 +1101,7 @@ class SecurityManagementPrivilegesApi
     /**
      * Create request for operation 'createPrivilege4'
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1197,9 +1197,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a script type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1213,9 +1213,9 @@ class SecurityManagementPrivilegesApi
      *
      * Create a script type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1266,7 +1266,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a script type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1286,7 +1286,7 @@ class SecurityManagementPrivilegesApi
      *
      * Create a script type privilege.
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1322,7 +1322,7 @@ class SecurityManagementPrivilegesApi
     /**
      * Create request for operation 'createPrivilege5'
      *
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1420,7 +1420,7 @@ class SecurityManagementPrivilegesApi
      *
      * @param  string $privilege_id The id of the privilege to delete. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1436,7 +1436,7 @@ class SecurityManagementPrivilegesApi
      *
      * @param  string $privilege_id The id of the privilege to delete. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1652,9 +1652,9 @@ class SecurityManagementPrivilegesApi
      *
      * @param  string $privilege_id The id of the privilege to retrieve. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiPrivilege
+     * @return \NexusClient\Model\ApiPrivilege
      */
     public function getPrivilege($privilege_id)
     {
@@ -1669,13 +1669,13 @@ class SecurityManagementPrivilegesApi
      *
      * @param  string $privilege_id The id of the privilege to retrieve. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiPrivilege, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiPrivilege, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPrivilegeWithHttpInfo($privilege_id)
     {
-        $returnType = '\Swagger\Client\Model\ApiPrivilege';
+        $returnType = '\NexusClient\Model\ApiPrivilege';
         $request = $this->getPrivilegeRequest($privilege_id);
 
         try {
@@ -1727,7 +1727,7 @@ class SecurityManagementPrivilegesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiPrivilege',
+                        '\NexusClient\Model\ApiPrivilege',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1769,7 +1769,7 @@ class SecurityManagementPrivilegesApi
      */
     public function getPrivilegeAsyncWithHttpInfo($privilege_id)
     {
-        $returnType = '\Swagger\Client\Model\ApiPrivilege';
+        $returnType = '\NexusClient\Model\ApiPrivilege';
         $request = $this->getPrivilegeRequest($privilege_id);
 
         return $this->client
@@ -1920,9 +1920,9 @@ class SecurityManagementPrivilegesApi
      * Retrieve a list of privileges.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiPrivilege[]
+     * @return \NexusClient\Model\ApiPrivilege[]
      */
     public function getPrivileges()
     {
@@ -1936,13 +1936,13 @@ class SecurityManagementPrivilegesApi
      * Retrieve a list of privileges.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiPrivilege[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiPrivilege[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getPrivilegesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiPrivilege[]';
+        $returnType = '\NexusClient\Model\ApiPrivilege[]';
         $request = $this->getPrivilegesRequest();
 
         try {
@@ -1994,7 +1994,7 @@ class SecurityManagementPrivilegesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiPrivilege[]',
+                        '\NexusClient\Model\ApiPrivilege[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2034,7 +2034,7 @@ class SecurityManagementPrivilegesApi
      */
     public function getPrivilegesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiPrivilege[]';
+        $returnType = '\NexusClient\Model\ApiPrivilege[]';
         $request = $this->getPrivilegesRequest();
 
         return $this->client
@@ -2170,9 +2170,9 @@ class SecurityManagementPrivilegesApi
      * Update a wildcard type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2187,9 +2187,9 @@ class SecurityManagementPrivilegesApi
      * Update a wildcard type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2241,7 +2241,7 @@ class SecurityManagementPrivilegesApi
      * Update a wildcard type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2262,7 +2262,7 @@ class SecurityManagementPrivilegesApi
      * Update a wildcard type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2299,7 +2299,7 @@ class SecurityManagementPrivilegesApi
      * Create request for operation 'updatePrivilege'
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeWildcardRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2410,9 +2410,9 @@ class SecurityManagementPrivilegesApi
      * Update an application type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2427,9 +2427,9 @@ class SecurityManagementPrivilegesApi
      * Update an application type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2481,7 +2481,7 @@ class SecurityManagementPrivilegesApi
      * Update an application type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2502,7 +2502,7 @@ class SecurityManagementPrivilegesApi
      * Update an application type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2539,7 +2539,7 @@ class SecurityManagementPrivilegesApi
      * Create request for operation 'updatePrivilege1'
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeApplicationRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2650,9 +2650,9 @@ class SecurityManagementPrivilegesApi
      * Update a repository view type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2667,9 +2667,9 @@ class SecurityManagementPrivilegesApi
      * Update a repository view type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2721,7 +2721,7 @@ class SecurityManagementPrivilegesApi
      * Update a repository view type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2742,7 +2742,7 @@ class SecurityManagementPrivilegesApi
      * Update a repository view type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2779,7 +2779,7 @@ class SecurityManagementPrivilegesApi
      * Create request for operation 'updatePrivilege2'
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryViewRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2890,9 +2890,9 @@ class SecurityManagementPrivilegesApi
      * Update a repository content selector type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2907,9 +2907,9 @@ class SecurityManagementPrivilegesApi
      * Update a repository content selector type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2961,7 +2961,7 @@ class SecurityManagementPrivilegesApi
      * Update a repository content selector type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2982,7 +2982,7 @@ class SecurityManagementPrivilegesApi
      * Update a repository content selector type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3019,7 +3019,7 @@ class SecurityManagementPrivilegesApi
      * Create request for operation 'updatePrivilege3'
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryContentSelectorRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3130,9 +3130,9 @@ class SecurityManagementPrivilegesApi
      * Update a repository admin type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3147,9 +3147,9 @@ class SecurityManagementPrivilegesApi
      * Update a repository admin type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3201,7 +3201,7 @@ class SecurityManagementPrivilegesApi
      * Update a repository admin type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3222,7 +3222,7 @@ class SecurityManagementPrivilegesApi
      * Update a repository admin type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3259,7 +3259,7 @@ class SecurityManagementPrivilegesApi
      * Create request for operation 'updatePrivilege4'
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeRepositoryAdminRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3370,9 +3370,9 @@ class SecurityManagementPrivilegesApi
      * Update a script type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3387,9 +3387,9 @@ class SecurityManagementPrivilegesApi
      * Update a script type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3441,7 +3441,7 @@ class SecurityManagementPrivilegesApi
      * Update a script type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3462,7 +3462,7 @@ class SecurityManagementPrivilegesApi
      * Update a script type privilege.
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3499,7 +3499,7 @@ class SecurityManagementPrivilegesApi
      * Create request for operation 'updatePrivilege5'
      *
      * @param  string $privilege_id The id of the privilege to update. (required)
-     * @param  \Swagger\Client\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
+     * @param  \NexusClient\Model\ApiPrivilegeScriptRequest $body The privilege to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

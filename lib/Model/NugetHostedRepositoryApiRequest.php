@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * NugetHostedRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class NugetHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\HostedStorageAttributes',
-        'cleanup' => '\Swagger\Client\Model\CleanupPolicyAttributes'
+        'storage' => '\NexusClient\Model\HostedStorageAttributes',
+        'cleanup' => '\NexusClient\Model\CleanupPolicyAttributes'
     ];
 
     /**
@@ -291,7 +291,7 @@ class NugetHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\HostedStorageAttributes
+     * @return \NexusClient\Model\HostedStorageAttributes
      */
     public function getStorage()
     {
@@ -301,7 +301,7 @@ class NugetHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\HostedStorageAttributes $storage storage
+     * @param \NexusClient\Model\HostedStorageAttributes $storage storage
      *
      * @return $this
      */
@@ -315,7 +315,7 @@ class NugetHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cleanup
      *
-     * @return \Swagger\Client\Model\CleanupPolicyAttributes
+     * @return \NexusClient\Model\CleanupPolicyAttributes
      */
     public function getCleanup()
     {
@@ -325,7 +325,7 @@ class NugetHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cleanup
      *
-     * @param \Swagger\Client\Model\CleanupPolicyAttributes $cleanup cleanup
+     * @param \NexusClient\Model\CleanupPolicyAttributes $cleanup cleanup
      *
      * @return $this
      */

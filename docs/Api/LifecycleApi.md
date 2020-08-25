@@ -1,4 +1,4 @@
-# Swagger\Client\LifecycleApi
+# NexusClient\LifecycleApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -21,7 +21,7 @@ Re-runs all phases from the given phase to the current phase
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LifecycleApi(
+$apiInstance = new NexusClient\Api\LifecycleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -69,7 +69,7 @@ Get current lifecycle phase
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LifecycleApi(
+$apiInstance = new NexusClient\Api\LifecycleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ Move to new lifecycle phase
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LifecycleApi(
+$apiInstance = new NexusClient\Api\LifecycleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

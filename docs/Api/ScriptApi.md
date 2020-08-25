@@ -1,4 +1,4 @@
-# Swagger\Client\ScriptApi
+# NexusClient\ScriptApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -24,12 +24,12 @@ Add a new script
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScriptApi(
+$apiInstance = new NexusClient\Api\ScriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ScriptXO(); // \Swagger\Client\Model\ScriptXO | 
+$body = new \NexusClient\Model\ScriptXO(); // \NexusClient\Model\ScriptXO | 
 
 try {
     $apiInstance->add($body);
@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ScriptXO**](../Model/ScriptXO.md)|  | [optional]
+ **body** | [**\NexusClient\Model\ScriptXO**](../Model/ScriptXO.md)|  | [optional]
 
 ### Return type
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **browse**
-> \Swagger\Client\Model\ScriptXO[] browse()
+> \NexusClient\Model\ScriptXO[] browse()
 
 List all stored scripts
 
@@ -72,7 +72,7 @@ List all stored scripts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScriptApi(
+$apiInstance = new NexusClient\Api\ScriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -92,7 +92,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ScriptXO[]**](../Model/ScriptXO.md)
+[**\NexusClient\Model\ScriptXO[]**](../Model/ScriptXO.md)
 
 ### Authorization
 
@@ -117,7 +117,7 @@ Delete stored script by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScriptApi(
+$apiInstance = new NexusClient\Api\ScriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -165,13 +165,13 @@ Update stored script by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScriptApi(
+$apiInstance = new NexusClient\Api\ScriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = "name_example"; // string | 
-$body = new \Swagger\Client\Model\ScriptXO(); // \Swagger\Client\Model\ScriptXO | 
+$body = new \NexusClient\Model\ScriptXO(); // \NexusClient\Model\ScriptXO | 
 
 try {
     $apiInstance->edit($name, $body);
@@ -186,7 +186,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**|  |
- **body** | [**\Swagger\Client\Model\ScriptXO**](../Model/ScriptXO.md)|  | [optional]
+ **body** | [**\NexusClient\Model\ScriptXO**](../Model/ScriptXO.md)|  | [optional]
 
 ### Return type
 
@@ -204,7 +204,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **read1**
-> \Swagger\Client\Model\ScriptXO read1($name)
+> \NexusClient\Model\ScriptXO read1($name)
 
 Read stored script by name
 
@@ -215,7 +215,7 @@ Read stored script by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScriptApi(
+$apiInstance = new NexusClient\Api\ScriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScriptXO**](../Model/ScriptXO.md)
+[**\NexusClient\Model\ScriptXO**](../Model/ScriptXO.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **run1**
-> \Swagger\Client\Model\ScriptResultXO run1($name, $body)
+> \NexusClient\Model\ScriptResultXO run1($name, $body)
 
 Run stored script by name
 
@@ -264,7 +264,7 @@ Run stored script by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScriptApi(
+$apiInstance = new NexusClient\Api\ScriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScriptResultXO**](../Model/ScriptResultXO.md)
+[**\NexusClient\Model\ScriptResultXO**](../Model/ScriptResultXO.md)
 
 ### Authorization
 

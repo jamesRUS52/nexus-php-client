@@ -1,4 +1,4 @@
-# Swagger\Client\BlobStoreApi
+# NexusClient\BlobStoreApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -27,12 +27,12 @@ Create an S3 blob store
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\S3BlobStoreApiModel(); // \Swagger\Client\Model\S3BlobStoreApiModel | 
+$body = new \NexusClient\Model\S3BlobStoreApiModel(); // \NexusClient\Model\S3BlobStoreApiModel | 
 
 try {
     $apiInstance->createBlobStore($body);
@@ -46,7 +46,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\S3BlobStoreApiModel**](../Model/S3BlobStoreApiModel.md)|  | [optional]
+ **body** | [**\NexusClient\Model\S3BlobStoreApiModel**](../Model/S3BlobStoreApiModel.md)|  | [optional]
 
 ### Return type
 
@@ -75,12 +75,12 @@ Create a file blob store
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\FileBlobStoreApiCreateRequest(); // \Swagger\Client\Model\FileBlobStoreApiCreateRequest | 
+$body = new \NexusClient\Model\FileBlobStoreApiCreateRequest(); // \NexusClient\Model\FileBlobStoreApiCreateRequest | 
 
 try {
     $apiInstance->createFileBlobStore($body);
@@ -94,7 +94,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\FileBlobStoreApiCreateRequest**](../Model/FileBlobStoreApiCreateRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\FileBlobStoreApiCreateRequest**](../Model/FileBlobStoreApiCreateRequest.md)|  | [optional]
 
 ### Return type
 
@@ -123,7 +123,7 @@ Delete a blob store by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -171,7 +171,7 @@ Fetch a S3 blob store configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -208,7 +208,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFileBlobStoreConfiguration**
-> \Swagger\Client\Model\FileBlobStoreApiModel getFileBlobStoreConfiguration($name)
+> \NexusClient\Model\FileBlobStoreApiModel getFileBlobStoreConfiguration($name)
 
 Get a file blob store configuration by name
 
@@ -219,7 +219,7 @@ Get a file blob store configuration by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FileBlobStoreApiModel**](../Model/FileBlobStoreApiModel.md)
+[**\NexusClient\Model\FileBlobStoreApiModel**](../Model/FileBlobStoreApiModel.md)
 
 ### Authorization
 
@@ -257,7 +257,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listBlobStores**
-> \Swagger\Client\Model\GenericBlobStoreApiResponse[] listBlobStores()
+> \NexusClient\Model\GenericBlobStoreApiResponse[] listBlobStores()
 
 List the blob stores
 
@@ -268,7 +268,7 @@ List the blob stores
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -288,7 +288,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\GenericBlobStoreApiResponse[]**](../Model/GenericBlobStoreApiResponse.md)
+[**\NexusClient\Model\GenericBlobStoreApiResponse[]**](../Model/GenericBlobStoreApiResponse.md)
 
 ### Authorization
 
@@ -302,7 +302,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quotaStatus**
-> \Swagger\Client\Model\BlobStoreQuotaResultXO quotaStatus($name)
+> \NexusClient\Model\BlobStoreQuotaResultXO quotaStatus($name)
 
 Get quota status for a given blob store
 
@@ -313,7 +313,7 @@ Get quota status for a given blob store
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BlobStoreQuotaResultXO**](../Model/BlobStoreQuotaResultXO.md)
+[**\NexusClient\Model\BlobStoreQuotaResultXO**](../Model/BlobStoreQuotaResultXO.md)
 
 ### Authorization
 
@@ -362,13 +362,13 @@ Update an S3 blob store configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = "name_example"; // string | Name of the blob store to update
-$body = new \Swagger\Client\Model\S3BlobStoreApiModel(); // \Swagger\Client\Model\S3BlobStoreApiModel | 
+$body = new \NexusClient\Model\S3BlobStoreApiModel(); // \NexusClient\Model\S3BlobStoreApiModel | 
 
 try {
     $apiInstance->updateBlobStore($name, $body);
@@ -383,7 +383,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Name of the blob store to update |
- **body** | [**\Swagger\Client\Model\S3BlobStoreApiModel**](../Model/S3BlobStoreApiModel.md)|  | [optional]
+ **body** | [**\NexusClient\Model\S3BlobStoreApiModel**](../Model/S3BlobStoreApiModel.md)|  | [optional]
 
 ### Return type
 
@@ -412,13 +412,13 @@ Update a file blob store configuration by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BlobStoreApi(
+$apiInstance = new NexusClient\Api\BlobStoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = "name_example"; // string | The name of the file blob store to update
-$body = new \Swagger\Client\Model\FileBlobStoreApiUpdateRequest(); // \Swagger\Client\Model\FileBlobStoreApiUpdateRequest | 
+$body = new \NexusClient\Model\FileBlobStoreApiUpdateRequest(); // \NexusClient\Model\FileBlobStoreApiUpdateRequest | 
 
 try {
     $apiInstance->updateFileBlobStore($name, $body);
@@ -433,7 +433,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The name of the file blob store to update |
- **body** | [**\Swagger\Client\Model\FileBlobStoreApiUpdateRequest**](../Model/FileBlobStoreApiUpdateRequest.md)|  | [optional]
+ **body** | [**\NexusClient\Model\FileBlobStoreApiUpdateRequest**](../Model/FileBlobStoreApiUpdateRequest.md)|  | [optional]
 
 ### Return type
 

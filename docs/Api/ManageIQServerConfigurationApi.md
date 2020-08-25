@@ -1,4 +1,4 @@
-# Swagger\Client\ManageIQServerConfigurationApi
+# NexusClient\ManageIQServerConfigurationApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -23,7 +23,7 @@ Disable IQ server
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ManageIQServerConfigurationApi(
+$apiInstance = new NexusClient\Api\ManageIQServerConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -67,7 +67,7 @@ Enable IQ server
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ManageIQServerConfigurationApi(
+$apiInstance = new NexusClient\Api\ManageIQServerConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ Get IQ server configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ManageIQServerConfigurationApi(
+$apiInstance = new NexusClient\Api\ManageIQServerConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -155,12 +155,12 @@ Update IQ server configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ManageIQServerConfigurationApi(
+$apiInstance = new NexusClient\Api\ManageIQServerConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\IqConnectionXo(); // \Swagger\Client\Model\IqConnectionXo | 
+$body = new \NexusClient\Model\IqConnectionXo(); // \NexusClient\Model\IqConnectionXo | 
 
 try {
     $apiInstance->updateConfiguration($body);
@@ -174,7 +174,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\IqConnectionXo**](../Model/IqConnectionXo.md)|  | [optional]
+ **body** | [**\NexusClient\Model\IqConnectionXo**](../Model/IqConnectionXo.md)|  | [optional]
 
 ### Return type
 
@@ -203,7 +203,7 @@ Verify IQ server connection
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ManageIQServerConfigurationApi(
+$apiInstance = new NexusClient\Api\ManageIQServerConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

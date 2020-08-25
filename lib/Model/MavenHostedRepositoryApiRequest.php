@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * MavenHostedRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\HostedStorageAttributes',
-        'cleanup' => '\Swagger\Client\Model\CleanupPolicyAttributes',
-        'maven' => '\Swagger\Client\Model\MavenAttributes'
+        'storage' => '\NexusClient\Model\HostedStorageAttributes',
+        'cleanup' => '\NexusClient\Model\CleanupPolicyAttributes',
+        'maven' => '\NexusClient\Model\MavenAttributes'
     ];
 
     /**
@@ -300,7 +300,7 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\HostedStorageAttributes
+     * @return \NexusClient\Model\HostedStorageAttributes
      */
     public function getStorage()
     {
@@ -310,7 +310,7 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\HostedStorageAttributes $storage storage
+     * @param \NexusClient\Model\HostedStorageAttributes $storage storage
      *
      * @return $this
      */
@@ -324,7 +324,7 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cleanup
      *
-     * @return \Swagger\Client\Model\CleanupPolicyAttributes
+     * @return \NexusClient\Model\CleanupPolicyAttributes
      */
     public function getCleanup()
     {
@@ -334,7 +334,7 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cleanup
      *
-     * @param \Swagger\Client\Model\CleanupPolicyAttributes $cleanup cleanup
+     * @param \NexusClient\Model\CleanupPolicyAttributes $cleanup cleanup
      *
      * @return $this
      */
@@ -348,7 +348,7 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets maven
      *
-     * @return \Swagger\Client\Model\MavenAttributes
+     * @return \NexusClient\Model\MavenAttributes
      */
     public function getMaven()
     {
@@ -358,7 +358,7 @@ class MavenHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets maven
      *
-     * @param \Swagger\Client\Model\MavenAttributes $maven maven
+     * @param \NexusClient\Model\MavenAttributes $maven maven
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementUsersApi
+# NexusClient\SecurityManagementUsersApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -23,7 +23,7 @@ Change a user's password.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementUsersApi(
+$apiInstance = new NexusClient\Api\SecurityManagementUsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUser**
-> \Swagger\Client\Model\ApiUser createUser($body)
+> \NexusClient\Model\ApiUser createUser($body)
 
 Create a new user in the default source.
 
@@ -73,12 +73,12 @@ Create a new user in the default source.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementUsersApi(
+$apiInstance = new NexusClient\Api\SecurityManagementUsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiCreateUser(); // \Swagger\Client\Model\ApiCreateUser | A representation of the user to create.
+$body = new \NexusClient\Model\ApiCreateUser(); // \NexusClient\Model\ApiCreateUser | A representation of the user to create.
 
 try {
     $result = $apiInstance->createUser($body);
@@ -93,11 +93,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiCreateUser**](../Model/ApiCreateUser.md)| A representation of the user to create. | [optional]
+ **body** | [**\NexusClient\Model\ApiCreateUser**](../Model/ApiCreateUser.md)| A representation of the user to create. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiUser**](../Model/ApiUser.md)
+[**\NexusClient\Model\ApiUser**](../Model/ApiUser.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Delete a user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementUsersApi(
+$apiInstance = new NexusClient\Api\SecurityManagementUsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUsers**
-> \Swagger\Client\Model\ApiUser[] getUsers($user_id, $source)
+> \NexusClient\Model\ApiUser[] getUsers($user_id, $source)
 
 Retrieve a list of users. Note if the source is not 'default' the response is limited to 100 users.
 
@@ -170,7 +170,7 @@ Retrieve a list of users. Note if the source is not 'default' the response is li
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementUsersApi(
+$apiInstance = new NexusClient\Api\SecurityManagementUsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiUser[]**](../Model/ApiUser.md)
+[**\NexusClient\Model\ApiUser[]**](../Model/ApiUser.md)
 
 ### Authorization
 
@@ -221,13 +221,13 @@ Update an existing user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementUsersApi(
+$apiInstance = new NexusClient\Api\SecurityManagementUsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = "user_id_example"; // string | The userid the request should apply to.
-$body = new \Swagger\Client\Model\ApiUser(); // \Swagger\Client\Model\ApiUser | A representation of the user to update.
+$body = new \NexusClient\Model\ApiUser(); // \NexusClient\Model\ApiUser | A representation of the user to update.
 
 try {
     $apiInstance->updateUser($user_id, $body);
@@ -242,7 +242,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **string**| The userid the request should apply to. |
- **body** | [**\Swagger\Client\Model\ApiUser**](../Model/ApiUser.md)| A representation of the user to update. | [optional]
+ **body** | [**\NexusClient\Model\ApiUser**](../Model/ApiUser.md)| A representation of the user to update. | [optional]
 
 ### Return type
 

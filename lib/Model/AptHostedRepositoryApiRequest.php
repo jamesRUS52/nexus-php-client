@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * AptHostedRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\HostedStorageAttributes',
-        'cleanup' => '\Swagger\Client\Model\CleanupPolicyAttributes',
-        'apt' => '\Swagger\Client\Model\AptHostedRepositoriesAttributes',
-        'apt_signing' => '\Swagger\Client\Model\AptSigningRepositoriesAttributes'
+        'storage' => '\NexusClient\Model\HostedStorageAttributes',
+        'cleanup' => '\NexusClient\Model\CleanupPolicyAttributes',
+        'apt' => '\NexusClient\Model\AptHostedRepositoriesAttributes',
+        'apt_signing' => '\NexusClient\Model\AptSigningRepositoriesAttributes'
     ];
 
     /**
@@ -309,7 +309,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\HostedStorageAttributes
+     * @return \NexusClient\Model\HostedStorageAttributes
      */
     public function getStorage()
     {
@@ -319,7 +319,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\HostedStorageAttributes $storage storage
+     * @param \NexusClient\Model\HostedStorageAttributes $storage storage
      *
      * @return $this
      */
@@ -333,7 +333,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cleanup
      *
-     * @return \Swagger\Client\Model\CleanupPolicyAttributes
+     * @return \NexusClient\Model\CleanupPolicyAttributes
      */
     public function getCleanup()
     {
@@ -343,7 +343,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cleanup
      *
-     * @param \Swagger\Client\Model\CleanupPolicyAttributes $cleanup cleanup
+     * @param \NexusClient\Model\CleanupPolicyAttributes $cleanup cleanup
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets apt
      *
-     * @return \Swagger\Client\Model\AptHostedRepositoriesAttributes
+     * @return \NexusClient\Model\AptHostedRepositoriesAttributes
      */
     public function getApt()
     {
@@ -367,7 +367,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets apt
      *
-     * @param \Swagger\Client\Model\AptHostedRepositoriesAttributes $apt apt
+     * @param \NexusClient\Model\AptHostedRepositoriesAttributes $apt apt
      *
      * @return $this
      */
@@ -381,7 +381,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets apt_signing
      *
-     * @return \Swagger\Client\Model\AptSigningRepositoriesAttributes
+     * @return \NexusClient\Model\AptSigningRepositoriesAttributes
      */
     public function getAptSigning()
     {
@@ -391,7 +391,7 @@ class AptHostedRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets apt_signing
      *
-     * @param \Swagger\Client\Model\AptSigningRepositoriesAttributes $apt_signing apt_signing
+     * @param \NexusClient\Model\AptSigningRepositoriesAttributes $apt_signing apt_signing
      *
      * @return $this
      */

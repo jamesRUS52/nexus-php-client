@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementUsersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class SecurityManagementUsersApi
      * @param  string $user_id The userid the request should apply to. (required)
      * @param  string $body The new password to use. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -112,7 +112,7 @@ class SecurityManagementUsersApi
      * @param  string $user_id The userid the request should apply to. (required)
      * @param  string $body The new password to use. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -332,11 +332,11 @@ class SecurityManagementUsersApi
      *
      * Create a new user in the default source.
      *
-     * @param  \Swagger\Client\Model\ApiCreateUser $body A representation of the user to create. (optional)
+     * @param  \NexusClient\Model\ApiCreateUser $body A representation of the user to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiUser
+     * @return \NexusClient\Model\ApiUser
      */
     public function createUser($body = null)
     {
@@ -349,15 +349,15 @@ class SecurityManagementUsersApi
      *
      * Create a new user in the default source.
      *
-     * @param  \Swagger\Client\Model\ApiCreateUser $body A representation of the user to create. (optional)
+     * @param  \NexusClient\Model\ApiCreateUser $body A representation of the user to create. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function createUserWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiUser';
+        $returnType = '\NexusClient\Model\ApiUser';
         $request = $this->createUserRequest($body);
 
         try {
@@ -409,7 +409,7 @@ class SecurityManagementUsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiUser',
+                        '\NexusClient\Model\ApiUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -424,7 +424,7 @@ class SecurityManagementUsersApi
      *
      * Create a new user in the default source.
      *
-     * @param  \Swagger\Client\Model\ApiCreateUser $body A representation of the user to create. (optional)
+     * @param  \NexusClient\Model\ApiCreateUser $body A representation of the user to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -444,14 +444,14 @@ class SecurityManagementUsersApi
      *
      * Create a new user in the default source.
      *
-     * @param  \Swagger\Client\Model\ApiCreateUser $body A representation of the user to create. (optional)
+     * @param  \NexusClient\Model\ApiCreateUser $body A representation of the user to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createUserAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiUser';
+        $returnType = '\NexusClient\Model\ApiUser';
         $request = $this->createUserRequest($body);
 
         return $this->client
@@ -494,7 +494,7 @@ class SecurityManagementUsersApi
     /**
      * Create request for operation 'createUser'
      *
-     * @param  \Swagger\Client\Model\ApiCreateUser $body A representation of the user to create. (optional)
+     * @param  \NexusClient\Model\ApiCreateUser $body A representation of the user to create. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -592,7 +592,7 @@ class SecurityManagementUsersApi
      *
      * @param  string $user_id The userid the request should apply to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -608,7 +608,7 @@ class SecurityManagementUsersApi
      *
      * @param  string $user_id The userid the request should apply to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -825,9 +825,9 @@ class SecurityManagementUsersApi
      * @param  string $user_id An optional term to search userids for. (optional)
      * @param  string $source An optional user source to restrict the search to. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiUser[]
+     * @return \NexusClient\Model\ApiUser[]
      */
     public function getUsers($user_id = null, $source = null)
     {
@@ -843,13 +843,13 @@ class SecurityManagementUsersApi
      * @param  string $user_id An optional term to search userids for. (optional)
      * @param  string $source An optional user source to restrict the search to. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiUser[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiUser[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUsersWithHttpInfo($user_id = null, $source = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiUser[]';
+        $returnType = '\NexusClient\Model\ApiUser[]';
         $request = $this->getUsersRequest($user_id, $source);
 
         try {
@@ -901,7 +901,7 @@ class SecurityManagementUsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiUser[]',
+                        '\NexusClient\Model\ApiUser[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -945,7 +945,7 @@ class SecurityManagementUsersApi
      */
     public function getUsersAsyncWithHttpInfo($user_id = null, $source = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiUser[]';
+        $returnType = '\NexusClient\Model\ApiUser[]';
         $request = $this->getUsersRequest($user_id, $source);
 
         return $this->client
@@ -1091,9 +1091,9 @@ class SecurityManagementUsersApi
      * Update an existing user.
      *
      * @param  string $user_id The userid the request should apply to. (required)
-     * @param  \Swagger\Client\Model\ApiUser $body A representation of the user to update. (optional)
+     * @param  \NexusClient\Model\ApiUser $body A representation of the user to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1108,9 +1108,9 @@ class SecurityManagementUsersApi
      * Update an existing user.
      *
      * @param  string $user_id The userid the request should apply to. (required)
-     * @param  \Swagger\Client\Model\ApiUser $body A representation of the user to update. (optional)
+     * @param  \NexusClient\Model\ApiUser $body A representation of the user to update. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1162,7 +1162,7 @@ class SecurityManagementUsersApi
      * Update an existing user.
      *
      * @param  string $user_id The userid the request should apply to. (required)
-     * @param  \Swagger\Client\Model\ApiUser $body A representation of the user to update. (optional)
+     * @param  \NexusClient\Model\ApiUser $body A representation of the user to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1183,7 +1183,7 @@ class SecurityManagementUsersApi
      * Update an existing user.
      *
      * @param  string $user_id The userid the request should apply to. (required)
-     * @param  \Swagger\Client\Model\ApiUser $body A representation of the user to update. (optional)
+     * @param  \NexusClient\Model\ApiUser $body A representation of the user to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1220,7 +1220,7 @@ class SecurityManagementUsersApi
      * Create request for operation 'updateUser'
      *
      * @param  string $user_id The userid the request should apply to. (required)
-     * @param  \Swagger\Client\Model\ApiUser $body A representation of the user to update. (optional)
+     * @param  \NexusClient\Model\ApiUser $body A representation of the user to update. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

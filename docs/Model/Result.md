@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **healthy** | **bool** |  | [optional] 
 **message** | **string** |  | [optional] 
-**error** | [**\Swagger\Client\Model\Throwable**](Throwable.md) |  | [optional] 
+**error** | [**\NexusClient\Model\Throwable**](Throwable.md) |  | [optional] 
 **details** | **map[string,object]** |  | [optional] 
 **time** | **int** |  | [optional] 
 **duration** | **int** |  | [optional] 

@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementRolesApi
+# NexusClient\SecurityManagementRolesApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create**
-> \Swagger\Client\Model\RoleXOResponse create($body)
+> \NexusClient\Model\RoleXOResponse create($body)
 
 Create role
 
@@ -23,12 +23,12 @@ Create role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRolesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\RoleXORequest(); // \Swagger\Client\Model\RoleXORequest | A role configuration
+$body = new \NexusClient\Model\RoleXORequest(); // \NexusClient\Model\RoleXORequest | A role configuration
 
 try {
     $result = $apiInstance->create($body);
@@ -43,11 +43,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RoleXORequest**](../Model/RoleXORequest.md)| A role configuration |
+ **body** | [**\NexusClient\Model\RoleXORequest**](../Model/RoleXORequest.md)| A role configuration |
 
 ### Return type
 
-[**\Swagger\Client\Model\RoleXOResponse**](../Model/RoleXOResponse.md)
+[**\NexusClient\Model\RoleXOResponse**](../Model/RoleXOResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Delete role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRolesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRole**
-> \Swagger\Client\Model\RoleXOResponse getRole($id, $source)
+> \NexusClient\Model\RoleXOResponse getRole($id, $source)
 
 Get role
 
@@ -120,7 +120,7 @@ Get role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRolesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RoleXOResponse**](../Model/RoleXOResponse.md)
+[**\NexusClient\Model\RoleXOResponse**](../Model/RoleXOResponse.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRoles**
-> \Swagger\Client\Model\RoleXOResponse[] getRoles($source)
+> \NexusClient\Model\RoleXOResponse[] getRoles($source)
 
 List roles
 
@@ -171,7 +171,7 @@ List roles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRolesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RoleXOResponse[]**](../Model/RoleXOResponse.md)
+[**\NexusClient\Model\RoleXOResponse[]**](../Model/RoleXOResponse.md)
 
 ### Authorization
 
@@ -220,13 +220,13 @@ Update role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRolesApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id = "id_example"; // string | The id of the role to update
-$body = new \Swagger\Client\Model\RoleXORequest(); // \Swagger\Client\Model\RoleXORequest | A role configuration
+$body = new \NexusClient\Model\RoleXORequest(); // \NexusClient\Model\RoleXORequest | A role configuration
 
 try {
     $apiInstance->update1($id, $body);
@@ -241,7 +241,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the role to update |
- **body** | [**\Swagger\Client\Model\RoleXORequest**](../Model/RoleXORequest.md)| A role configuration |
+ **body** | [**\NexusClient\Model\RoleXORequest**](../Model/RoleXORequest.md)| A role configuration |
 
 ### Return type
 

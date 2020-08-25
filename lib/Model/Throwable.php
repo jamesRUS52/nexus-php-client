@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * Throwable Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,11 +57,11 @@ class Throwable implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cause' => '\Swagger\Client\Model\Throwable',
-        'stack_trace' => '\Swagger\Client\Model\StackTraceElement[]',
+        'cause' => '\NexusClient\Model\Throwable',
+        'stack_trace' => '\NexusClient\Model\StackTraceElement[]',
         'message' => 'string',
         'localized_message' => 'string',
-        'suppressed' => '\Swagger\Client\Model\Throwable[]'
+        'suppressed' => '\NexusClient\Model\Throwable[]'
     ];
 
     /**
@@ -231,7 +231,7 @@ class Throwable implements ModelInterface, ArrayAccess
     /**
      * Gets cause
      *
-     * @return \Swagger\Client\Model\Throwable
+     * @return \NexusClient\Model\Throwable
      */
     public function getCause()
     {
@@ -241,7 +241,7 @@ class Throwable implements ModelInterface, ArrayAccess
     /**
      * Sets cause
      *
-     * @param \Swagger\Client\Model\Throwable $cause cause
+     * @param \NexusClient\Model\Throwable $cause cause
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class Throwable implements ModelInterface, ArrayAccess
     /**
      * Gets stack_trace
      *
-     * @return \Swagger\Client\Model\StackTraceElement[]
+     * @return \NexusClient\Model\StackTraceElement[]
      */
     public function getStackTrace()
     {
@@ -265,7 +265,7 @@ class Throwable implements ModelInterface, ArrayAccess
     /**
      * Sets stack_trace
      *
-     * @param \Swagger\Client\Model\StackTraceElement[] $stack_trace stack_trace
+     * @param \NexusClient\Model\StackTraceElement[] $stack_trace stack_trace
      *
      * @return $this
      */
@@ -327,7 +327,7 @@ class Throwable implements ModelInterface, ArrayAccess
     /**
      * Gets suppressed
      *
-     * @return \Swagger\Client\Model\Throwable[]
+     * @return \NexusClient\Model\Throwable[]
      */
     public function getSuppressed()
     {
@@ -337,7 +337,7 @@ class Throwable implements ModelInterface, ArrayAccess
     /**
      * Sets suppressed
      *
-     * @param \Swagger\Client\Model\Throwable[] $suppressed suppressed
+     * @param \NexusClient\Model\Throwable[] $suppressed suppressed
      *
      * @return $this
      */

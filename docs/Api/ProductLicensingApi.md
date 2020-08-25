@@ -1,4 +1,4 @@
-# Swagger\Client\ProductLicensingApi
+# NexusClient\ProductLicensingApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getLicenseStatus**
-> \Swagger\Client\Model\ApiLicenseDetailsXO getLicenseStatus()
+> \NexusClient\Model\ApiLicenseDetailsXO getLicenseStatus()
 
 Get the current license status.
 
@@ -21,7 +21,7 @@ Get the current license status.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductLicensingApi(
+$apiInstance = new NexusClient\Api\ProductLicensingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiLicenseDetailsXO**](../Model/ApiLicenseDetailsXO.md)
+[**\NexusClient\Model\ApiLicenseDetailsXO**](../Model/ApiLicenseDetailsXO.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Uninstall license if present.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductLicensingApi(
+$apiInstance = new NexusClient\Api\ProductLicensingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -99,7 +99,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setLicense**
-> \Swagger\Client\Model\ApiLicenseDetailsXO setLicense($body)
+> \NexusClient\Model\ApiLicenseDetailsXO setLicense($body)
 
 Upload a new license file.
 
@@ -110,12 +110,12 @@ Server must be restarted to take effect
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductLicensingApi(
+$apiInstance = new NexusClient\Api\ProductLicensingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\InputStream(); // \Swagger\Client\Model\InputStream | 
+$body = new \NexusClient\Model\InputStream(); // \NexusClient\Model\InputStream | 
 
 try {
     $result = $apiInstance->setLicense($body);
@@ -130,11 +130,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\InputStream**](../Model/InputStream.md)|  | [optional]
+ **body** | [**\NexusClient\Model\InputStream**](../Model/InputStream.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiLicenseDetailsXO**](../Model/ApiLicenseDetailsXO.md)
+[**\NexusClient\Model\ApiLicenseDetailsXO**](../Model/ApiLicenseDetailsXO.md)
 
 ### Authorization
 

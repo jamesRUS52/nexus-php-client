@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementAnonymousAccessApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class SecurityManagementAnonymousAccessApi
      * Get Anonymous Access settings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AnonymousAccessSettingsXO
+     * @return \NexusClient\Model\AnonymousAccessSettingsXO
      */
     public function read()
     {
@@ -109,13 +109,13 @@ class SecurityManagementAnonymousAccessApi
      * Get Anonymous Access settings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AnonymousAccessSettingsXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\AnonymousAccessSettingsXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function readWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\AnonymousAccessSettingsXO';
+        $returnType = '\NexusClient\Model\AnonymousAccessSettingsXO';
         $request = $this->readRequest();
 
         try {
@@ -167,7 +167,7 @@ class SecurityManagementAnonymousAccessApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AnonymousAccessSettingsXO',
+                        '\NexusClient\Model\AnonymousAccessSettingsXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class SecurityManagementAnonymousAccessApi
      */
     public function readAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\AnonymousAccessSettingsXO';
+        $returnType = '\NexusClient\Model\AnonymousAccessSettingsXO';
         $request = $this->readRequest();
 
         return $this->client
@@ -342,11 +342,11 @@ class SecurityManagementAnonymousAccessApi
      *
      * Update Anonymous Access settings
      *
-     * @param  \Swagger\Client\Model\AnonymousAccessSettingsXO $body body (optional)
+     * @param  \NexusClient\Model\AnonymousAccessSettingsXO $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AnonymousAccessSettingsXO
+     * @return \NexusClient\Model\AnonymousAccessSettingsXO
      */
     public function update($body = null)
     {
@@ -359,15 +359,15 @@ class SecurityManagementAnonymousAccessApi
      *
      * Update Anonymous Access settings
      *
-     * @param  \Swagger\Client\Model\AnonymousAccessSettingsXO $body (optional)
+     * @param  \NexusClient\Model\AnonymousAccessSettingsXO $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AnonymousAccessSettingsXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\AnonymousAccessSettingsXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\AnonymousAccessSettingsXO';
+        $returnType = '\NexusClient\Model\AnonymousAccessSettingsXO';
         $request = $this->updateRequest($body);
 
         try {
@@ -419,7 +419,7 @@ class SecurityManagementAnonymousAccessApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AnonymousAccessSettingsXO',
+                        '\NexusClient\Model\AnonymousAccessSettingsXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -434,7 +434,7 @@ class SecurityManagementAnonymousAccessApi
      *
      * Update Anonymous Access settings
      *
-     * @param  \Swagger\Client\Model\AnonymousAccessSettingsXO $body (optional)
+     * @param  \NexusClient\Model\AnonymousAccessSettingsXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -454,14 +454,14 @@ class SecurityManagementAnonymousAccessApi
      *
      * Update Anonymous Access settings
      *
-     * @param  \Swagger\Client\Model\AnonymousAccessSettingsXO $body (optional)
+     * @param  \NexusClient\Model\AnonymousAccessSettingsXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\AnonymousAccessSettingsXO';
+        $returnType = '\NexusClient\Model\AnonymousAccessSettingsXO';
         $request = $this->updateRequest($body);
 
         return $this->client
@@ -504,7 +504,7 @@ class SecurityManagementAnonymousAccessApi
     /**
      * Create request for operation 'update'
      *
-     * @param  \Swagger\Client\Model\AnonymousAccessSettingsXO $body (optional)
+     * @param  \NexusClient\Model\AnonymousAccessSettingsXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

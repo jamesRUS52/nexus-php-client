@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementAnonymousAccessApi
+# NexusClient\SecurityManagementAnonymousAccessApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **read**
-> \Swagger\Client\Model\AnonymousAccessSettingsXO read()
+> \NexusClient\Model\AnonymousAccessSettingsXO read()
 
 Get Anonymous Access settings
 
@@ -20,7 +20,7 @@ Get Anonymous Access settings
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementAnonymousAccessApi(
+$apiInstance = new NexusClient\Api\SecurityManagementAnonymousAccessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\AnonymousAccessSettingsXO**](../Model/AnonymousAccessSettingsXO.md)
+[**\NexusClient\Model\AnonymousAccessSettingsXO**](../Model/AnonymousAccessSettingsXO.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **update**
-> \Swagger\Client\Model\AnonymousAccessSettingsXO update($body)
+> \NexusClient\Model\AnonymousAccessSettingsXO update($body)
 
 Update Anonymous Access settings
 
@@ -65,12 +65,12 @@ Update Anonymous Access settings
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementAnonymousAccessApi(
+$apiInstance = new NexusClient\Api\SecurityManagementAnonymousAccessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\AnonymousAccessSettingsXO(); // \Swagger\Client\Model\AnonymousAccessSettingsXO | 
+$body = new \NexusClient\Model\AnonymousAccessSettingsXO(); // \NexusClient\Model\AnonymousAccessSettingsXO | 
 
 try {
     $result = $apiInstance->update($body);
@@ -85,11 +85,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AnonymousAccessSettingsXO**](../Model/AnonymousAccessSettingsXO.md)|  | [optional]
+ **body** | [**\NexusClient\Model\AnonymousAccessSettingsXO**](../Model/AnonymousAccessSettingsXO.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\AnonymousAccessSettingsXO**](../Model/AnonymousAccessSettingsXO.md)
+[**\NexusClient\Model\AnonymousAccessSettingsXO**](../Model/AnonymousAccessSettingsXO.md)
 
 ### Authorization
 

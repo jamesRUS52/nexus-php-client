@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * ContentSelectorsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class ContentSelectorsApi
      *
      * Create a new content selector
      *
-     * @param  \Swagger\Client\Model\ContentSelectorApiCreateRequest $body body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiCreateRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class ContentSelectorsApi
      *
      * Create a new content selector
      *
-     * @param  \Swagger\Client\Model\ContentSelectorApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiCreateRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class ContentSelectorsApi
      *
      * Create a new content selector
      *
-     * @param  \Swagger\Client\Model\ContentSelectorApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiCreateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class ContentSelectorsApi
      *
      * Create a new content selector
      *
-     * @param  \Swagger\Client\Model\ContentSelectorApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiCreateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class ContentSelectorsApi
     /**
      * Create request for operation 'createContentSelector'
      *
-     * @param  \Swagger\Client\Model\ContentSelectorApiCreateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiCreateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -315,7 +315,7 @@ class ContentSelectorsApi
      *
      * @param  string $name name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -331,7 +331,7 @@ class ContentSelectorsApi
      *
      * @param  string $name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -547,9 +547,9 @@ class ContentSelectorsApi
      *
      * @param  string $name The content selector name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContentSelectorApiResponse
+     * @return \NexusClient\Model\ContentSelectorApiResponse
      */
     public function getContentSelector($name)
     {
@@ -564,13 +564,13 @@ class ContentSelectorsApi
      *
      * @param  string $name The content selector name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContentSelectorApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ContentSelectorApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContentSelectorWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\ContentSelectorApiResponse';
+        $returnType = '\NexusClient\Model\ContentSelectorApiResponse';
         $request = $this->getContentSelectorRequest($name);
 
         try {
@@ -622,7 +622,7 @@ class ContentSelectorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContentSelectorApiResponse',
+                        '\NexusClient\Model\ContentSelectorApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -664,7 +664,7 @@ class ContentSelectorsApi
      */
     public function getContentSelectorAsyncWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\ContentSelectorApiResponse';
+        $returnType = '\NexusClient\Model\ContentSelectorApiResponse';
         $request = $this->getContentSelectorRequest($name);
 
         return $this->client
@@ -815,9 +815,9 @@ class ContentSelectorsApi
      * List content selectors
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContentSelectorApiResponse[]
+     * @return \NexusClient\Model\ContentSelectorApiResponse[]
      */
     public function getContentSelectors()
     {
@@ -831,13 +831,13 @@ class ContentSelectorsApi
      * List content selectors
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContentSelectorApiResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ContentSelectorApiResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getContentSelectorsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ContentSelectorApiResponse[]';
+        $returnType = '\NexusClient\Model\ContentSelectorApiResponse[]';
         $request = $this->getContentSelectorsRequest();
 
         try {
@@ -889,7 +889,7 @@ class ContentSelectorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContentSelectorApiResponse[]',
+                        '\NexusClient\Model\ContentSelectorApiResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -929,7 +929,7 @@ class ContentSelectorsApi
      */
     public function getContentSelectorsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ContentSelectorApiResponse[]';
+        $returnType = '\NexusClient\Model\ContentSelectorApiResponse[]';
         $request = $this->getContentSelectorsRequest();
 
         return $this->client
@@ -1065,9 +1065,9 @@ class ContentSelectorsApi
      * Update a content selector
      *
      * @param  string $name The content selector name (required)
-     * @param  \Swagger\Client\Model\ContentSelectorApiUpdateRequest $body body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiUpdateRequest $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1082,9 +1082,9 @@ class ContentSelectorsApi
      * Update a content selector
      *
      * @param  string $name The content selector name (required)
-     * @param  \Swagger\Client\Model\ContentSelectorApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiUpdateRequest $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1136,7 +1136,7 @@ class ContentSelectorsApi
      * Update a content selector
      *
      * @param  string $name The content selector name (required)
-     * @param  \Swagger\Client\Model\ContentSelectorApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiUpdateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1157,7 +1157,7 @@ class ContentSelectorsApi
      * Update a content selector
      *
      * @param  string $name The content selector name (required)
-     * @param  \Swagger\Client\Model\ContentSelectorApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiUpdateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1194,7 +1194,7 @@ class ContentSelectorsApi
      * Create request for operation 'updateContentSelector'
      *
      * @param  string $name The content selector name (required)
-     * @param  \Swagger\Client\Model\ContentSelectorApiUpdateRequest $body (optional)
+     * @param  \NexusClient\Model\ContentSelectorApiUpdateRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

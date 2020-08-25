@@ -1,4 +1,4 @@
-# Swagger\Client\AssetsApi
+# NexusClient\AssetsApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -21,7 +21,7 @@ Delete a single asset
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AssetsApi(
+$apiInstance = new NexusClient\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssetById**
-> \Swagger\Client\Model\AssetXO getAssetById($id)
+> \NexusClient\Model\AssetXO getAssetById($id)
 
 Get a single asset
 
@@ -69,7 +69,7 @@ Get a single asset
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AssetsApi(
+$apiInstance = new NexusClient\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AssetXO**](../Model/AssetXO.md)
+[**\NexusClient\Model\AssetXO**](../Model/AssetXO.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssets**
-> \Swagger\Client\Model\PageAssetXO getAssets($repository, $continuation_token)
+> \NexusClient\Model\PageAssetXO getAssets($repository, $continuation_token)
 
 List assets
 
@@ -118,7 +118,7 @@ List assets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AssetsApi(
+$apiInstance = new NexusClient\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PageAssetXO**](../Model/PageAssetXO.md)
+[**\NexusClient\Model\PageAssetXO**](../Model/PageAssetXO.md)
 
 ### Authorization
 

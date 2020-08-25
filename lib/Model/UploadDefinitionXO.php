@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * UploadDefinitionXO Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class UploadDefinitionXO implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'format' => 'string',
         'multiple_upload' => 'bool',
-        'component_fields' => '\Swagger\Client\Model\UploadFieldDefinitionXO[]',
-        'asset_fields' => '\Swagger\Client\Model\UploadFieldDefinitionXO[]'
+        'component_fields' => '\NexusClient\Model\UploadFieldDefinitionXO[]',
+        'asset_fields' => '\NexusClient\Model\UploadFieldDefinitionXO[]'
     ];
 
     /**
@@ -273,7 +273,7 @@ class UploadDefinitionXO implements ModelInterface, ArrayAccess
     /**
      * Gets component_fields
      *
-     * @return \Swagger\Client\Model\UploadFieldDefinitionXO[]
+     * @return \NexusClient\Model\UploadFieldDefinitionXO[]
      */
     public function getComponentFields()
     {
@@ -283,7 +283,7 @@ class UploadDefinitionXO implements ModelInterface, ArrayAccess
     /**
      * Sets component_fields
      *
-     * @param \Swagger\Client\Model\UploadFieldDefinitionXO[] $component_fields component_fields
+     * @param \NexusClient\Model\UploadFieldDefinitionXO[] $component_fields component_fields
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class UploadDefinitionXO implements ModelInterface, ArrayAccess
     /**
      * Gets asset_fields
      *
-     * @return \Swagger\Client\Model\UploadFieldDefinitionXO[]
+     * @return \NexusClient\Model\UploadFieldDefinitionXO[]
      */
     public function getAssetFields()
     {
@@ -307,7 +307,7 @@ class UploadDefinitionXO implements ModelInterface, ArrayAccess
     /**
      * Sets asset_fields
      *
-     * @param \Swagger\Client\Model\UploadFieldDefinitionXO[] $asset_fields asset_fields
+     * @param \NexusClient\Model\UploadFieldDefinitionXO[] $asset_fields asset_fields
      *
      * @return $this
      */

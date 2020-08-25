@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * ManageIQServerConfigurationApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class ManageIQServerConfigurationApi
      * Disable IQ server
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,7 +108,7 @@ class ManageIQServerConfigurationApi
      * Disable IQ server
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -306,7 +306,7 @@ class ManageIQServerConfigurationApi
      * Enable IQ server
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -321,7 +321,7 @@ class ManageIQServerConfigurationApi
      * Enable IQ server
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -519,7 +519,7 @@ class ManageIQServerConfigurationApi
      * Get IQ server configuration
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -534,7 +534,7 @@ class ManageIQServerConfigurationApi
      * Get IQ server configuration
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -731,9 +731,9 @@ class ManageIQServerConfigurationApi
      *
      * Update IQ server configuration
      *
-     * @param  \Swagger\Client\Model\IqConnectionXo $body body (optional)
+     * @param  \NexusClient\Model\IqConnectionXo $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -747,9 +747,9 @@ class ManageIQServerConfigurationApi
      *
      * Update IQ server configuration
      *
-     * @param  \Swagger\Client\Model\IqConnectionXo $body (optional)
+     * @param  \NexusClient\Model\IqConnectionXo $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -800,7 +800,7 @@ class ManageIQServerConfigurationApi
      *
      * Update IQ server configuration
      *
-     * @param  \Swagger\Client\Model\IqConnectionXo $body (optional)
+     * @param  \NexusClient\Model\IqConnectionXo $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -820,7 +820,7 @@ class ManageIQServerConfigurationApi
      *
      * Update IQ server configuration
      *
-     * @param  \Swagger\Client\Model\IqConnectionXo $body (optional)
+     * @param  \NexusClient\Model\IqConnectionXo $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -856,7 +856,7 @@ class ManageIQServerConfigurationApi
     /**
      * Create request for operation 'updateConfiguration'
      *
-     * @param  \Swagger\Client\Model\IqConnectionXo $body (optional)
+     * @param  \NexusClient\Model\IqConnectionXo $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -953,7 +953,7 @@ class ManageIQServerConfigurationApi
      * Verify IQ server connection
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -968,7 +968,7 @@ class ManageIQServerConfigurationApi
      * Verify IQ server connection
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

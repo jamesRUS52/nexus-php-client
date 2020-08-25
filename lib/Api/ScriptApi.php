@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * ScriptApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class ScriptApi
      *
      * Add a new script
      *
-     * @param  \Swagger\Client\Model\ScriptXO $body body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class ScriptApi
      *
      * Add a new script
      *
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class ScriptApi
      *
      * Add a new script
      *
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class ScriptApi
      *
      * Add a new script
      *
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class ScriptApi
     /**
      * Create request for operation 'add'
      *
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -314,9 +314,9 @@ class ScriptApi
      * List all stored scripts
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ScriptXO[]
+     * @return \NexusClient\Model\ScriptXO[]
      */
     public function browse()
     {
@@ -330,13 +330,13 @@ class ScriptApi
      * List all stored scripts
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ScriptXO[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ScriptXO[], HTTP status code, HTTP response headers (array of strings)
      */
     public function browseWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ScriptXO[]';
+        $returnType = '\NexusClient\Model\ScriptXO[]';
         $request = $this->browseRequest();
 
         try {
@@ -388,7 +388,7 @@ class ScriptApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ScriptXO[]',
+                        '\NexusClient\Model\ScriptXO[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -428,7 +428,7 @@ class ScriptApi
      */
     public function browseAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ScriptXO[]';
+        $returnType = '\NexusClient\Model\ScriptXO[]';
         $request = $this->browseRequest();
 
         return $this->client
@@ -565,7 +565,7 @@ class ScriptApi
      *
      * @param  string $name name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -581,7 +581,7 @@ class ScriptApi
      *
      * @param  string $name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -796,9 +796,9 @@ class ScriptApi
      * Update stored script by name
      *
      * @param  string $name name (required)
-     * @param  \Swagger\Client\Model\ScriptXO $body body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -813,9 +813,9 @@ class ScriptApi
      * Update stored script by name
      *
      * @param  string $name (required)
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -867,7 +867,7 @@ class ScriptApi
      * Update stored script by name
      *
      * @param  string $name (required)
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -888,7 +888,7 @@ class ScriptApi
      * Update stored script by name
      *
      * @param  string $name (required)
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -925,7 +925,7 @@ class ScriptApi
      * Create request for operation 'edit'
      *
      * @param  string $name (required)
-     * @param  \Swagger\Client\Model\ScriptXO $body (optional)
+     * @param  \NexusClient\Model\ScriptXO $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1037,9 +1037,9 @@ class ScriptApi
      *
      * @param  string $name name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ScriptXO
+     * @return \NexusClient\Model\ScriptXO
      */
     public function read1($name)
     {
@@ -1054,13 +1054,13 @@ class ScriptApi
      *
      * @param  string $name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ScriptXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ScriptXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function read1WithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\ScriptXO';
+        $returnType = '\NexusClient\Model\ScriptXO';
         $request = $this->read1Request($name);
 
         try {
@@ -1112,7 +1112,7 @@ class ScriptApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ScriptXO',
+                        '\NexusClient\Model\ScriptXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1154,7 +1154,7 @@ class ScriptApi
      */
     public function read1AsyncWithHttpInfo($name)
     {
-        $returnType = '\Swagger\Client\Model\ScriptXO';
+        $returnType = '\NexusClient\Model\ScriptXO';
         $request = $this->read1Request($name);
 
         return $this->client
@@ -1307,9 +1307,9 @@ class ScriptApi
      * @param  string $name name (required)
      * @param  string $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ScriptResultXO
+     * @return \NexusClient\Model\ScriptResultXO
      */
     public function run1($name, $body = null)
     {
@@ -1325,13 +1325,13 @@ class ScriptApi
      * @param  string $name (required)
      * @param  string $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ScriptResultXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ScriptResultXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function run1WithHttpInfo($name, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\ScriptResultXO';
+        $returnType = '\NexusClient\Model\ScriptResultXO';
         $request = $this->run1Request($name, $body);
 
         try {
@@ -1383,7 +1383,7 @@ class ScriptApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ScriptResultXO',
+                        '\NexusClient\Model\ScriptResultXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1427,7 +1427,7 @@ class ScriptApi
      */
     public function run1AsyncWithHttpInfo($name, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\ScriptResultXO';
+        $returnType = '\NexusClient\Model\ScriptResultXO';
         $request = $this->run1Request($name, $body);
 
         return $this->client

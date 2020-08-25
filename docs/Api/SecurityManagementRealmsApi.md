@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementRealmsApi
+# NexusClient\SecurityManagementRealmsApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -21,7 +21,7 @@ List the active realm IDs in order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRealmsApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRealmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRealms**
-> \Swagger\Client\Model\RealmApiXO[] getRealms()
+> \NexusClient\Model\RealmApiXO[] getRealms()
 
 List the available realms
 
@@ -66,7 +66,7 @@ List the available realms
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRealmsApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRealmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -86,7 +86,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RealmApiXO[]**](../Model/RealmApiXO.md)
+[**\NexusClient\Model\RealmApiXO[]**](../Model/RealmApiXO.md)
 
 ### Authorization
 
@@ -111,12 +111,12 @@ Set the active security realms in the order they should be used
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementRealmsApi(
+$apiInstance = new NexusClient\Api\SecurityManagementRealmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = array(new \Swagger\Client\Model\string[]()); // string[] | The realm IDs
+$body = array(new \NexusClient\Model\string[]()); // string[] | The realm IDs
 
 try {
     $apiInstance->setActiveRealms($body);

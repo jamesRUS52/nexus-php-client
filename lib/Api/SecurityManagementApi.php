@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class SecurityManagementApi
      * Retrieve a list of the available user sources.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiUserSource[]
+     * @return \NexusClient\Model\ApiUserSource[]
      */
     public function getUserSources()
     {
@@ -109,13 +109,13 @@ class SecurityManagementApi
      * Retrieve a list of the available user sources.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiUserSource[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiUserSource[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserSourcesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiUserSource[]';
+        $returnType = '\NexusClient\Model\ApiUserSource[]';
         $request = $this->getUserSourcesRequest();
 
         try {
@@ -167,7 +167,7 @@ class SecurityManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiUserSource[]',
+                        '\NexusClient\Model\ApiUserSource[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class SecurityManagementApi
      */
     public function getUserSourcesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiUserSource[]';
+        $returnType = '\NexusClient\Model\ApiUserSource[]';
         $request = $this->getUserSourcesRequest();
 
         return $this->client

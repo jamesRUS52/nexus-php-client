@@ -1,4 +1,4 @@
-# Swagger\Client\SupportApi
+# NexusClient\SupportApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -20,12 +20,12 @@ Creates and downloads a support zip
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupportApi(
+$apiInstance = new NexusClient\Api\SupportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Request(); // \Swagger\Client\Model\Request | 
+$body = new \NexusClient\Model\Request(); // \NexusClient\Model\Request | 
 
 try {
     $apiInstance->supportzip($body);
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Request**](../Model/Request.md)|  | [optional]
+ **body** | [**\NexusClient\Model\Request**](../Model/Request.md)|  | [optional]
 
 ### Return type
 
@@ -57,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **supportzippath**
-> \Swagger\Client\Model\SupportZipXO supportzippath($body)
+> \NexusClient\Model\SupportZipXO supportzippath($body)
 
 Creates a support zip and returns the path
 
@@ -68,12 +68,12 @@ Creates a support zip and returns the path
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupportApi(
+$apiInstance = new NexusClient\Api\SupportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Request(); // \Swagger\Client\Model\Request | 
+$body = new \NexusClient\Model\Request(); // \NexusClient\Model\Request | 
 
 try {
     $result = $apiInstance->supportzippath($body);
@@ -88,11 +88,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Request**](../Model/Request.md)|  | [optional]
+ **body** | [**\NexusClient\Model\Request**](../Model/Request.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\SupportZipXO**](../Model/SupportZipXO.md)
+[**\NexusClient\Model\SupportZipXO**](../Model/SupportZipXO.md)
 
 ### Authorization
 

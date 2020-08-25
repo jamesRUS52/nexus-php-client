@@ -1,4 +1,4 @@
-# Swagger\Client\SecurityManagementLDAPApi
+# NexusClient\SecurityManagementLDAPApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -24,12 +24,12 @@ Change LDAP server order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementLDAPApi(
+$apiInstance = new NexusClient\Api\SecurityManagementLDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = array(new \Swagger\Client\Model\string[]()); // string[] | Ordered list of LDAP server names
+$body = array(new \NexusClient\Model\string[]()); // string[] | Ordered list of LDAP server names
 
 try {
     $apiInstance->changeOrder($body);
@@ -72,12 +72,12 @@ Create LDAP server
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementLDAPApi(
+$apiInstance = new NexusClient\Api\SecurityManagementLDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CreateLdapServerXo(); // \Swagger\Client\Model\CreateLdapServerXo | 
+$body = new \NexusClient\Model\CreateLdapServerXo(); // \NexusClient\Model\CreateLdapServerXo | 
 
 try {
     $apiInstance->createLdapServer($body);
@@ -91,7 +91,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateLdapServerXo**](../Model/CreateLdapServerXo.md)|  | [optional]
+ **body** | [**\NexusClient\Model\CreateLdapServerXo**](../Model/CreateLdapServerXo.md)|  | [optional]
 
 ### Return type
 
@@ -120,7 +120,7 @@ Delete LDAP server
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementLDAPApi(
+$apiInstance = new NexusClient\Api\SecurityManagementLDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -168,7 +168,7 @@ Get LDAP server
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementLDAPApi(
+$apiInstance = new NexusClient\Api\SecurityManagementLDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ List LDAP servers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementLDAPApi(
+$apiInstance = new NexusClient\Api\SecurityManagementLDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -260,13 +260,13 @@ Update LDAP server
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SecurityManagementLDAPApi(
+$apiInstance = new NexusClient\Api\SecurityManagementLDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = "name_example"; // string | Name of the LDAP server to update
-$body = new \Swagger\Client\Model\UpdateLdapServerXo(); // \Swagger\Client\Model\UpdateLdapServerXo | Updated values of LDAP server
+$body = new \NexusClient\Model\UpdateLdapServerXo(); // \NexusClient\Model\UpdateLdapServerXo | Updated values of LDAP server
 
 try {
     $apiInstance->updateLdapServer($name, $body);
@@ -281,7 +281,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Name of the LDAP server to update |
- **body** | [**\Swagger\Client\Model\UpdateLdapServerXo**](../Model/UpdateLdapServerXo.md)| Updated values of LDAP server | [optional]
+ **body** | [**\NexusClient\Model\UpdateLdapServerXo**](../Model/UpdateLdapServerXo.md)| Updated values of LDAP server | [optional]
 
 ### Return type
 

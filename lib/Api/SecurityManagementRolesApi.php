@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityManagementRolesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,11 +92,11 @@ class SecurityManagementRolesApi
      *
      * Create role
      *
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RoleXOResponse
+     * @return \NexusClient\Model\RoleXOResponse
      */
     public function create($body)
     {
@@ -109,15 +109,15 @@ class SecurityManagementRolesApi
      *
      * Create role
      *
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RoleXOResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\RoleXOResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\RoleXOResponse';
+        $returnType = '\NexusClient\Model\RoleXOResponse';
         $request = $this->createRequest($body);
 
         try {
@@ -169,7 +169,7 @@ class SecurityManagementRolesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RoleXOResponse',
+                        '\NexusClient\Model\RoleXOResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class SecurityManagementRolesApi
      *
      * Create role
      *
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,14 +204,14 @@ class SecurityManagementRolesApi
      *
      * Create role
      *
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\RoleXOResponse';
+        $returnType = '\NexusClient\Model\RoleXOResponse';
         $request = $this->createRequest($body);
 
         return $this->client
@@ -254,7 +254,7 @@ class SecurityManagementRolesApi
     /**
      * Create request for operation 'create'
      *
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -358,7 +358,7 @@ class SecurityManagementRolesApi
      *
      * @param  string $id The id of the role to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -374,7 +374,7 @@ class SecurityManagementRolesApi
      *
      * @param  string $id The id of the role to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -591,9 +591,9 @@ class SecurityManagementRolesApi
      * @param  string $id The id of the role to get (required)
      * @param  string $source The id of the user source to filter the roles by. Available sources can be fetched using the &#39;User Sources&#39; endpoint. (optional, default to default)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RoleXOResponse
+     * @return \NexusClient\Model\RoleXOResponse
      */
     public function getRole($id, $source = 'default')
     {
@@ -609,13 +609,13 @@ class SecurityManagementRolesApi
      * @param  string $id The id of the role to get (required)
      * @param  string $source The id of the user source to filter the roles by. Available sources can be fetched using the &#39;User Sources&#39; endpoint. (optional, default to default)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RoleXOResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\RoleXOResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRoleWithHttpInfo($id, $source = 'default')
     {
-        $returnType = '\Swagger\Client\Model\RoleXOResponse';
+        $returnType = '\NexusClient\Model\RoleXOResponse';
         $request = $this->getRoleRequest($id, $source);
 
         try {
@@ -667,7 +667,7 @@ class SecurityManagementRolesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RoleXOResponse',
+                        '\NexusClient\Model\RoleXOResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -711,7 +711,7 @@ class SecurityManagementRolesApi
      */
     public function getRoleAsyncWithHttpInfo($id, $source = 'default')
     {
-        $returnType = '\Swagger\Client\Model\RoleXOResponse';
+        $returnType = '\NexusClient\Model\RoleXOResponse';
         $request = $this->getRoleRequest($id, $source);
 
         return $this->client
@@ -868,9 +868,9 @@ class SecurityManagementRolesApi
      *
      * @param  string $source The id of the user source to filter the roles by, if supplied. Otherwise roles from all user sources will be returned. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RoleXOResponse[]
+     * @return \NexusClient\Model\RoleXOResponse[]
      */
     public function getRoles($source = null)
     {
@@ -885,13 +885,13 @@ class SecurityManagementRolesApi
      *
      * @param  string $source The id of the user source to filter the roles by, if supplied. Otherwise roles from all user sources will be returned. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RoleXOResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\RoleXOResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getRolesWithHttpInfo($source = null)
     {
-        $returnType = '\Swagger\Client\Model\RoleXOResponse[]';
+        $returnType = '\NexusClient\Model\RoleXOResponse[]';
         $request = $this->getRolesRequest($source);
 
         try {
@@ -943,7 +943,7 @@ class SecurityManagementRolesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RoleXOResponse[]',
+                        '\NexusClient\Model\RoleXOResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -985,7 +985,7 @@ class SecurityManagementRolesApi
      */
     public function getRolesAsyncWithHttpInfo($source = null)
     {
-        $returnType = '\Swagger\Client\Model\RoleXOResponse[]';
+        $returnType = '\NexusClient\Model\RoleXOResponse[]';
         $request = $this->getRolesRequest($source);
 
         return $this->client
@@ -1126,9 +1126,9 @@ class SecurityManagementRolesApi
      * Update role
      *
      * @param  string $id The id of the role to update (required)
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1143,9 +1143,9 @@ class SecurityManagementRolesApi
      * Update role
      *
      * @param  string $id The id of the role to update (required)
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1197,7 +1197,7 @@ class SecurityManagementRolesApi
      * Update role
      *
      * @param  string $id The id of the role to update (required)
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1218,7 +1218,7 @@ class SecurityManagementRolesApi
      * Update role
      *
      * @param  string $id The id of the role to update (required)
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1255,7 +1255,7 @@ class SecurityManagementRolesApi
      * Create request for operation 'update1'
      *
      * @param  string $id The id of the role to update (required)
-     * @param  \Swagger\Client\Model\RoleXORequest $body A role configuration (required)
+     * @param  \NexusClient\Model\RoleXORequest $body A role configuration (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

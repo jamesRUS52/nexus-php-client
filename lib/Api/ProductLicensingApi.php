@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * ProductLicensingApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class ProductLicensingApi
      * Get the current license status.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiLicenseDetailsXO
+     * @return \NexusClient\Model\ApiLicenseDetailsXO
      */
     public function getLicenseStatus()
     {
@@ -109,13 +109,13 @@ class ProductLicensingApi
      * Get the current license status.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiLicenseDetailsXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiLicenseDetailsXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getLicenseStatusWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiLicenseDetailsXO';
+        $returnType = '\NexusClient\Model\ApiLicenseDetailsXO';
         $request = $this->getLicenseStatusRequest();
 
         try {
@@ -167,7 +167,7 @@ class ProductLicensingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiLicenseDetailsXO',
+                        '\NexusClient\Model\ApiLicenseDetailsXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class ProductLicensingApi
      */
     public function getLicenseStatusAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiLicenseDetailsXO';
+        $returnType = '\NexusClient\Model\ApiLicenseDetailsXO';
         $request = $this->getLicenseStatusRequest();
 
         return $this->client
@@ -343,7 +343,7 @@ class ProductLicensingApi
      * Uninstall license if present.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -358,7 +358,7 @@ class ProductLicensingApi
      * Uninstall license if present.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -555,11 +555,11 @@ class ProductLicensingApi
      *
      * Upload a new license file.
      *
-     * @param  \Swagger\Client\Model\InputStream $body body (optional)
+     * @param  \NexusClient\Model\InputStream $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiLicenseDetailsXO
+     * @return \NexusClient\Model\ApiLicenseDetailsXO
      */
     public function setLicense($body = null)
     {
@@ -572,15 +572,15 @@ class ProductLicensingApi
      *
      * Upload a new license file.
      *
-     * @param  \Swagger\Client\Model\InputStream $body (optional)
+     * @param  \NexusClient\Model\InputStream $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiLicenseDetailsXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiLicenseDetailsXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function setLicenseWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiLicenseDetailsXO';
+        $returnType = '\NexusClient\Model\ApiLicenseDetailsXO';
         $request = $this->setLicenseRequest($body);
 
         try {
@@ -632,7 +632,7 @@ class ProductLicensingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiLicenseDetailsXO',
+                        '\NexusClient\Model\ApiLicenseDetailsXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -647,7 +647,7 @@ class ProductLicensingApi
      *
      * Upload a new license file.
      *
-     * @param  \Swagger\Client\Model\InputStream $body (optional)
+     * @param  \NexusClient\Model\InputStream $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -667,14 +667,14 @@ class ProductLicensingApi
      *
      * Upload a new license file.
      *
-     * @param  \Swagger\Client\Model\InputStream $body (optional)
+     * @param  \NexusClient\Model\InputStream $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function setLicenseAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiLicenseDetailsXO';
+        $returnType = '\NexusClient\Model\ApiLicenseDetailsXO';
         $request = $this->setLicenseRequest($body);
 
         return $this->client
@@ -717,7 +717,7 @@ class ProductLicensingApi
     /**
      * Create request for operation 'setLicense'
      *
-     * @param  \Swagger\Client\Model\InputStream $body (optional)
+     * @param  \NexusClient\Model\InputStream $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -1,4 +1,4 @@
-# Swagger\Client\SearchApi
+# NexusClient\SearchApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **search**
-> \Swagger\Client\Model\PageComponentXO search($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture)
+> \NexusClient\Model\PageComponentXO search($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture)
 
 Search components
 
@@ -21,7 +21,7 @@ Search components
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SearchApi(
+$apiInstance = new NexusClient\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PageComponentXO**](../Model/PageComponentXO.md)
+[**\NexusClient\Model\PageComponentXO**](../Model/PageComponentXO.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ Returns a 302 Found with location header field set to download URL. Unless a sor
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SearchApi(
+$apiInstance = new NexusClient\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -253,7 +253,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchAssets**
-> \Swagger\Client\Model\PageAssetXO searchAssets($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture)
+> \NexusClient\Model\PageAssetXO searchAssets($continuation_token, $sort, $direction, $timeout, $q, $repository, $format, $group, $name, $version, $md5, $sha1, $sha256, $sha512, $prerelease, $conan_base_version, $conan_channel, $docker_image_name, $docker_image_tag, $docker_layer_id, $docker_content_digest, $maven_group_id, $maven_artifact_id, $maven_base_version, $maven_extension, $maven_classifier, $npm_scope, $nuget_id, $nuget_tags, $p2_plugin_name, $pypi_classifiers, $pypi_description, $pypi_keywords, $pypi_summary, $rubygems_description, $rubygems_platform, $rubygems_summary, $yum_architecture)
 
 Search assets
 
@@ -264,7 +264,7 @@ Search assets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SearchApi(
+$apiInstance = new NexusClient\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PageAssetXO**](../Model/PageAssetXO.md)
+[**\NexusClient\Model\PageAssetXO**](../Model/PageAssetXO.md)
 
 ### Authorization
 

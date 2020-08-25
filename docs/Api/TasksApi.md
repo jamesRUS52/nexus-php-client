@@ -1,4 +1,4 @@
-# Swagger\Client\TasksApi
+# NexusClient\TasksApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **getTaskById**
-> \Swagger\Client\Model\TaskXO getTaskById($id)
+> \NexusClient\Model\TaskXO getTaskById($id)
 
 Get a single task by id
 
@@ -22,7 +22,7 @@ Get a single task by id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TasksApi(
+$apiInstance = new NexusClient\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TaskXO**](../Model/TaskXO.md)
+[**\NexusClient\Model\TaskXO**](../Model/TaskXO.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTasks**
-> \Swagger\Client\Model\PageTaskXO getTasks($type)
+> \NexusClient\Model\PageTaskXO getTasks($type)
 
 List tasks
 
@@ -71,7 +71,7 @@ List tasks
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TasksApi(
+$apiInstance = new NexusClient\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PageTaskXO**](../Model/PageTaskXO.md)
+[**\NexusClient\Model\PageTaskXO**](../Model/PageTaskXO.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Run task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TasksApi(
+$apiInstance = new NexusClient\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -168,7 +168,7 @@ Stop task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TasksApi(
+$apiInstance = new NexusClient\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

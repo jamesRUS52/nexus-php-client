@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * FileBlobStoreApiCreateRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class FileBlobStoreApiCreateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'soft_quota' => '\Swagger\Client\Model\BlobStoreApiSoftQuota',
+        'soft_quota' => '\NexusClient\Model\BlobStoreApiSoftQuota',
         'path' => 'string',
         'name' => 'string'
     ];
@@ -219,7 +219,7 @@ class FileBlobStoreApiCreateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets soft_quota
      *
-     * @return \Swagger\Client\Model\BlobStoreApiSoftQuota
+     * @return \NexusClient\Model\BlobStoreApiSoftQuota
      */
     public function getSoftQuota()
     {
@@ -229,7 +229,7 @@ class FileBlobStoreApiCreateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets soft_quota
      *
-     * @param \Swagger\Client\Model\BlobStoreApiSoftQuota $soft_quota Settings to control the soft quota
+     * @param \NexusClient\Model\BlobStoreApiSoftQuota $soft_quota Settings to control the soft quota
      *
      * @return $this
      */

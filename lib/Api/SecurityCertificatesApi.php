@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SecurityCertificatesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class SecurityCertificatesApi
      *
      * @param  string $body The certificate to add encoded in PEM format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiCertificate
+     * @return \NexusClient\Model\ApiCertificate
      */
     public function addCertificate($body = null)
     {
@@ -111,13 +111,13 @@ class SecurityCertificatesApi
      *
      * @param  string $body The certificate to add encoded in PEM format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiCertificate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiCertificate, HTTP status code, HTTP response headers (array of strings)
      */
     public function addCertificateWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiCertificate';
+        $returnType = '\NexusClient\Model\ApiCertificate';
         $request = $this->addCertificateRequest($body);
 
         try {
@@ -169,7 +169,7 @@ class SecurityCertificatesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiCertificate',
+                        '\NexusClient\Model\ApiCertificate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class SecurityCertificatesApi
      */
     public function addCertificateAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiCertificate';
+        $returnType = '\NexusClient\Model\ApiCertificate';
         $request = $this->addCertificateRequest($body);
 
         return $this->client
@@ -351,9 +351,9 @@ class SecurityCertificatesApi
      * Retrieve a list of certificates added to the trust store.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiCertificate[]
+     * @return \NexusClient\Model\ApiCertificate[]
      */
     public function getTrustStoreCertificates()
     {
@@ -367,13 +367,13 @@ class SecurityCertificatesApi
      * Retrieve a list of certificates added to the trust store.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiCertificate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiCertificate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getTrustStoreCertificatesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiCertificate[]';
+        $returnType = '\NexusClient\Model\ApiCertificate[]';
         $request = $this->getTrustStoreCertificatesRequest();
 
         try {
@@ -425,7 +425,7 @@ class SecurityCertificatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiCertificate[]',
+                        '\NexusClient\Model\ApiCertificate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class SecurityCertificatesApi
      */
     public function getTrustStoreCertificatesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ApiCertificate[]';
+        $returnType = '\NexusClient\Model\ApiCertificate[]';
         $request = $this->getTrustStoreCertificatesRequest();
 
         return $this->client
@@ -602,7 +602,7 @@ class SecurityCertificatesApi
      *
      * @param  string $id The id of the certificate that should be removed. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -618,7 +618,7 @@ class SecurityCertificatesApi
      *
      * @param  string $id The id of the certificate that should be removed. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -836,9 +836,9 @@ class SecurityCertificatesApi
      * @param  int $port The port on the remote system to connect to (optional, default to 443)
      * @param  string $protocol_hint An optional hint of the protocol to try for the connection (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ApiCertificate
+     * @return \NexusClient\Model\ApiCertificate
      */
     public function retrieveCertificate($host, $port = '443', $protocol_hint = null)
     {
@@ -855,13 +855,13 @@ class SecurityCertificatesApi
      * @param  int $port The port on the remote system to connect to (optional, default to 443)
      * @param  string $protocol_hint An optional hint of the protocol to try for the connection (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ApiCertificate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\ApiCertificate, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveCertificateWithHttpInfo($host, $port = '443', $protocol_hint = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiCertificate';
+        $returnType = '\NexusClient\Model\ApiCertificate';
         $request = $this->retrieveCertificateRequest($host, $port, $protocol_hint);
 
         try {
@@ -913,7 +913,7 @@ class SecurityCertificatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiCertificate',
+                        '\NexusClient\Model\ApiCertificate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -959,7 +959,7 @@ class SecurityCertificatesApi
      */
     public function retrieveCertificateAsyncWithHttpInfo($host, $port = '443', $protocol_hint = null)
     {
-        $returnType = '\Swagger\Client\Model\ApiCertificate';
+        $returnType = '\NexusClient\Model\ApiCertificate';
         $request = $this->retrieveCertificateRequest($host, $port, $protocol_hint);
 
         return $this->client

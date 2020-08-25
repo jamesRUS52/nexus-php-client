@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace NexusClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \NexusClient\ObjectSerializer;
 
 /**
  * DockerGroupRepositoryApiRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'online' => 'bool',
-        'storage' => '\Swagger\Client\Model\StorageAttributes',
-        'group' => '\Swagger\Client\Model\GroupAttributes',
-        'docker' => '\Swagger\Client\Model\DockerAttributes'
+        'storage' => '\NexusClient\Model\StorageAttributes',
+        'group' => '\NexusClient\Model\GroupAttributes',
+        'docker' => '\NexusClient\Model\DockerAttributes'
     ];
 
     /**
@@ -303,7 +303,7 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets storage
      *
-     * @return \Swagger\Client\Model\StorageAttributes
+     * @return \NexusClient\Model\StorageAttributes
      */
     public function getStorage()
     {
@@ -313,7 +313,7 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets storage
      *
-     * @param \Swagger\Client\Model\StorageAttributes $storage storage
+     * @param \NexusClient\Model\StorageAttributes $storage storage
      *
      * @return $this
      */
@@ -327,7 +327,7 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets group
      *
-     * @return \Swagger\Client\Model\GroupAttributes
+     * @return \NexusClient\Model\GroupAttributes
      */
     public function getGroup()
     {
@@ -337,7 +337,7 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets group
      *
-     * @param \Swagger\Client\Model\GroupAttributes $group group
+     * @param \NexusClient\Model\GroupAttributes $group group
      *
      * @return $this
      */
@@ -351,7 +351,7 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Gets docker
      *
-     * @return \Swagger\Client\Model\DockerAttributes
+     * @return \NexusClient\Model\DockerAttributes
      */
     public function getDocker()
     {
@@ -361,7 +361,7 @@ class DockerGroupRepositoryApiRequest implements ModelInterface, ArrayAccess
     /**
      * Sets docker
      *
-     * @param \Swagger\Client\Model\DockerAttributes $docker docker
+     * @param \NexusClient\Model\DockerAttributes $docker docker
      *
      * @return $this
      */

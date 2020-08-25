@@ -1,4 +1,4 @@
-# Swagger\Client\FormatsApi
+# NexusClient\FormatsApi
 
 All URIs are relative to *https://localhost/service/rest/*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get1**
-> \Swagger\Client\Model\UploadDefinitionXO get1($format)
+> \NexusClient\Model\UploadDefinitionXO get1($format)
 
 Get upload field requirements for the desired format
 
@@ -20,7 +20,7 @@ Get upload field requirements for the desired format
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FormatsApi(
+$apiInstance = new NexusClient\Api\FormatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UploadDefinitionXO**](../Model/UploadDefinitionXO.md)
+[**\NexusClient\Model\UploadDefinitionXO**](../Model/UploadDefinitionXO.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **get2**
-> \Swagger\Client\Model\UploadDefinitionXO[] get2()
+> \NexusClient\Model\UploadDefinitionXO[] get2()
 
 Get upload field requirements for each supported format
 
@@ -69,7 +69,7 @@ Get upload field requirements for each supported format
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FormatsApi(
+$apiInstance = new NexusClient\Api\FormatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -89,7 +89,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\UploadDefinitionXO[]**](../Model/UploadDefinitionXO.md)
+[**\NexusClient\Model\UploadDefinitionXO[]**](../Model/UploadDefinitionXO.md)
 
 ### Authorization
 

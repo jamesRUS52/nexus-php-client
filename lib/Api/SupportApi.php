@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace NexusClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use NexusClient\ApiException;
+use NexusClient\Configuration;
+use NexusClient\HeaderSelector;
+use NexusClient\ObjectSerializer;
 
 /**
  * SupportApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  NexusClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class SupportApi
      *
      * Creates and downloads a support zip
      *
-     * @param  \Swagger\Client\Model\Request $body body (optional)
+     * @param  \NexusClient\Model\Request $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class SupportApi
      *
      * Creates and downloads a support zip
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class SupportApi
      *
      * Creates and downloads a support zip
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class SupportApi
      *
      * Creates and downloads a support zip
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class SupportApi
     /**
      * Create request for operation 'supportzip'
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -313,11 +313,11 @@ class SupportApi
      *
      * Creates a support zip and returns the path
      *
-     * @param  \Swagger\Client\Model\Request $body body (optional)
+     * @param  \NexusClient\Model\Request $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SupportZipXO
+     * @return \NexusClient\Model\SupportZipXO
      */
     public function supportzippath($body = null)
     {
@@ -330,15 +330,15 @@ class SupportApi
      *
      * Creates a support zip and returns the path
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \NexusClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SupportZipXO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \NexusClient\Model\SupportZipXO, HTTP status code, HTTP response headers (array of strings)
      */
     public function supportzippathWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\SupportZipXO';
+        $returnType = '\NexusClient\Model\SupportZipXO';
         $request = $this->supportzippathRequest($body);
 
         try {
@@ -390,7 +390,7 @@ class SupportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SupportZipXO',
+                        '\NexusClient\Model\SupportZipXO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -405,7 +405,7 @@ class SupportApi
      *
      * Creates a support zip and returns the path
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -425,14 +425,14 @@ class SupportApi
      *
      * Creates a support zip and returns the path
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function supportzippathAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\SupportZipXO';
+        $returnType = '\NexusClient\Model\SupportZipXO';
         $request = $this->supportzippathRequest($body);
 
         return $this->client
@@ -475,7 +475,7 @@ class SupportApi
     /**
      * Create request for operation 'supportzippath'
      *
-     * @param  \Swagger\Client\Model\Request $body (optional)
+     * @param  \NexusClient\Model\Request $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
