@@ -20,7 +20,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/james.rus52/nexus-php-client.git"
+      "url": "https://github.com/jamesRUS52/nexus-php-client.git"
     }
   ],
   "require": {
