@@ -24,7 +24,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
     }
   ],
   "require": {
-    "james.rus52/nexus-php-client": "*@dev"
+    "james.rus52/nexus-php-client": "^3.26.*"
   }
 }
 ```
